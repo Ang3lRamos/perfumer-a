@@ -10,7 +10,8 @@
     "test": "vitest run",
     "typecheck": "next typegen && tsc --noEmit",
     "catalogo:importar": "tsx scripts/importar-catalogo/index.ts",
-    "catalogo:seed": "tsx scripts/generar-seed.ts"
+    "catalogo:seed": "tsx scripts/generar-seed.ts",
+    "catalogo:imagenes": "tsx scripts/imagenes-oficiales/index.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",

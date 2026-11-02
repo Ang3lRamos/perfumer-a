@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps<"/p/[slug]">): Prom
     title: titulo,
     description: descripcion,
     alternates: { canonical: `/p/${producto.slug}` },
-    openGraph: { title: titulo, description: descripcion, images: producto.imagenUrl ? [producto.imagenUrl] : [] },
+    openGraph: { title: titulo, description: descripcion, images: producto.imagenes.slice(0, 1) },
   };
 }
 

@@ -52,7 +52,7 @@ export const perfumes = {
   nombreProducto: { singular: "perfume", plural: "perfumes" },
   atributos: atributosPerfume,
   filtros: [
-    { clave: "genero", etiqueta: "Para", opciones: GENEROS },
+    { clave: "genero", etiqueta: "Para", opciones: GENEROS, unico: true },
     { clave: "familias", etiqueta: "Familia olfativa", opciones: FAMILIAS },
     { clave: "ocasiones", etiqueta: "Ocasión", opciones: OCASIONES },
   ],

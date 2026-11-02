@@ -19,7 +19,8 @@ export interface Producto<A = Record<string, unknown>> {
   descripcion: string | null;
   atributos: A;
   fichaVerificada: boolean;
-  imagenUrl: string | null;
+  /** La primera es la principal. */
+  imagenes: string[];
   variantes: Variante[];
 }
 

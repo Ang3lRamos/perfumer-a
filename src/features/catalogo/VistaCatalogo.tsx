@@ -3,9 +3,10 @@ import { contarPor, opcionesConConteo, valoresDeAtributo } from "@/core/catalogo
 import { filtrarCatalogo, ordenarCatalogo } from "@/core/catalogo/filtrar";
 import type { Producto } from "@/core/catalogo/tipos";
 import { BarraBusqueda, SelectorOrden } from "./BarraBusqueda";
+import { BarraFiltros } from "./BarraFiltros";
 import { obtenerCatalogo } from "./datos";
 import { ProveedorNavegacion, ZonaResultados } from "./navegacion";
-import { FiltrosLaterales, FiltrosMovil, type GrupoFiltro } from "./PanelFiltros";
+import { FiltrosActivos, type GrupoFiltro } from "./OpcionesFiltro";
 import { leerFiltros, type ParametrosUrl } from "./parametros";
 import { TarjetaProducto } from "./TarjetaProducto";
 
@@ -15,6 +16,7 @@ function armarGrupos(catalogo: Producto[]): GrupoFiltro[] {
   const porAtributo = negocio.filtros.map((filtro) => ({
     clave: filtro.clave,
     etiqueta: filtro.etiqueta,
+    unico: filtro.unico,
     opciones: opcionesConConteo(filtro.opciones, contarPor(catalogo, (p) => valoresDeAtributo(p, filtro.clave))),
   }));
 
@@ -54,36 +56,33 @@ export async function VistaCatalogo({ parametros }: { parametros: Promise<Parame
 
   return (
     <ProveedorNavegacion consulta={aConsulta(params)}>
-      <div className="lg:grid lg:grid-cols-[15rem_1fr] lg:gap-10">
-        <aside className="lg:sticky lg:top-6 lg:self-start">
-          <FiltrosLaterales grupos={grupos} />
-        </aside>
-        <section aria-labelledby="titulo-resultados">
-          <div className="mb-6 flex items-center gap-2">
-            <BarraBusqueda />
-            <FiltrosMovil grupos={grupos} total={resultados.length} />
-            <SelectorOrden />
-          </div>
-          <p id="titulo-resultados" className="mb-4 font-mono text-xs text-tinta-suave" aria-live="polite">
-            {resultados.length} de {catalogo.length} {negocio.nombreProducto.plural}
+      {/* Barra fija al hacer scroll: los filtros siempre a mano, sin bajar por todo el inventario. */}
+      <div className="sticky top-0 z-20 -mx-4 mb-6 space-y-3 border-b border-linea bg-papel px-4 py-3">
+        <div className="flex items-center gap-2">
+          <BarraBusqueda />
+          <SelectorOrden />
+        </div>
+        <div className="flex items-center justify-between gap-3">
+          <BarraFiltros grupos={grupos} total={resultados.length} />
+          <p className="shrink-0 font-mono text-xs text-tinta-suave" aria-live="polite">
+            {resultados.length} de {catalogo.length}
           </p>
-          <ZonaResultados>
-            {resultados.length ? (
-              <ul className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 xl:grid-cols-4">
-                {resultados.map((producto, i) => (
-                  <li key={producto.id}>
-                    <TarjetaProducto producto={producto} prioridad={i < TARJETAS_PRIORITARIAS} />
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className="py-16 text-center font-display text-2xl text-tinta-suave">
-                Nada por aquí con esos filtros.
-              </p>
-            )}
-          </ZonaResultados>
-        </section>
+        </div>
+        <FiltrosActivos grupos={grupos} />
       </div>
+      <ZonaResultados>
+        {resultados.length ? (
+          <ul className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+            {resultados.map((producto, i) => (
+              <li key={producto.id}>
+                <TarjetaProducto producto={producto} prioridad={i < TARJETAS_PRIORITARIAS} />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="py-16 text-center font-display text-2xl text-tinta-suave">Nada por aquí con esos filtros.</p>
+        )}
+      </ZonaResultados>
     </ProveedorNavegacion>
   );
 }

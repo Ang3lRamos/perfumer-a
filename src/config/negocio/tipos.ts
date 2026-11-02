@@ -10,6 +10,8 @@ export interface FiltroAtributo {
   clave: string;
   etiqueta: string;
   opciones: Opcion[];
+  /** Una sola opción a la vez (ej. género), en vez de combinar varias. */
+  unico?: boolean;
 }
 
 export interface Cobertura {

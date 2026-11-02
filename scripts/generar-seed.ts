@@ -2,6 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { negocio } from "../src/config/negocio";
 import { FICHAS_BORRADOR } from "../supabase/datos/fichas-borrador";
+import imagenesOficiales from "../supabase/datos/imagenes-oficiales.json";
 import type { ProductoImportado } from "./importar-catalogo/agrupar";
 
 type ProductoCatalogo = Omit<ProductoImportado, "indiceImagen"> & { imagen: string };
@@ -25,6 +26,14 @@ function atributosDe(slug: string): Record<string, unknown> {
   });
 }
 
+// Las fotos oficiales de la marca reemplazan la del PDF del distribuidor, que es de baja resolución.
+function imagenesDe(producto: ProductoCatalogo): string[] {
+  const oficiales = (imagenesOficiales as Record<string, { urls: string[] }>)[producto.slug];
+  return oficiales?.urls ?? [producto.imagen];
+}
+
+const arregloSql = (valores: string[]) => `array[${valores.map(sql).join(", ")}]::text[]`;
+
 function filaProducto(producto: ProductoCatalogo): string {
   const atributos = JSON.stringify(atributosDe(producto.slug));
   return `(${[
@@ -34,7 +43,7 @@ function filaProducto(producto: ProductoCatalogo): string {
     sql(producto.nombre),
     sql(producto.concentracion),
     `${sql(atributos)}::jsonb`,
-    sql(producto.imagen),
+    arregloSql(imagenesDe(producto)),
   ].join(", ")})`;
 }
 
@@ -52,9 +61,9 @@ async function main(): Promise<void> {
 
   // Se cruza por slug para que reimportar una lista nueva actualice precios sin cambiar códigos.
   const contenido = `-- Generado por scripts/generar-seed.ts desde supabase/datos/. No editar a mano.
-insert into productos (codigo, slug, marca, nombre, presentacion, atributos, imagen_url) values
+insert into productos (codigo, slug, marca, nombre, presentacion, atributos, imagenes) values
 ${productos.map(filaProducto).join(",\n")}
-on conflict (slug) do nothing;
+on conflict (slug) do update set imagenes = excluded.imagenes;
 
 insert into variantes (producto_id, tamano_ml, precio_cop, disponible)
 select p.id, v.tamano_ml, v.precio_cop, v.disponible

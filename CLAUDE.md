@@ -25,6 +25,10 @@ Next.js 16 (App Router, `cacheComponents`), TypeScript, Tailwind 4, Supabase, Zo
   `public/productos/*.webp`; luego `npm run catalogo:seed` → `supabase/seed.sql`. Se cruza por `slug`:
   reimportar actualiza precios y disponibilidad sin cambiar códigos. `supabase/datos/fichas-borrador.ts` es un
   borrador de género/familia sin verificar (`ficha_verificada = false`).
+- Imágenes: `productos.imagenes text[]` (la primera es la principal). `npm run catalogo:imagenes` busca fotos en
+  las tiendas Shopify oficiales de cada marca y las guarda en `supabase/datos/imagenes-oficiales.json`; si una
+  tienda responde con límite de peticiones se omite y conserva lo anterior (no se reintenta ni se disfraza el
+  cliente). Las de `cdn.shopify.com` se piden al ancho exacto con `src/infra/imagenes/cargador.ts`.
 - El código de producto (`LAT-051`) es un contrato con el agente: va en el mensaje prellenado de WhatsApp
   (`core/catalogo/referencia.ts`).
 

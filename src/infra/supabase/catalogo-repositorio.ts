@@ -6,7 +6,7 @@ import type { Producto } from "@/core/catalogo/tipos";
 
 const COLUMNAS = `
   id, codigo, slug, marca, nombre, tipo, inspiracion_nota, presentacion, descripcion,
-  atributos, ficha_verificada, imagen_url,
+  atributos, ficha_verificada, imagenes,
   variantes (id, tamano_ml, precio_cop, disponible)
 `;
 
@@ -22,7 +22,7 @@ const filaProducto = z.object({
   descripcion: z.string().nullable(),
   atributos: negocio.atributos,
   ficha_verificada: z.boolean(),
-  imagen_url: z.string().nullable(),
+  imagenes: z.array(z.string()),
   variantes: z.array(
     z.object({
       id: z.uuid(),
@@ -46,7 +46,7 @@ function aProducto(fila: z.infer<typeof filaProducto>): Producto<Atributos> {
     descripcion: fila.descripcion,
     atributos: fila.atributos,
     fichaVerificada: fila.ficha_verificada,
-    imagenUrl: fila.imagen_url,
+    imagenes: fila.imagenes,
     variantes: fila.variantes
       .map((v) => ({ id: v.id, tamanoMl: v.tamano_ml, precioCop: v.precio_cop, disponible: v.disponible }))
       .sort((a, b) => a.tamanoMl - b.tamanoMl),

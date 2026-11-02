@@ -3,7 +3,7 @@ import { VistaCatalogo } from "@/features/catalogo/VistaCatalogo";
 
 function EsqueletoCatalogo() {
   return (
-    <ul className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:ml-[17.5rem] xl:grid-cols-4" aria-hidden>
+    <ul className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5" aria-hidden>
       {Array.from({ length: 8 }, (_, i) => (
         <li key={i}>
           <div className="aspect-[4/5] animate-pulse bg-vitrina" />

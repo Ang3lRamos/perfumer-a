@@ -14,7 +14,7 @@ async function guardarImagen(imagen: ImagenCruda, destino: string): Promise<void
     raw: { width: imagen.ancho, height: imagen.alto, channels: imagen.canales },
   })
     .flatten({ background: "#ffffff" })
-    .webp({ quality: 82 })
+    .webp({ quality: 95 })
     .toFile(destino);
 }
 

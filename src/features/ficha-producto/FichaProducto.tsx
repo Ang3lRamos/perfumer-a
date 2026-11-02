@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { envPublico } from "@/config/env";
 import { negocio, type Atributos } from "@/config/negocio";
 import type { Producto } from "@/core/catalogo/tipos";
+import { GaleriaProducto } from "./GaleriaProducto";
 import { SelectorCompra } from "./SelectorCompra";
 
 const etiquetaDe = (clave: string, valor: string) =>
@@ -60,17 +60,8 @@ export function FichaProducto({ producto }: { producto: Producto<Atributos> }) {
   const { atributos } = producto;
   return (
     <article className="grid gap-8 pt-6 lg:grid-cols-2 lg:gap-16 lg:pt-12">
-      <div className="relative aspect-square bg-vitrina lg:sticky lg:top-6 lg:self-start">
-        {producto.imagenUrl && (
-          <Image
-            src={producto.imagenUrl}
-            alt={`${producto.marca} ${producto.nombre}`}
-            fill
-            priority
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            className="object-contain p-10 mix-blend-multiply"
-          />
-        )}
+      <div className="-mx-4 sm:mx-0 lg:sticky lg:top-6 lg:self-start">
+        <GaleriaProducto imagenes={producto.imagenes} alt={`${producto.marca} ${producto.nombre}`} />
       </div>
       <div className="space-y-8">
         <header>

@@ -19,7 +19,7 @@ function producto(codigo: string, parcial: Partial<Producto>): Producto {
     descripcion: null,
     atributos: {},
     fichaVerificada: false,
-    imagenUrl: null,
+    imagenes: [],
     variantes: [variante(100, 130000)],
     ...parcial,
   };
