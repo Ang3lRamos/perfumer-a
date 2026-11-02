@@ -35,4 +35,6 @@ export interface ConfiguracionNegocio<A extends z.ZodType = z.ZodType> {
   cobertura: Cobertura;
   /** Cómo se pasa del costo del proveedor al precio de venta al importar el catálogo. */
   reglaPrecio: ReglaPrecio;
+  /** Personalidad y tono del agente de WhatsApp. Las reglas de negocio las pone el núcleo. */
+  agente: { persona: string };
 }

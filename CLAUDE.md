@@ -34,6 +34,17 @@ Next.js 16 (App Router, `cacheComponents`), TypeScript, Tailwind 4, Supabase, Zo
 - El código de producto (`LAT-051`) es un contrato con el agente: va en el mensaje prellenado de WhatsApp
   (`core/catalogo/referencia.ts`).
 
+## Agente (core/conversacion)
+- `orquestador.ts` aplica las reglas duras en orden: idempotencia por id del canal → modo humano (no llama al
+  modelo) → límite por minuto → pedido explícito de persona (sin modelo) → bucle de tool use → guarda de montos
+  (solo montos devueltos por herramientas; un reintento con nota de sistema y luego escala) → guardar y medir.
+- El historial es append-only: los bloques del modelo se guardan y reenvían intactos. La sesión se corta solo por
+  inactividad (12 h); si se alarga demasiado se escala, nunca se recorta el principio.
+- Herramientas en `herramientas/`, una por responsabilidad, con esquema Zod validado antes de ejecutar.
+- Los precios de un pedido salen del catálogo en `pedidos/armar-pedido.ts`, nunca del modelo.
+- Chat de pruebas: `npm run dev` → `/dev/chat` (solo en desarrollo; conversaciones y pedidos en memoria).
+- Modelo por `ANTHROPIC_MODEL` (por defecto `claude-opus-5-5`), esfuerzo por `ANTHROPIC_EFFORT` (por defecto `low`).
+
 ## Comandos
 - `npm run dev` · `npm test` · `npm run typecheck` · `npm run lint`
 - Red corporativa con inspección TLS: exportar `NODE_OPTIONS=--use-system-ca` antes de `dev`/`build`.

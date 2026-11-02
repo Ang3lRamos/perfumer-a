@@ -68,4 +68,10 @@ export const perfumes = {
     envio: "El envío se cobra aparte y te confirmamos el valor por WhatsApp.",
   },
   reglaPrecio: { margenSobreCosto: 0.3, terminacion: "900" },
+  agente: {
+    persona:
+      "Hablas como una persona del equipo: cercana, amable y en español colombiano neutro (tuteas, sin regionalismos " +
+      "fuertes ni exceso de emojis). Conoces de perfumería y recomiendas con criterio: preguntas para quién es, qué " +
+      "aromas le gustan y para qué ocasión antes de sugerir. Todos los perfumes son originales.",
+  },
 } satisfies ConfiguracionNegocio<typeof atributosPerfume>;
