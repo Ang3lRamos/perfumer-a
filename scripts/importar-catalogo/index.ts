@@ -9,12 +9,22 @@ const RAIZ = path.resolve(import.meta.dirname, "../..");
 const CARPETA_IMAGENES = path.join(RAIZ, "public/productos");
 const SALIDA_JSON = path.join(RAIZ, "supabase/datos/catalogo-distribuidor.json");
 
+// Las fotos del PDF miden ~300 px y traen mucho margen blanco: se recorta el margen y se amplía con
+// lanczos + enfoque suave. No inventa detalle, pero evita el pixelado al mostrarlas en pantallas densas.
+const FACTOR_AMPLIACION = 2.5;
+
 async function guardarImagen(imagen: ImagenCruda, destino: string): Promise<void> {
-  await sharp(Buffer.from(imagen.datos), {
+  const recortada = await sharp(Buffer.from(imagen.datos), {
     raw: { width: imagen.ancho, height: imagen.alto, channels: imagen.canales },
   })
     .flatten({ background: "#ffffff" })
-    .webp({ quality: 95 })
+    .trim({ background: "#ffffff", threshold: 12 })
+    .png()
+    .toBuffer({ resolveWithObject: true });
+  await sharp(recortada.data)
+    .resize(Math.round(recortada.info.width * FACTOR_AMPLIACION), null, { kernel: "lanczos3" })
+    .sharpen({ sigma: 0.8, m1: 0.5, m2: 1.5 })
+    .webp({ quality: 90 })
     .toFile(destino);
 }
 

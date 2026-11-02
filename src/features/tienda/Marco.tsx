@@ -1,6 +1,9 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { envPublico } from "@/config/env";
 import { negocio } from "@/config/negocio";
+import { BotonCarrito } from "@/features/carrito/BotonCarrito";
+import { CajonCarrito } from "@/features/carrito/CajonCarrito";
 
 function Encabezado() {
   return (
@@ -8,13 +11,16 @@ function Encabezado() {
       <p className="bg-tinta px-4 py-1.5 text-center font-mono text-[11px] uppercase tracking-wider text-papel">
         Pagas al recibir · Contraentrega en {negocio.cobertura.ciudadesContraentrega.join(", ")}
       </p>
-      <div className="mx-auto flex max-w-7xl items-baseline justify-between px-4 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
         <Link href="/" className="font-display text-3xl leading-none">
           {negocio.nombreTienda}
         </Link>
-        <span className="hidden font-mono text-[11px] uppercase tracking-wider text-tinta-suave sm:inline">
-          Perfumería original
-        </span>
+        <div className="flex items-center gap-4">
+          <span className="hidden font-mono text-[11px] uppercase tracking-wider text-tinta-suave sm:inline">
+            Perfumería original
+          </span>
+          <BotonCarrito />
+        </div>
       </div>
     </header>
   );
@@ -41,6 +47,10 @@ export function MarcoTienda({ children }: { children: ReactNode }) {
       <Encabezado />
       <main className="mx-auto max-w-7xl px-4">{children}</main>
       <Pie />
+      <CajonCarrito
+        whatsapp={envPublico.NEXT_PUBLIC_WHATSAPP_NUMERO}
+        ciudades={negocio.cobertura.ciudadesContraentrega.join(", ")}
+      />
     </>
   );
 }

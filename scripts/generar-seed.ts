@@ -2,6 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { negocio } from "../src/config/negocio";
 import { FICHAS_BORRADOR } from "../supabase/datos/fichas-borrador";
+import imagenesManuales from "../supabase/datos/imagenes-manuales.json";
 import imagenesOficiales from "../supabase/datos/imagenes-oficiales.json";
 import type { ProductoImportado } from "./importar-catalogo/agrupar";
 
@@ -26,10 +27,11 @@ function atributosDe(slug: string): Record<string, unknown> {
   });
 }
 
-// Las fotos oficiales de la marca reemplazan la del PDF del distribuidor, que es de baja resolución.
+// Prioridad: URLs puestas a mano (slug → [urls]) > fotos oficiales de la marca > foto del PDF del distribuidor.
 function imagenesDe(producto: ProductoCatalogo): string[] {
+  const manuales = (imagenesManuales as Record<string, string[]>)[producto.slug];
   const oficiales = (imagenesOficiales as Record<string, { urls: string[] }>)[producto.slug];
-  return oficiales?.urls ?? [producto.imagen];
+  return manuales?.length ? manuales : (oficiales?.urls ?? [producto.imagen]);
 }
 
 const arregloSql = (valores: string[]) => `array[${valores.map(sql).join(", ")}]::text[]`;
