@@ -64,32 +64,32 @@ async function main(): Promise<void> {
   const fichasHuerfanas = Object.keys(FICHAS_BORRADOR).filter((slug) => !productos.some((p) => p.slug === slug));
   if (fichasHuerfanas.length) throw new Error(`Fichas sin producto: ${fichasHuerfanas.join(", ")}`);
 
+  // La lista va repetida en cada instrucción (sin tabla temporal) porque el SQL Editor de Supabase
+  // no garantiza que todas las instrucciones del archivo corran en la misma sesión.
+  const listaProveedor = `(values
+${productos.flatMap(filasVariantes).join(",\n")}
+) as l (slug, tamano_ml, precio_cop, costo_cop, disponible)`;
+
   // Se cruza por slug para que reimportar una lista nueva actualice precios sin cambiar códigos.
   const contenido = `-- Generado por scripts/generar-seed.ts desde supabase/datos/. No editar a mano.
 insert into productos (codigo, slug, marca, nombre, presentacion, atributos, imagenes) values
 ${productos.map(filaProducto).join(",\n")}
 on conflict (slug) do update set imagenes = excluded.imagenes;
 
-create temporary table lista_proveedor (slug text, tamano_ml int, precio_cop int, costo_cop int, disponible boolean);
-insert into lista_proveedor values
-${productos.flatMap(filasVariantes).join(",\n")};
-
 insert into variantes (producto_id, tamano_ml, precio_cop, disponible)
 select p.id, l.tamano_ml, l.precio_cop, l.disponible
-from lista_proveedor l
+from ${listaProveedor}
 join productos p on p.slug = l.slug
 on conflict (producto_id, tamano_ml) do update
   set precio_cop = excluded.precio_cop, disponible = excluded.disponible;
 
 insert into costos_variante (variante_id, costo_cop)
 select v.id, l.costo_cop
-from lista_proveedor l
+from ${listaProveedor}
 join productos p on p.slug = l.slug
 join variantes v on v.producto_id = p.id and v.tamano_ml = l.tamano_ml
 where l.costo_cop is not null
 on conflict (variante_id) do update set costo_cop = excluded.costo_cop, actualizado_at = now();
-
-drop table lista_proveedor;
 `;
   await writeFile(SALIDA, contenido);
   console.log(`seed.sql: ${productos.length} productos, ${productos.length - sinFicha.length} con ficha borrador`);
