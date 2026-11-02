@@ -1,0 +1,3072 @@
+[
+  {
+    "codigo": "ARM-001",
+    "slug": "armaf-club-de-nuit-precieux",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Precieux",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 55,
+        "precioCop": 230000
+      }
+    ],
+    "imagen": "/productos/armaf-club-de-nuit-precieux.webp"
+  },
+  {
+    "codigo": "ARM-002",
+    "slug": "armaf-club-de-nuit-untold",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Untold",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 105,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/armaf-club-de-nuit-untold.webp"
+  },
+  {
+    "codigo": "ARM-003",
+    "slug": "armaf-club-de-nuit-intense",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Intense",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 105,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/armaf-club-de-nuit-intense.webp"
+  },
+  {
+    "codigo": "ARM-004",
+    "slug": "armaf-club-de-nuit-iconic",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Iconic",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 105,
+        "precioCop": 170000
+      }
+    ],
+    "imagen": "/productos/armaf-club-de-nuit-iconic.webp"
+  },
+  {
+    "codigo": "ARM-005",
+    "slug": "armaf-club-de-nuit-urban-man-elixir",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Urban Man Elixir",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 105,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/armaf-club-de-nuit-urban-man-elixir.webp"
+  },
+  {
+    "codigo": "ARM-006",
+    "slug": "armaf-club-de-nuit-bling",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Bling",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 75,
+        "precioCop": 196000
+      }
+    ],
+    "imagen": "/productos/armaf-club-de-nuit-bling.webp"
+  },
+  {
+    "codigo": "ARM-007",
+    "slug": "armaf-club-de-nuit-woman",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Woman",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 150000
+      }
+    ],
+    "imagen": "/productos/armaf-club-de-nuit-woman.webp"
+  },
+  {
+    "codigo": "ARM-008",
+    "slug": "armaf-club-de-nuit-maleka",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Maleka",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 105,
+        "precioCop": 150000
+      }
+    ],
+    "imagen": "/productos/armaf-club-de-nuit-maleka.webp"
+  },
+  {
+    "codigo": "ARM-009",
+    "slug": "armaf-club-de-nuit-imperiale",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Imperiale",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 105,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/armaf-club-de-nuit-imperiale.webp"
+  },
+  {
+    "codigo": "ARM-010",
+    "slug": "armaf-club-de-nuit-overdose-extrait-de-parfum",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Overdose",
+    "concentracion": "Extrait de Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 105,
+        "precioCop": 230000
+      }
+    ],
+    "imagen": "/productos/armaf-club-de-nuit-overdose-extrait-de-parfum.webp"
+  },
+  {
+    "codigo": "ARM-011",
+    "slug": "armaf-club-de-nuit-sillage",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Sillage",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 105,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/armaf-club-de-nuit-sillage.webp"
+  },
+  {
+    "codigo": "ARM-012",
+    "slug": "armaf-club-de-nuit-milestone",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Milestone",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 105,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/armaf-club-de-nuit-milestone.webp"
+  },
+  {
+    "codigo": "ARM-013",
+    "slug": "armaf-yum-yum",
+    "marca": "Armaf",
+    "nombre": "Yum Yum",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 170000
+      }
+    ],
+    "imagen": "/productos/armaf-yum-yum.webp"
+  },
+  {
+    "codigo": "ARM-014",
+    "slug": "armaf-island-bliss",
+    "marca": "Armaf",
+    "nombre": "Island Bliss",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 165000
+      }
+    ],
+    "imagen": "/productos/armaf-island-bliss.webp"
+  },
+  {
+    "codigo": "ARM-015",
+    "slug": "armaf-odyssey-mandarin-sky",
+    "marca": "Armaf",
+    "nombre": "Odyssey Mandarin Sky",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-mandarin-sky.webp"
+  },
+  {
+    "codigo": "ARM-016",
+    "slug": "armaf-odyssey-mandarin-sky-elixir",
+    "marca": "Armaf",
+    "nombre": "Odyssey Mandarin Sky Elixir",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 165000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-mandarin-sky-elixir.webp"
+  },
+  {
+    "codigo": "ARM-017",
+    "slug": "armaf-odyssey-go-mango",
+    "marca": "Armaf",
+    "nombre": "Odyssey Go Mango",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 155000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-go-mango.webp"
+  },
+  {
+    "codigo": "ARM-018",
+    "slug": "armaf-odyssey-mega",
+    "marca": "Armaf",
+    "nombre": "Odyssey Mega",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-mega.webp"
+  },
+  {
+    "codigo": "ARM-019",
+    "slug": "armaf-odyssey-homme",
+    "marca": "Armaf",
+    "nombre": "Odyssey Homme",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-homme.webp"
+  },
+  {
+    "codigo": "ARM-020",
+    "slug": "armaf-odyssey-homme-white",
+    "marca": "Armaf",
+    "nombre": "Odyssey Homme White",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-homme-white.webp"
+  },
+  {
+    "codigo": "ARM-021",
+    "slug": "armaf-odyssey-bahamas",
+    "marca": "Armaf",
+    "nombre": "Odyssey Bahamas",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-bahamas.webp"
+  },
+  {
+    "codigo": "ARM-022",
+    "slug": "armaf-odyssey-aqua",
+    "marca": "Armaf",
+    "nombre": "Odyssey Aqua",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 175000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-aqua.webp"
+  },
+  {
+    "codigo": "ARM-023",
+    "slug": "armaf-odyssey-limoni",
+    "marca": "Armaf",
+    "nombre": "Odyssey Limoni",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-limoni.webp"
+  },
+  {
+    "codigo": "ARM-024",
+    "slug": "armaf-odyssey-mandarin-sky-vintage",
+    "marca": "Armaf",
+    "nombre": "Odyssey Mandarin Sky Vintage",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 190000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-mandarin-sky-vintage.webp"
+  },
+  {
+    "codigo": "ARM-025",
+    "slug": "armaf-odyssey-spectra",
+    "marca": "Armaf",
+    "nombre": "Odyssey Spectra",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-spectra.webp"
+  },
+  {
+    "codigo": "ARM-026",
+    "slug": "armaf-odyssey-artisto",
+    "marca": "Armaf",
+    "nombre": "Odyssey Artisto",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 170000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-artisto.webp"
+  },
+  {
+    "codigo": "ARM-027",
+    "slug": "armaf-odyssey-candee",
+    "marca": "Armaf",
+    "nombre": "Odyssey Candee",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-candee.webp"
+  },
+  {
+    "codigo": "ARM-028",
+    "slug": "armaf-odyssey-marshmallow",
+    "marca": "Armaf",
+    "nombre": "Odyssey Marshmallow",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 150000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-marshmallow.webp"
+  },
+  {
+    "codigo": "ARM-029",
+    "slug": "armaf-odyssey-nexus",
+    "marca": "Armaf",
+    "nombre": "Odyssey Nexus",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 195000
+      }
+    ],
+    "imagen": "/productos/armaf-odyssey-nexus.webp"
+  },
+  {
+    "codigo": "ALH-001",
+    "slug": "al-haramain-amber-oud-aqua-dubai",
+    "marca": "Al Haramain",
+    "nombre": "Amber Oud Aqua Dubai",
+    "concentracion": null,
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 230000
+      }
+    ],
+    "imagen": "/productos/al-haramain-amber-oud-aqua-dubai.webp"
+  },
+  {
+    "codigo": "ALH-002",
+    "slug": "al-haramain-amber-oud-gold-edition",
+    "marca": "Al Haramain",
+    "nombre": "Amber Oud Gold Edition",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 210000
+      },
+      {
+        "tamanoMl": 120,
+        "precioCop": 240000
+      }
+    ],
+    "imagen": "/productos/al-haramain-amber-oud-gold-edition.webp"
+  },
+  {
+    "codigo": "ALH-003",
+    "slug": "al-haramain-amber-oud-dubai-night-extrait-de-parfum",
+    "marca": "Al Haramain",
+    "nombre": "Amber Oud Dubai Night",
+    "concentracion": "Extrait de Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 240000
+      }
+    ],
+    "imagen": "/productos/al-haramain-amber-oud-dubai-night-extrait-de-parfum.webp"
+  },
+  {
+    "codigo": "ARB-001",
+    "slug": "arabiyat-uhud",
+    "marca": "Arabiyat",
+    "nombre": "Uhud",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 190000
+      }
+    ],
+    "imagen": "/productos/arabiyat-uhud.webp"
+  },
+  {
+    "codigo": "ARB-002",
+    "slug": "arabiyat-marwa",
+    "marca": "Arabiyat",
+    "nombre": "Marwa",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 190000
+      }
+    ],
+    "imagen": "/productos/arabiyat-marwa.webp"
+  },
+  {
+    "codigo": "ARB-003",
+    "slug": "arabiyat-mahd-al-dhahab",
+    "marca": "Arabiyat",
+    "nombre": "Mahd al Dhahab",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 190000
+      }
+    ],
+    "imagen": "/productos/arabiyat-mahd-al-dhahab.webp"
+  },
+  {
+    "codigo": "ARB-004",
+    "slug": "arabiyat-lutfah-first-love",
+    "marca": "Arabiyat",
+    "nombre": "Lutfah First Love",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 167000
+      }
+    ],
+    "imagen": "/productos/arabiyat-lutfah-first-love.webp"
+  },
+  {
+    "codigo": "BHR-001",
+    "slug": "bharara-rey-de-reyes",
+    "marca": "Bharara",
+    "nombre": "Rey de Reyes",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 220000
+      }
+    ],
+    "imagen": "/productos/bharara-rey-de-reyes.webp"
+  },
+  {
+    "codigo": "BHR-002",
+    "slug": "bharara-king-soleil",
+    "marca": "Bharara",
+    "nombre": "King Soleil",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 245000
+      }
+    ],
+    "imagen": "/productos/bharara-king-soleil.webp"
+  },
+  {
+    "codigo": "BHR-003",
+    "slug": "bharara-niche-femme",
+    "marca": "Bharara",
+    "nombre": "Niche Femme",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 240000
+      }
+    ],
+    "imagen": "/productos/bharara-niche-femme.webp"
+  },
+  {
+    "codigo": "BHR-004",
+    "slug": "bharara-king",
+    "marca": "Bharara",
+    "nombre": "King",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 210000
+      }
+    ],
+    "imagen": "/productos/bharara-king.webp"
+  },
+  {
+    "codigo": "BHR-005",
+    "slug": "bharara-king-parfum",
+    "marca": "Bharara",
+    "nombre": "King",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 295000
+      }
+    ],
+    "imagen": "/productos/bharara-king-parfum.webp"
+  },
+  {
+    "codigo": "BHR-006",
+    "slug": "bharara-niche-parfum",
+    "marca": "Bharara",
+    "nombre": "Niche",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 240000
+      }
+    ],
+    "imagen": "/productos/bharara-niche-parfum.webp"
+  },
+  {
+    "codigo": "BHR-007",
+    "slug": "bharara-onix",
+    "marca": "Bharara",
+    "nombre": "Onix",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 265000
+      }
+    ],
+    "imagen": "/productos/bharara-onix.webp"
+  },
+  {
+    "codigo": "BHR-008",
+    "slug": "bharara-rose",
+    "marca": "Bharara",
+    "nombre": "Rose",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 265000
+      }
+    ],
+    "imagen": "/productos/bharara-rose.webp"
+  },
+  {
+    "codigo": "BHR-009",
+    "slug": "bharara-rome-ivory-pour-homme",
+    "marca": "Bharara",
+    "nombre": "Rome Ivory pour Homme",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-ivory-pour-homme.webp"
+  },
+  {
+    "codigo": "BHR-010",
+    "slug": "bharara-rome-imagine",
+    "marca": "Bharara",
+    "nombre": "Rome Imagine",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 155000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-imagine.webp"
+  },
+  {
+    "codigo": "BHR-011",
+    "slug": "bharara-rome-pour-homme",
+    "marca": "Bharara",
+    "nombre": "Rome pour Homme",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 135000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-pour-homme.webp"
+  },
+  {
+    "codigo": "BHR-012",
+    "slug": "bharara-rome-extradose",
+    "marca": "Bharara",
+    "nombre": "Rome Extradose",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 160000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-extradose.webp"
+  },
+  {
+    "codigo": "BHR-013",
+    "slug": "bharara-rome-intense",
+    "marca": "Bharara",
+    "nombre": "Rome Intense",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 165000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-intense.webp"
+  },
+  {
+    "codigo": "BHR-014",
+    "slug": "bharara-melancholia-pour-homme",
+    "marca": "Bharara",
+    "nombre": "Melancholia pour Homme",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 170000
+      }
+    ],
+    "imagen": "/productos/bharara-melancholia-pour-homme.webp"
+  },
+  {
+    "codigo": "BHR-015",
+    "slug": "bharara-rome-lucky",
+    "marca": "Bharara",
+    "nombre": "Rome Lucky",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-lucky.webp"
+  },
+  {
+    "codigo": "BHR-016",
+    "slug": "bharara-rome-pour-femme",
+    "marca": "Bharara",
+    "nombre": "Rome pour Femme",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 135000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-pour-femme.webp"
+  },
+  {
+    "codigo": "BHR-017",
+    "slug": "bharara-rome-paradoxe",
+    "marca": "Bharara",
+    "nombre": "Rome Paradoxe",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 155000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-paradoxe.webp"
+  },
+  {
+    "codigo": "BHR-018",
+    "slug": "bharara-rome-fantasmagory",
+    "marca": "Bharara",
+    "nombre": "Rome Fantasmagory",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 160000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-fantasmagory.webp"
+  },
+  {
+    "codigo": "BHR-019",
+    "slug": "bharara-rome-melancholia-pour-femme",
+    "marca": "Bharara",
+    "nombre": "Rome Melancholia pour Femme",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 155000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-melancholia-pour-femme.webp"
+  },
+  {
+    "codigo": "BHR-020",
+    "slug": "bharara-rome-la-bomba",
+    "marca": "Bharara",
+    "nombre": "Rome la Bomba",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 160000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-la-bomba.webp"
+  },
+  {
+    "codigo": "BHR-021",
+    "slug": "bharara-rome-yum-yum",
+    "marca": "Bharara",
+    "nombre": "Rome Yum Yum",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 120000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-yum-yum.webp"
+  },
+  {
+    "codigo": "BHR-022",
+    "slug": "bharara-rome-pour-femme-extradose",
+    "marca": "Bharara",
+    "nombre": "Rome pour Femme Extradose",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 160000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-pour-femme-extradose.webp"
+  },
+  {
+    "codigo": "BHR-023",
+    "slug": "bharara-rome-ivory-pour-femme",
+    "marca": "Bharara",
+    "nombre": "Rome Ivory pour Femme",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 145000
+      }
+    ],
+    "imagen": "/productos/bharara-rome-ivory-pour-femme.webp"
+  },
+  {
+    "codigo": "AFN-001",
+    "slug": "afnan-9pm-dive",
+    "marca": "Afnan",
+    "nombre": "9PM Dive",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 145000
+      }
+    ],
+    "imagen": "/productos/afnan-9pm-dive.webp"
+  },
+  {
+    "codigo": "AFN-002",
+    "slug": "afnan-9pm",
+    "marca": "Afnan",
+    "nombre": "9PM",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/afnan-9pm.webp"
+  },
+  {
+    "codigo": "AFN-003",
+    "slug": "afnan-9pm-night-out",
+    "marca": "Afnan",
+    "nombre": "9PM Night Out",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": null
+      }
+    ],
+    "imagen": "/productos/afnan-9pm-night-out.webp"
+  },
+  {
+    "codigo": "AFN-004",
+    "slug": "afnan-9pm-elixir",
+    "marca": "Afnan",
+    "nombre": "9PM Elixir",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 160000
+      }
+    ],
+    "imagen": "/productos/afnan-9pm-elixir.webp"
+  },
+  {
+    "codigo": "DUM-001",
+    "slug": "dumont-nitro-red",
+    "marca": "Dumont",
+    "nombre": "Nitro Red",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/dumont-nitro-red.webp"
+  },
+  {
+    "codigo": "DUM-002",
+    "slug": "dumont-nitro-red-intensely",
+    "marca": "Dumont",
+    "nombre": "Nitro Red Intensely",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 185000
+      }
+    ],
+    "imagen": "/productos/dumont-nitro-red-intensely.webp"
+  },
+  {
+    "codigo": "DUM-003",
+    "slug": "dumont-nitro-red-white",
+    "marca": "Dumont",
+    "nombre": "Nitro Red White",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 150000
+      }
+    ],
+    "imagen": "/productos/dumont-nitro-red-white.webp"
+  },
+  {
+    "codigo": "DUM-004",
+    "slug": "dumont-nitro-gold-extrait-de-parfum",
+    "marca": "Dumont",
+    "nombre": "Nitro Gold",
+    "concentracion": "Extrait de Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 210000
+      }
+    ],
+    "imagen": "/productos/dumont-nitro-gold-extrait-de-parfum.webp"
+  },
+  {
+    "codigo": "DUM-005",
+    "slug": "dumont-nitro-elixir-extrait-de-parfum",
+    "marca": "Dumont",
+    "nombre": "Nitro Elixir",
+    "concentracion": "Extrait de Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 210000
+      }
+    ],
+    "imagen": "/productos/dumont-nitro-elixir-extrait-de-parfum.webp"
+  },
+  {
+    "codigo": "DUM-006",
+    "slug": "dumont-nitro-black",
+    "marca": "Dumont",
+    "nombre": "Nitro Black",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 132000
+      }
+    ],
+    "imagen": "/productos/dumont-nitro-black.webp"
+  },
+  {
+    "codigo": "FAV-001",
+    "slug": "french-avenue-liquid-brun",
+    "marca": "French Avenue",
+    "nombre": "Liquid Brun",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 175000
+      }
+    ],
+    "imagen": "/productos/french-avenue-liquid-brun.webp"
+  },
+  {
+    "codigo": "FAV-002",
+    "slug": "french-avenue-cocoa-morado",
+    "marca": "French Avenue",
+    "nombre": "Cocoa Morado",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 170000
+      }
+    ],
+    "imagen": "/productos/french-avenue-cocoa-morado.webp"
+  },
+  {
+    "codigo": "FAV-003",
+    "slug": "french-avenue-azzure-aoud",
+    "marca": "French Avenue",
+    "nombre": "Azzure Aoud",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/french-avenue-azzure-aoud.webp"
+  },
+  {
+    "codigo": "FAV-004",
+    "slug": "french-avenue-aether-extrait-de-parfum",
+    "marca": "French Avenue",
+    "nombre": "Aether",
+    "concentracion": "Extrait de Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 220000
+      }
+    ],
+    "imagen": "/productos/french-avenue-aether-extrait-de-parfum.webp"
+  },
+  {
+    "codigo": "FAV-005",
+    "slug": "french-avenue-atlantis-extrait-de-parfum",
+    "marca": "French Avenue",
+    "nombre": "Atlantis",
+    "concentracion": "Extrait de Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 220000
+      }
+    ],
+    "imagen": "/productos/french-avenue-atlantis-extrait-de-parfum.webp"
+  },
+  {
+    "codigo": "FAV-006",
+    "slug": "french-avenue-ghost-spectre",
+    "marca": "French Avenue",
+    "nombre": "Ghost Spectre",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 80,
+        "precioCop": 199000
+      }
+    ],
+    "imagen": "/productos/french-avenue-ghost-spectre.webp"
+  },
+  {
+    "codigo": "FAV-007",
+    "slug": "french-avenue-veneno-blanco",
+    "marca": "French Avenue",
+    "nombre": "Veneno Blanco",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/french-avenue-veneno-blanco.webp"
+  },
+  {
+    "codigo": "FAV-008",
+    "slug": "french-avenue-veneno-negro",
+    "marca": "French Avenue",
+    "nombre": "Veneno Negro",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 220000
+      }
+    ],
+    "imagen": "/productos/french-avenue-veneno-negro.webp"
+  },
+  {
+    "codigo": "FAV-009",
+    "slug": "french-avenue-vulcan-feu",
+    "marca": "French Avenue",
+    "nombre": "Vulcan Feu",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 190000
+      }
+    ],
+    "imagen": "/productos/french-avenue-vulcan-feu.webp"
+  },
+  {
+    "codigo": "RAS-001",
+    "slug": "rasasi-hawas-for-him",
+    "marca": "Rasasi",
+    "nombre": "Hawas for Him",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/rasasi-hawas-for-him.webp"
+  },
+  {
+    "codigo": "RAS-002",
+    "slug": "rasasi-hawas-ice",
+    "marca": "Rasasi",
+    "nombre": "Hawas Ice",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/rasasi-hawas-ice.webp"
+  },
+  {
+    "codigo": "RAS-003",
+    "slug": "rasasi-hawas-fire",
+    "marca": "Rasasi",
+    "nombre": "Hawas Fire",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 210000
+      }
+    ],
+    "imagen": "/productos/rasasi-hawas-fire.webp"
+  },
+  {
+    "codigo": "RAS-004",
+    "slug": "rasasi-hawas-kobra",
+    "marca": "Rasasi",
+    "nombre": "Hawas Kobra",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 190000
+      }
+    ],
+    "imagen": "/productos/rasasi-hawas-kobra.webp"
+  },
+  {
+    "codigo": "RAS-005",
+    "slug": "rasasi-hawas-elixir",
+    "marca": "Rasasi",
+    "nombre": "Hawas Elixir",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 172000
+      }
+    ],
+    "imagen": "/productos/rasasi-hawas-elixir.webp"
+  },
+  {
+    "codigo": "RAS-006",
+    "slug": "rasasi-hawas-tropical",
+    "marca": "Rasasi",
+    "nombre": "Hawas Tropical",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": null
+      }
+    ],
+    "imagen": "/productos/rasasi-hawas-tropical.webp"
+  },
+  {
+    "codigo": "RAS-007",
+    "slug": "rasasi-hawas-black",
+    "marca": "Rasasi",
+    "nombre": "Hawas Black",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": null
+      }
+    ],
+    "imagen": "/productos/rasasi-hawas-black.webp"
+  },
+  {
+    "codigo": "RAS-008",
+    "slug": "rasasi-hawas-malibu",
+    "marca": "Rasasi",
+    "nombre": "Hawas Malibu",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/rasasi-hawas-malibu.webp"
+  },
+  {
+    "codigo": "RAS-009",
+    "slug": "rasasi-hawas-chrome",
+    "marca": "Rasasi",
+    "nombre": "Hawas Chrome",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 210000
+      }
+    ],
+    "imagen": "/productos/rasasi-hawas-chrome.webp"
+  },
+  {
+    "codigo": "RAS-010",
+    "slug": "rasasi-hawas-pink",
+    "marca": "Rasasi",
+    "nombre": "Hawas Pink",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 185000
+      }
+    ],
+    "imagen": "/productos/rasasi-hawas-pink.webp"
+  },
+  {
+    "codigo": "RAS-011",
+    "slug": "rasasi-hawas-diva",
+    "marca": "Rasasi",
+    "nombre": "Hawas Diva",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 190000
+      }
+    ],
+    "imagen": "/productos/rasasi-hawas-diva.webp"
+  },
+  {
+    "codigo": "RAS-012",
+    "slug": "rasasi-hawas-eclat",
+    "marca": "Rasasi",
+    "nombre": "Hawas Eclat",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 160000
+      }
+    ],
+    "imagen": "/productos/rasasi-hawas-eclat.webp"
+  },
+  {
+    "codigo": "RAS-013",
+    "slug": "rasasi-hawas-rouge",
+    "marca": "Rasasi",
+    "nombre": "Hawas Rouge",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 220000
+      }
+    ],
+    "imagen": "/productos/rasasi-hawas-rouge.webp"
+  },
+  {
+    "codigo": "JOM-001",
+    "slug": "jo-milano-game-of-spades-full-house-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Full House",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 295000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-full-house-parfum.webp"
+  },
+  {
+    "codigo": "JOM-002",
+    "slug": "jo-milano-game-of-spades-full-house-refresh-extrait-de-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Full House Refresh",
+    "concentracion": "Extrait de Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 320000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-full-house-refresh-extrait-de-parfum.webp"
+  },
+  {
+    "codigo": "JOM-003",
+    "slug": "jo-milano-game-of-spades-wildcard-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Wildcard",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 295000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-wildcard-parfum.webp"
+  },
+  {
+    "codigo": "JOM-004",
+    "slug": "jo-milano-game-of-spades-royale-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Royale",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 295000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-royale-parfum.webp"
+  },
+  {
+    "codigo": "JOM-005",
+    "slug": "jo-milano-game-of-spades-all-in-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades All In",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 310000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-all-in-parfum.webp"
+  },
+  {
+    "codigo": "JOM-006",
+    "slug": "jo-milano-game-of-spades-esmerald-extrait-de-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Esmerald",
+    "concentracion": "Extrait de Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 320000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-esmerald-extrait-de-parfum.webp"
+  },
+  {
+    "codigo": "JOM-007",
+    "slug": "jo-milano-game-of-spades-esmerald-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Esmerald",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 295000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-esmerald-parfum.webp"
+  },
+  {
+    "codigo": "JOM-008",
+    "slug": "jo-milano-game-of-spades-bonus-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Bonus",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 295000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-bonus-parfum.webp"
+  },
+  {
+    "codigo": "JOM-009",
+    "slug": "jo-milano-game-of-spades-jackpot-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Jackpot",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 265000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-jackpot-parfum.webp"
+  },
+  {
+    "codigo": "JOM-010",
+    "slug": "jo-milano-game-of-spades-bluff-extrait-de-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Bluff",
+    "concentracion": "Extrait de Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 320000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-bluff-extrait-de-parfum.webp"
+  },
+  {
+    "codigo": "JOM-011",
+    "slug": "jo-milano-game-of-spades-platinum-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Platinum",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 295000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-platinum-parfum.webp"
+  },
+  {
+    "codigo": "JOM-012",
+    "slug": "jo-milano-game-of-spades-ruby-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Ruby",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 295000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-ruby-parfum.webp"
+  },
+  {
+    "codigo": "JOM-013",
+    "slug": "jo-milano-game-of-spades-trick-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Trick",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 310000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-trick-parfum.webp"
+  },
+  {
+    "codigo": "JOM-014",
+    "slug": "jo-milano-game-of-spades-bid-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Bid",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 270000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-bid-parfum.webp"
+  },
+  {
+    "codigo": "JOM-015",
+    "slug": "jo-milano-game-of-spades-topaz-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Topaz",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 285000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-topaz-parfum.webp"
+  },
+  {
+    "codigo": "JOM-016",
+    "slug": "jo-milano-game-of-spades-win-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Win",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 290000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-win-parfum.webp"
+  },
+  {
+    "codigo": "JOM-017",
+    "slug": "jo-milano-game-of-spades-moon-parfum",
+    "marca": "Jo Milano",
+    "nombre": "Game of Spades Moon",
+    "concentracion": "Parfum",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 295000
+      }
+    ],
+    "imagen": "/productos/jo-milano-game-of-spades-moon-parfum.webp"
+  },
+  {
+    "codigo": "LAT-001",
+    "slug": "lattafa-his-confession",
+    "marca": "Lattafa",
+    "nombre": "His Confession",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 150000
+      }
+    ],
+    "imagen": "/productos/lattafa-his-confession.webp"
+  },
+  {
+    "codigo": "LAT-002",
+    "slug": "lattafa-her-confession",
+    "marca": "Lattafa",
+    "nombre": "Her Confession",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 150000
+      }
+    ],
+    "imagen": "/productos/lattafa-her-confession.webp"
+  },
+  {
+    "codigo": "LAT-003",
+    "slug": "lattafa-ishq-al-shuyukh-gold",
+    "marca": "Lattafa",
+    "nombre": "Ishq al Shuyukh Gold",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 135000
+      }
+    ],
+    "imagen": "/productos/lattafa-ishq-al-shuyukh-gold.webp"
+  },
+  {
+    "codigo": "LAT-004",
+    "slug": "lattafa-ishq-al-shuyukh-silver",
+    "marca": "Lattafa",
+    "nombre": "Ishq al Shuyukh Silver",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 145000
+      }
+    ],
+    "imagen": "/productos/lattafa-ishq-al-shuyukh-silver.webp"
+  },
+  {
+    "codigo": "LAT-005",
+    "slug": "lattafa-al-qiam-gold",
+    "marca": "Lattafa",
+    "nombre": "Al Qiam Gold",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/lattafa-al-qiam-gold.webp"
+  },
+  {
+    "codigo": "LAT-006",
+    "slug": "lattafa-al-qiam-silver",
+    "marca": "Lattafa",
+    "nombre": "Al Qiam Silver",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": null
+      }
+    ],
+    "imagen": "/productos/lattafa-al-qiam-silver.webp"
+  },
+  {
+    "codigo": "LAT-007",
+    "slug": "lattafa-emeer",
+    "marca": "Lattafa",
+    "nombre": "Emeer",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/lattafa-emeer.webp"
+  },
+  {
+    "codigo": "LAT-008",
+    "slug": "lattafa-atlas",
+    "marca": "Lattafa",
+    "nombre": "Atlas",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 55,
+        "precioCop": 160000
+      }
+    ],
+    "imagen": "/productos/lattafa-atlas.webp"
+  },
+  {
+    "codigo": "LAT-009",
+    "slug": "lattafa-fakhar-black",
+    "marca": "Lattafa",
+    "nombre": "Fakhar Black",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 120000
+      }
+    ],
+    "imagen": "/productos/lattafa-fakhar-black.webp"
+  },
+  {
+    "codigo": "LAT-010",
+    "slug": "lattafa-fakhar-rose",
+    "marca": "Lattafa",
+    "nombre": "Fakhar Rose",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 120000
+      }
+    ],
+    "imagen": "/productos/lattafa-fakhar-rose.webp"
+  },
+  {
+    "codigo": "LAT-011",
+    "slug": "lattafa-fakhar-gold",
+    "marca": "Lattafa",
+    "nombre": "Fakhar Gold",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 120000
+      }
+    ],
+    "imagen": "/productos/lattafa-fakhar-gold.webp"
+  },
+  {
+    "codigo": "LAT-012",
+    "slug": "lattafa-teriaq",
+    "marca": "Lattafa",
+    "nombre": "Teriaq",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-teriaq.webp"
+  },
+  {
+    "codigo": "LAT-013",
+    "slug": "lattafa-teriaq-intense",
+    "marca": "Lattafa",
+    "nombre": "Teriaq Intense",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 145000
+      }
+    ],
+    "imagen": "/productos/lattafa-teriaq-intense.webp"
+  },
+  {
+    "codigo": "LAT-014",
+    "slug": "lattafa-yara-moi",
+    "marca": "Lattafa",
+    "nombre": "Yara Moi",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 120000
+      }
+    ],
+    "imagen": "/productos/lattafa-yara-moi.webp"
+  },
+  {
+    "codigo": "LAT-015",
+    "slug": "lattafa-yara-candy",
+    "marca": "Lattafa",
+    "nombre": "Yara Candy",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 120000
+      }
+    ],
+    "imagen": "/productos/lattafa-yara-candy.webp"
+  },
+  {
+    "codigo": "LAT-016",
+    "slug": "lattafa-yara-tous",
+    "marca": "Lattafa",
+    "nombre": "Yara Tous",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 120000
+      }
+    ],
+    "imagen": "/productos/lattafa-yara-tous.webp"
+  },
+  {
+    "codigo": "LAT-017",
+    "slug": "lattafa-yara",
+    "marca": "Lattafa",
+    "nombre": "Yara",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 120000
+      }
+    ],
+    "imagen": "/productos/lattafa-yara.webp"
+  },
+  {
+    "codigo": "LAT-018",
+    "slug": "lattafa-yara-elixir",
+    "marca": "Lattafa",
+    "nombre": "Yara Elixir",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 165000
+      }
+    ],
+    "imagen": "/productos/lattafa-yara-elixir.webp"
+  },
+  {
+    "codigo": "LAT-019",
+    "slug": "lattafa-asad",
+    "marca": "Lattafa",
+    "nombre": "Asad",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 120000
+      }
+    ],
+    "imagen": "/productos/lattafa-asad.webp"
+  },
+  {
+    "codigo": "LAT-020",
+    "slug": "lattafa-asad-elixir",
+    "marca": "Lattafa",
+    "nombre": "Asad Elixir",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 155000
+      }
+    ],
+    "imagen": "/productos/lattafa-asad-elixir.webp"
+  },
+  {
+    "codigo": "LAT-021",
+    "slug": "lattafa-asad-bourbon",
+    "marca": "Lattafa",
+    "nombre": "Asad Bourbon",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/lattafa-asad-bourbon.webp"
+  },
+  {
+    "codigo": "LAT-022",
+    "slug": "lattafa-asad-zanzibar",
+    "marca": "Lattafa",
+    "nombre": "Asad Zanzibar",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 110000
+      }
+    ],
+    "imagen": "/productos/lattafa-asad-zanzibar.webp"
+  },
+  {
+    "codigo": "LAT-023",
+    "slug": "lattafa-victoria",
+    "marca": "Lattafa",
+    "nombre": "Victoria",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 145000
+      }
+    ],
+    "imagen": "/productos/lattafa-victoria.webp"
+  },
+  {
+    "codigo": "LAT-024",
+    "slug": "lattafa-layaan",
+    "marca": "Lattafa",
+    "nombre": "Layaan",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/lattafa-layaan.webp"
+  },
+  {
+    "codigo": "LAT-025",
+    "slug": "lattafa-give-me-gourmand-berry-on-top",
+    "marca": "Lattafa",
+    "nombre": "Give Me Gourmand Berry on Top",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 75,
+        "precioCop": 190000
+      }
+    ],
+    "imagen": "/productos/lattafa-give-me-gourmand-berry-on-top.webp"
+  },
+  {
+    "codigo": "LAT-026",
+    "slug": "lattafa-give-me-gourmand-choco-overdose",
+    "marca": "Lattafa",
+    "nombre": "Give Me Gourmand Choco Overdose",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 75,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/lattafa-give-me-gourmand-choco-overdose.webp"
+  },
+  {
+    "codigo": "LAT-027",
+    "slug": "lattafa-give-me-gourmand-vanilla-freak",
+    "marca": "Lattafa",
+    "nombre": "Give Me Gourmand Vanilla Freak",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 75,
+        "precioCop": 190000
+      }
+    ],
+    "imagen": "/productos/lattafa-give-me-gourmand-vanilla-freak.webp"
+  },
+  {
+    "codigo": "LAT-028",
+    "slug": "lattafa-give-me-gourmand-cookie-crave",
+    "marca": "Lattafa",
+    "nombre": "Give Me Gourmand Cookie Crave",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 75,
+        "precioCop": 190000
+      }
+    ],
+    "imagen": "/productos/lattafa-give-me-gourmand-cookie-crave.webp"
+  },
+  {
+    "codigo": "LAT-029",
+    "slug": "lattafa-give-me-gourmand-mallow-madness",
+    "marca": "Lattafa",
+    "nombre": "Give Me Gourmand Mallow Madness",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 190000
+      }
+    ],
+    "imagen": "/productos/lattafa-give-me-gourmand-mallow-madness.webp"
+  },
+  {
+    "codigo": "LAT-030",
+    "slug": "lattafa-give-me-gourmand-whipped-pleasure",
+    "marca": "Lattafa",
+    "nombre": "Give Me Gourmand Whipped Pleasure",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 190000
+      }
+    ],
+    "imagen": "/productos/lattafa-give-me-gourmand-whipped-pleasure.webp"
+  },
+  {
+    "codigo": "LAT-031",
+    "slug": "lattafa-bade-al-oud-noble-blush",
+    "marca": "Lattafa",
+    "nombre": "Bade al Oud Noble Blush",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 135000
+      }
+    ],
+    "imagen": "/productos/lattafa-bade-al-oud-noble-blush.webp"
+  },
+  {
+    "codigo": "LAT-032",
+    "slug": "lattafa-bade-al-oud-sublime",
+    "marca": "Lattafa",
+    "nombre": "Bade al Oud Sublime",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-bade-al-oud-sublime.webp"
+  },
+  {
+    "codigo": "LAT-033",
+    "slug": "lattafa-bade-al-oud-amethiste",
+    "marca": "Lattafa",
+    "nombre": "Bade al Oud Amethiste",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-bade-al-oud-amethiste.webp"
+  },
+  {
+    "codigo": "LAT-034",
+    "slug": "lattafa-oud-for-glory",
+    "marca": "Lattafa",
+    "nombre": "Oud for Glory",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-oud-for-glory.webp"
+  },
+  {
+    "codigo": "LAT-035",
+    "slug": "lattafa-bade-al-oud-honor-y-glory",
+    "marca": "Lattafa",
+    "nombre": "Bade al Oud Honor & Glory",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-bade-al-oud-honor-y-glory.webp"
+  },
+  {
+    "codigo": "LAT-036",
+    "slug": "lattafa-qaed-al-fursan-negro",
+    "marca": "Lattafa",
+    "nombre": "Qaed al Fursan Negro",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 90,
+        "precioCop": 110000
+      }
+    ],
+    "imagen": "/productos/lattafa-qaed-al-fursan-negro.webp"
+  },
+  {
+    "codigo": "LAT-037",
+    "slug": "lattafa-qaed-al-fursan-untamed",
+    "marca": "Lattafa",
+    "nombre": "Qaed al Fursan Untamed",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 90,
+        "precioCop": 118000
+      }
+    ],
+    "imagen": "/productos/lattafa-qaed-al-fursan-untamed.webp"
+  },
+  {
+    "codigo": "LAT-038",
+    "slug": "lattafa-qaed-al-fursan-unlimited",
+    "marca": "Lattafa",
+    "nombre": "Qaed al Fursan Unlimited",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 90,
+        "precioCop": 110000
+      }
+    ],
+    "imagen": "/productos/lattafa-qaed-al-fursan-unlimited.webp"
+  },
+  {
+    "codigo": "LAT-039",
+    "slug": "lattafa-ajwad",
+    "marca": "Lattafa",
+    "nombre": "Ajwad",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 60,
+        "precioCop": 120000
+      }
+    ],
+    "imagen": "/productos/lattafa-ajwad.webp"
+  },
+  {
+    "codigo": "LAT-040",
+    "slug": "lattafa-musamam-white-intense",
+    "marca": "Lattafa",
+    "nombre": "Musamam White Intense",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 170000
+      }
+    ],
+    "imagen": "/productos/lattafa-musamam-white-intense.webp"
+  },
+  {
+    "codigo": "LAT-041",
+    "slug": "lattafa-petra",
+    "marca": "Lattafa",
+    "nombre": "Petra",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 170000
+      }
+    ],
+    "imagen": "/productos/lattafa-petra.webp"
+  },
+  {
+    "codigo": "LAT-042",
+    "slug": "lattafa-pride-pisa",
+    "marca": "Lattafa",
+    "nombre": "Pride Pisa",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 230000
+      }
+    ],
+    "imagen": "/productos/lattafa-pride-pisa.webp"
+  },
+  {
+    "codigo": "LAT-043",
+    "slug": "lattafa-shaheen-gold",
+    "marca": "Lattafa",
+    "nombre": "Shaheen Gold",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-shaheen-gold.webp"
+  },
+  {
+    "codigo": "LAT-044",
+    "slug": "lattafa-shaheen-silver",
+    "marca": "Lattafa",
+    "nombre": "Shaheen Silver",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-shaheen-silver.webp"
+  },
+  {
+    "codigo": "LAT-045",
+    "slug": "lattafa-vintage-radio",
+    "marca": "Lattafa",
+    "nombre": "Vintage Radio",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 155000
+      }
+    ],
+    "imagen": "/productos/lattafa-vintage-radio.webp"
+  },
+  {
+    "codigo": "LAT-046",
+    "slug": "lattafa-nebras",
+    "marca": "Lattafa",
+    "nombre": "Nebras",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 145000
+      }
+    ],
+    "imagen": "/productos/lattafa-nebras.webp"
+  },
+  {
+    "codigo": "LAT-047",
+    "slug": "lattafa-hayaati-gold-elixir",
+    "marca": "Lattafa",
+    "nombre": "Hayaati Gold Elixir",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 95000
+      }
+    ],
+    "imagen": "/productos/lattafa-hayaati-gold-elixir.webp"
+  },
+  {
+    "codigo": "LAT-048",
+    "slug": "lattafa-hayaati-al-maleky",
+    "marca": "Lattafa",
+    "nombre": "Hayaati al Maleky",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 100000
+      }
+    ],
+    "imagen": "/productos/lattafa-hayaati-al-maleky.webp"
+  },
+  {
+    "codigo": "LAT-049",
+    "slug": "lattafa-hayaati-clasico",
+    "marca": "Lattafa",
+    "nombre": "Hayaati Clasico",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 110000
+      }
+    ],
+    "imagen": "/productos/lattafa-hayaati-clasico.webp"
+  },
+  {
+    "codigo": "LAT-050",
+    "slug": "lattafa-nasheet",
+    "marca": "Lattafa",
+    "nombre": "Nasheet",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-nasheet.webp"
+  },
+  {
+    "codigo": "LAT-051",
+    "slug": "lattafa-khamrah",
+    "marca": "Lattafa",
+    "nombre": "Khamrah",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-khamrah.webp"
+  },
+  {
+    "codigo": "LAT-052",
+    "slug": "lattafa-khamrah-qahwa",
+    "marca": "Lattafa",
+    "nombre": "Khamrah Qahwa",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-khamrah-qahwa.webp"
+  },
+  {
+    "codigo": "LAT-053",
+    "slug": "lattafa-khamrah-dukhan",
+    "marca": "Lattafa",
+    "nombre": "Khamrah Dukhan",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-khamrah-dukhan.webp"
+  },
+  {
+    "codigo": "LAT-054",
+    "slug": "lattafa-khamrah-waha",
+    "marca": "Lattafa",
+    "nombre": "Khamrah Waha",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 210000
+      }
+    ],
+    "imagen": "/productos/lattafa-khamrah-waha.webp"
+  },
+  {
+    "codigo": "LAT-055",
+    "slug": "lattafa-qimmah-for-men",
+    "marca": "Lattafa",
+    "nombre": "Qimmah for Men",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-qimmah-for-men.webp"
+  },
+  {
+    "codigo": "LAT-056",
+    "slug": "lattafa-qimmah-for-women",
+    "marca": "Lattafa",
+    "nombre": "Qimmah for Women",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-qimmah-for-women.webp"
+  },
+  {
+    "codigo": "LAT-057",
+    "slug": "lattafa-mahir-honor",
+    "marca": "Lattafa",
+    "nombre": "Mahir Honor",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/lattafa-mahir-honor.webp"
+  },
+  {
+    "codigo": "LAT-058",
+    "slug": "lattafa-mahir-black",
+    "marca": "Lattafa",
+    "nombre": "Mahir Black",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-mahir-black.webp"
+  },
+  {
+    "codigo": "LAT-059",
+    "slug": "lattafa-jasoor",
+    "marca": "Lattafa",
+    "nombre": "Jasoor",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 145000
+      }
+    ],
+    "imagen": "/productos/lattafa-jasoor.webp"
+  },
+  {
+    "codigo": "LAT-060",
+    "slug": "lattafa-the-kingdom-for-men",
+    "marca": "Lattafa",
+    "nombre": "The Kingdom for Men",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/lattafa-the-kingdom-for-men.webp"
+  },
+  {
+    "codigo": "LAT-061",
+    "slug": "lattafa-the-kingdom-for-women",
+    "marca": "Lattafa",
+    "nombre": "The Kingdom for Women",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/lattafa-the-kingdom-for-women.webp"
+  },
+  {
+    "codigo": "LAT-062",
+    "slug": "lattafa-eclaire",
+    "marca": "Lattafa",
+    "nombre": "Eclaire",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 155000
+      }
+    ],
+    "imagen": "/productos/lattafa-eclaire.webp"
+  },
+  {
+    "codigo": "LAT-063",
+    "slug": "lattafa-eclaire-banoffi",
+    "marca": "Lattafa",
+    "nombre": "Eclaire Banoffi",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-eclaire-banoffi.webp"
+  },
+  {
+    "codigo": "LAT-064",
+    "slug": "lattafa-eclaire-pistacho",
+    "marca": "Lattafa",
+    "nombre": "Eclaire Pistacho",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-eclaire-pistacho.webp"
+  },
+  {
+    "codigo": "LAT-065",
+    "slug": "lattafa-mayar",
+    "marca": "Lattafa",
+    "nombre": "Mayar",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-mayar.webp"
+  },
+  {
+    "codigo": "LAT-066",
+    "slug": "lattafa-mayar-cherry-intense",
+    "marca": "Lattafa",
+    "nombre": "Mayar Cherry Intense",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-mayar-cherry-intense.webp"
+  },
+  {
+    "codigo": "LAT-067",
+    "slug": "lattafa-mayar-natural-intense",
+    "marca": "Lattafa",
+    "nombre": "Mayar Natural Intense",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/lattafa-mayar-natural-intense.webp"
+  },
+  {
+    "codigo": "LAT-068",
+    "slug": "lattafa-angham",
+    "marca": "Lattafa",
+    "nombre": "Angham",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 150000
+      }
+    ],
+    "imagen": "/productos/lattafa-angham.webp"
+  },
+  {
+    "codigo": "LAT-069",
+    "slug": "lattafa-angham-second-song",
+    "marca": "Lattafa",
+    "nombre": "Angham Second Song",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 220000
+      }
+    ],
+    "imagen": "/productos/lattafa-angham-second-song.webp"
+  },
+  {
+    "codigo": "LAT-070",
+    "slug": "lattafa-dalal",
+    "marca": "Lattafa",
+    "nombre": "Dalal",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 180000
+      }
+    ],
+    "imagen": "/productos/lattafa-dalal.webp"
+  },
+  {
+    "codigo": "LAT-071",
+    "slug": "lattafa-haya",
+    "marca": "Lattafa",
+    "nombre": "Haya",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/lattafa-haya.webp"
+  },
+  {
+    "codigo": "LAT-072",
+    "slug": "lattafa-jouri",
+    "marca": "Lattafa",
+    "nombre": "Jouri",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 205000
+      }
+    ],
+    "imagen": "/productos/lattafa-jouri.webp"
+  },
+  {
+    "codigo": "LAT-073",
+    "slug": "lattafa-rave-now-pink-women",
+    "marca": "Lattafa",
+    "nombre": "Rave Now Pink Women",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 110000
+      }
+    ],
+    "imagen": "/productos/lattafa-rave-now-pink-women.webp"
+  },
+  {
+    "codigo": "LAT-074",
+    "slug": "lattafa-rave-now-white",
+    "marca": "Lattafa",
+    "nombre": "Rave Now White",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 100000
+      }
+    ],
+    "imagen": "/productos/lattafa-rave-now-white.webp"
+  },
+  {
+    "codigo": "MAL-001",
+    "slug": "maison-alhambra-jean-lowe-vibe",
+    "marca": "Maison Alhambra",
+    "nombre": "Jean Lowe Vibe",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 155000
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-jean-lowe-vibe.webp"
+  },
+  {
+    "codigo": "MAL-002",
+    "slug": "maison-alhambra-jean-lowe-fraiche",
+    "marca": "Maison Alhambra",
+    "nombre": "Jean Lowe Fraiche",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 155000
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-jean-lowe-fraiche.webp"
+  },
+  {
+    "codigo": "MAL-003",
+    "slug": "maison-alhambra-jean-lowe-azure",
+    "marca": "Maison Alhambra",
+    "nombre": "Jean Lowe Azure",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 155000
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-jean-lowe-azure.webp"
+  },
+  {
+    "codigo": "MAL-004",
+    "slug": "maison-alhambra-jean-lowe-nouveau",
+    "marca": "Maison Alhambra",
+    "nombre": "Jean Lowe Nouveau",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 155000
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-jean-lowe-nouveau.webp"
+  },
+  {
+    "codigo": "MAL-005",
+    "slug": "maison-alhambra-jean-lowe-immortal",
+    "marca": "Maison Alhambra",
+    "nombre": "Jean Lowe Immortal",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": null
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-jean-lowe-immortal.webp"
+  },
+  {
+    "codigo": "MAL-006",
+    "slug": "maison-alhambra-sceptre-malachite",
+    "marca": "Maison Alhambra",
+    "nombre": "Sceptre Malachite",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 135000
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-sceptre-malachite.webp"
+  },
+  {
+    "codigo": "MAL-007",
+    "slug": "maison-alhambra-sceptre-amazonite",
+    "marca": "Maison Alhambra",
+    "nombre": "Sceptre Amazonite",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 135000
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-sceptre-amazonite.webp"
+  },
+  {
+    "codigo": "MAL-008",
+    "slug": "maison-alhambra-sceptre-bronzite",
+    "marca": "Maison Alhambra",
+    "nombre": "Sceptre Bronzite",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": null
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-sceptre-bronzite.webp"
+  },
+  {
+    "codigo": "MAL-009",
+    "slug": "maison-alhambra-la-charmante-eclatant",
+    "marca": "Maison Alhambra",
+    "nombre": "La Charmante Eclatant",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 152000
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-la-charmante-eclatant.webp"
+  },
+  {
+    "codigo": "MAL-010",
+    "slug": "maison-alhambra-zeno",
+    "marca": "Maison Alhambra",
+    "nombre": "Zeno",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 120000
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-zeno.webp"
+  },
+  {
+    "codigo": "MAL-011",
+    "slug": "maison-alhambra-delilah",
+    "marca": "Maison Alhambra",
+    "nombre": "Delilah",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 145000
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-delilah.webp"
+  },
+  {
+    "codigo": "MAL-012",
+    "slug": "maison-alhambra-delilah-white",
+    "marca": "Maison Alhambra",
+    "nombre": "Delilah White",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 130000
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-delilah-white.webp"
+  },
+  {
+    "codigo": "MAL-013",
+    "slug": "maison-alhambra-delilah-viola",
+    "marca": "Maison Alhambra",
+    "nombre": "Delilah Viola",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 165000
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-delilah-viola.webp"
+  },
+  {
+    "codigo": "MAL-014",
+    "slug": "maison-alhambra-delilah-reyna",
+    "marca": "Maison Alhambra",
+    "nombre": "Delilah Reyna",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 120000
+      }
+    ],
+    "imagen": "/productos/maison-alhambra-delilah-reyna.webp"
+  },
+  {
+    "codigo": "ORI-001",
+    "slug": "orientica-amber-rouge",
+    "marca": "Orientica",
+    "nombre": "Amber Rouge",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 80,
+        "precioCop": 270000
+      }
+    ],
+    "imagen": "/productos/orientica-amber-rouge.webp"
+  },
+  {
+    "codigo": "ORI-002",
+    "slug": "orientica-royal-amber",
+    "marca": "Orientica",
+    "nombre": "Royal Amber",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 80,
+        "precioCop": 270000
+      }
+    ],
+    "imagen": "/productos/orientica-royal-amber.webp"
+  },
+  {
+    "codigo": "ORI-003",
+    "slug": "orientica-velvet-gold",
+    "marca": "Orientica",
+    "nombre": "Velvet Gold",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 80,
+        "precioCop": 270000
+      }
+    ],
+    "imagen": "/productos/orientica-velvet-gold.webp"
+  },
+  {
+    "codigo": "ORI-004",
+    "slug": "orientica-amber-noir",
+    "marca": "Orientica",
+    "nombre": "Amber Noir",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 80,
+        "precioCop": 270000
+      }
+    ],
+    "imagen": "/productos/orientica-amber-noir.webp"
+  },
+  {
+    "codigo": "ORI-005",
+    "slug": "orientica-rose-eclat",
+    "marca": "Orientica",
+    "nombre": "Rose Eclat",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 80,
+        "precioCop": 320000
+      }
+    ],
+    "imagen": "/productos/orientica-rose-eclat.webp"
+  },
+  {
+    "codigo": "ORI-006",
+    "slug": "orientica-oud-saffron",
+    "marca": "Orientica",
+    "nombre": "Oud Saffron",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 80,
+        "precioCop": 275000
+      }
+    ],
+    "imagen": "/productos/orientica-oud-saffron.webp"
+  },
+  {
+    "codigo": "RAY-001",
+    "slug": "rayhaan-lion",
+    "marca": "Rayhaan",
+    "nombre": "Lion",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/rayhaan-lion.webp"
+  },
+  {
+    "codigo": "RAY-002",
+    "slug": "rayhaan-elixir",
+    "marca": "Rayhaan",
+    "nombre": "Elixir",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 140000
+      }
+    ],
+    "imagen": "/productos/rayhaan-elixir.webp"
+  },
+  {
+    "codigo": "RAY-003",
+    "slug": "rayhaan-crimson",
+    "marca": "Rayhaan",
+    "nombre": "Crimson",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 185000
+      }
+    ],
+    "imagen": "/productos/rayhaan-crimson.webp"
+  },
+  {
+    "codigo": "RAY-004",
+    "slug": "rayhaan-tropical-vibe",
+    "marca": "Rayhaan",
+    "nombre": "Tropical Vibe",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 185000
+      }
+    ],
+    "imagen": "/productos/rayhaan-tropical-vibe.webp"
+  },
+  {
+    "codigo": "RAY-005",
+    "slug": "rayhaan-jungle-vibe",
+    "marca": "Rayhaan",
+    "nombre": "Jungle Vibe",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 170000
+      }
+    ],
+    "imagen": "/productos/rayhaan-jungle-vibe.webp"
+  },
+  {
+    "codigo": "RAY-006",
+    "slug": "rayhaan-pacific-aloha",
+    "marca": "Rayhaan",
+    "nombre": "Pacific Aloha",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 185000
+      }
+    ],
+    "imagen": "/productos/rayhaan-pacific-aloha.webp"
+  },
+  {
+    "codigo": "RAY-007",
+    "slug": "rayhaan-aquatica",
+    "marca": "Rayhaan",
+    "nombre": "Aquatica",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 185000
+      }
+    ],
+    "imagen": "/productos/rayhaan-aquatica.webp"
+  },
+  {
+    "codigo": "RAY-008",
+    "slug": "rayhaan-azul",
+    "marca": "Rayhaan",
+    "nombre": "Azul",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 195000
+      }
+    ],
+    "imagen": "/productos/rayhaan-azul.webp"
+  },
+  {
+    "codigo": "RAY-009",
+    "slug": "rayhaan-kiss",
+    "marca": "Rayhaan",
+    "nombre": "Kiss",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 195000
+      }
+    ],
+    "imagen": "/productos/rayhaan-kiss.webp"
+  },
+  {
+    "codigo": "RAY-010",
+    "slug": "rayhaan-terra",
+    "marca": "Rayhaan",
+    "nombre": "Terra",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 195000
+      }
+    ],
+    "imagen": "/productos/rayhaan-terra.webp"
+  },
+  {
+    "codigo": "RAY-011",
+    "slug": "rayhaan-obsidian",
+    "marca": "Rayhaan",
+    "nombre": "Obsidian",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 160000
+      }
+    ],
+    "imagen": "/productos/rayhaan-obsidian.webp"
+  },
+  {
+    "codigo": "RAY-012",
+    "slug": "rayhaan-nocturno-elixir",
+    "marca": "Rayhaan",
+    "nombre": "Nocturno Elixir",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 185000
+      }
+    ],
+    "imagen": "/productos/rayhaan-nocturno-elixir.webp"
+  },
+  {
+    "codigo": "RAY-013",
+    "slug": "rayhaan-italia",
+    "marca": "Rayhaan",
+    "nombre": "Italia",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 185000
+      }
+    ],
+    "imagen": "/productos/rayhaan-italia.webp"
+  },
+  {
+    "codigo": "RAY-014",
+    "slug": "rayhaan-wolf",
+    "marca": "Rayhaan",
+    "nombre": "Wolf",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 195000
+      }
+    ],
+    "imagen": "/productos/rayhaan-wolf.webp"
+  },
+  {
+    "codigo": "RAY-015",
+    "slug": "rayhaan-tiger",
+    "marca": "Rayhaan",
+    "nombre": "Tiger",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 160000
+      }
+    ],
+    "imagen": "/productos/rayhaan-tiger.webp"
+  },
+  {
+    "codigo": "RAY-016",
+    "slug": "rayhaan-pharaoh",
+    "marca": "Rayhaan",
+    "nombre": "Pharaoh",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 195000
+      }
+    ],
+    "imagen": "/productos/rayhaan-pharaoh.webp"
+  },
+  {
+    "codigo": "RAY-017",
+    "slug": "rayhaan-tonquin-giza",
+    "marca": "Rayhaan",
+    "nombre": "Tonquin Giza",
+    "concentracion": "EDP",
+    "variantes": [
+      {
+        "tamanoMl": 100,
+        "precioCop": 195000
+      }
+    ],
+    "imagen": "/productos/rayhaan-tonquin-giza.webp"
+  }
+]
