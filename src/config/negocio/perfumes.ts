@@ -57,13 +57,15 @@ export const perfumes = {
     { clave: "ocasiones", etiqueta: "Ocasión", opciones: OCASIONES },
   ],
   rangosPrecio: [
-    { valor: "0-130000", etiqueta: "Hasta $130.000" },
-    { valor: "130000-180000", etiqueta: "$130.000 – $180.000" },
-    { valor: "180000-250000", etiqueta: "$180.000 – $250.000" },
-    { valor: "250000-", etiqueta: "Más de $250.000" },
+    { valor: "0-170000", etiqueta: "Hasta $170.000" },
+    { valor: "170000-230000", etiqueta: "$170.000 – $230.000" },
+    { valor: "230000-300000", etiqueta: "$230.000 – $300.000" },
+    { valor: "300000-", etiqueta: "Más de $300.000" },
   ],
   cobertura: {
     ciudadesContraentrega: ["Bogotá"],
     metodosPago: ["contraentrega"],
+    envio: "El envío se cobra aparte y te confirmamos el valor por WhatsApp.",
   },
+  reglaPrecio: { margenSobreCosto: 0.3, terminacion: "900" },
 } satisfies ConfiguracionNegocio<typeof atributosPerfume>;

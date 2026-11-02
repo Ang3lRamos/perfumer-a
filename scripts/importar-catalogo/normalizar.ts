@@ -10,7 +10,7 @@ export interface ReferenciaNormalizada {
   nombre: string;
   concentracion: Concentracion | null;
   tamanoMl: number;
-  precioCop: number | null;
+  costoCop: number | null;
   indiceOrigen: number;
 }
 
@@ -119,7 +119,7 @@ export function normalizarLinea(linea: LineaDistribuidor, indiceOrigen: number):
     nombre: aTitulo(resto),
     concentracion,
     tamanoMl,
-    precioCop: linea.precio,
+    costoCop: linea.precio,
     indiceOrigen,
   };
 }

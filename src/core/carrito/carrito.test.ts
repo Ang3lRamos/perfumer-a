@@ -47,7 +47,7 @@ describe("carrito", () => {
   it("arma un mensaje con todo el pedido y códigos que el agente puede leer", () => {
     const mensaje = mensajePedido([{ ...khamrah, cantidad: 2 }, goldEdition]);
     expect(mensaje).toContain("2 × Lattafa Khamrah 100 ml (ref. LAT-051) — $260.000");
-    expect(mensaje).toContain("Total: $500.000");
+    expect(mensaje).toContain("Total sin envío: $500.000");
     expect(extraerCodigos(mensaje)).toEqual(["LAT-051", "ALH-002"]);
   });
 });

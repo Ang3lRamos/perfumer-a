@@ -35,7 +35,10 @@ function Pie() {
           Todos los productos son originales de cada casa. Los precios y la disponibilidad se confirman por
           WhatsApp antes de despachar.
         </p>
-        <p>Envíos con pago contraentrega en {negocio.cobertura.ciudadesContraentrega.join(", ")}.</p>
+        <p>
+          Envíos con pago contraentrega en {negocio.cobertura.ciudadesContraentrega.join(", ")}.{" "}
+          {negocio.cobertura.envio}
+        </p>
       </div>
     </footer>
   );
@@ -50,6 +53,7 @@ export function MarcoTienda({ children }: { children: ReactNode }) {
       <CajonCarrito
         whatsapp={envPublico.NEXT_PUBLIC_WHATSAPP_NUMERO}
         ciudades={negocio.cobertura.ciudadesContraentrega.join(", ")}
+        envio={negocio.cobertura.envio}
       />
     </>
   );

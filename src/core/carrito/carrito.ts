@@ -46,5 +46,5 @@ export function mensajePedido(lineas: LineaCarrito[]): string {
     (l) =>
       `• ${l.cantidad} × ${l.marca} ${l.nombre} ${l.tamanoMl} ml (ref. ${l.codigo}) — ${formatearCop(l.precioCop * l.cantidad)}`,
   );
-  return ["Hola, quiero hacer este pedido:", ...detalle, `Total: ${formatearCop(totalCop(lineas))}`].join("\n");
+  return ["Hola, quiero hacer este pedido:", ...detalle, `Total sin envío: ${formatearCop(totalCop(lineas))}`].join("\n");
 }

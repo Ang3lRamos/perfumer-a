@@ -8,7 +8,7 @@
     "variantes": [
       {
         "tamanoMl": 55,
-        "precioCop": 230000
+        "costoCop": 230000
       }
     ],
     "imagen": "/productos/armaf-club-de-nuit-precieux.webp"
@@ -22,7 +22,7 @@
     "variantes": [
       {
         "tamanoMl": 105,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/armaf-club-de-nuit-untold.webp"
@@ -36,7 +36,7 @@
     "variantes": [
       {
         "tamanoMl": 105,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/armaf-club-de-nuit-intense.webp"
@@ -50,7 +50,7 @@
     "variantes": [
       {
         "tamanoMl": 105,
-        "precioCop": 170000
+        "costoCop": 170000
       }
     ],
     "imagen": "/productos/armaf-club-de-nuit-iconic.webp"
@@ -64,7 +64,7 @@
     "variantes": [
       {
         "tamanoMl": 105,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/armaf-club-de-nuit-urban-man-elixir.webp"
@@ -78,7 +78,7 @@
     "variantes": [
       {
         "tamanoMl": 75,
-        "precioCop": 196000
+        "costoCop": 196000
       }
     ],
     "imagen": "/productos/armaf-club-de-nuit-bling.webp"
@@ -92,7 +92,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 150000
+        "costoCop": 150000
       }
     ],
     "imagen": "/productos/armaf-club-de-nuit-woman.webp"
@@ -106,7 +106,7 @@
     "variantes": [
       {
         "tamanoMl": 105,
-        "precioCop": 150000
+        "costoCop": 150000
       }
     ],
     "imagen": "/productos/armaf-club-de-nuit-maleka.webp"
@@ -120,7 +120,7 @@
     "variantes": [
       {
         "tamanoMl": 105,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/armaf-club-de-nuit-imperiale.webp"
@@ -134,7 +134,7 @@
     "variantes": [
       {
         "tamanoMl": 105,
-        "precioCop": 230000
+        "costoCop": 230000
       }
     ],
     "imagen": "/productos/armaf-club-de-nuit-overdose-extrait-de-parfum.webp"
@@ -148,7 +148,7 @@
     "variantes": [
       {
         "tamanoMl": 105,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/armaf-club-de-nuit-sillage.webp"
@@ -162,7 +162,7 @@
     "variantes": [
       {
         "tamanoMl": 105,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/armaf-club-de-nuit-milestone.webp"
@@ -176,7 +176,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 170000
+        "costoCop": 170000
       }
     ],
     "imagen": "/productos/armaf-yum-yum.webp"
@@ -190,7 +190,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 165000
+        "costoCop": 165000
       }
     ],
     "imagen": "/productos/armaf-island-bliss.webp"
@@ -204,7 +204,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/armaf-odyssey-mandarin-sky.webp"
@@ -218,7 +218,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 165000
+        "costoCop": 165000
       }
     ],
     "imagen": "/productos/armaf-odyssey-mandarin-sky-elixir.webp"
@@ -232,7 +232,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 155000
+        "costoCop": 155000
       }
     ],
     "imagen": "/productos/armaf-odyssey-go-mango.webp"
@@ -246,7 +246,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/armaf-odyssey-mega.webp"
@@ -260,7 +260,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/armaf-odyssey-homme.webp"
@@ -274,7 +274,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/armaf-odyssey-homme-white.webp"
@@ -288,7 +288,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/armaf-odyssey-bahamas.webp"
@@ -302,7 +302,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 175000
+        "costoCop": 175000
       }
     ],
     "imagen": "/productos/armaf-odyssey-aqua.webp"
@@ -316,7 +316,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/armaf-odyssey-limoni.webp"
@@ -330,7 +330,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 190000
+        "costoCop": 190000
       }
     ],
     "imagen": "/productos/armaf-odyssey-mandarin-sky-vintage.webp"
@@ -344,7 +344,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/armaf-odyssey-spectra.webp"
@@ -358,7 +358,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 170000
+        "costoCop": 170000
       }
     ],
     "imagen": "/productos/armaf-odyssey-artisto.webp"
@@ -372,7 +372,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/armaf-odyssey-candee.webp"
@@ -386,7 +386,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 150000
+        "costoCop": 150000
       }
     ],
     "imagen": "/productos/armaf-odyssey-marshmallow.webp"
@@ -400,7 +400,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 195000
+        "costoCop": 195000
       }
     ],
     "imagen": "/productos/armaf-odyssey-nexus.webp"
@@ -414,7 +414,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 230000
+        "costoCop": 230000
       }
     ],
     "imagen": "/productos/al-haramain-amber-oud-aqua-dubai.webp"
@@ -428,11 +428,11 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 210000
+        "costoCop": 210000
       },
       {
         "tamanoMl": 120,
-        "precioCop": 240000
+        "costoCop": 240000
       }
     ],
     "imagen": "/productos/al-haramain-amber-oud-gold-edition.webp"
@@ -446,7 +446,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 240000
+        "costoCop": 240000
       }
     ],
     "imagen": "/productos/al-haramain-amber-oud-dubai-night-extrait-de-parfum.webp"
@@ -460,7 +460,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 190000
+        "costoCop": 190000
       }
     ],
     "imagen": "/productos/arabiyat-uhud.webp"
@@ -474,7 +474,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 190000
+        "costoCop": 190000
       }
     ],
     "imagen": "/productos/arabiyat-marwa.webp"
@@ -488,7 +488,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 190000
+        "costoCop": 190000
       }
     ],
     "imagen": "/productos/arabiyat-mahd-al-dhahab.webp"
@@ -502,7 +502,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 167000
+        "costoCop": 167000
       }
     ],
     "imagen": "/productos/arabiyat-lutfah-first-love.webp"
@@ -516,7 +516,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 220000
+        "costoCop": 220000
       }
     ],
     "imagen": "/productos/bharara-rey-de-reyes.webp"
@@ -530,7 +530,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 245000
+        "costoCop": 245000
       }
     ],
     "imagen": "/productos/bharara-king-soleil.webp"
@@ -544,7 +544,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 240000
+        "costoCop": 240000
       }
     ],
     "imagen": "/productos/bharara-niche-femme.webp"
@@ -558,7 +558,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 210000
+        "costoCop": 210000
       }
     ],
     "imagen": "/productos/bharara-king.webp"
@@ -572,7 +572,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 295000
+        "costoCop": 295000
       }
     ],
     "imagen": "/productos/bharara-king-parfum.webp"
@@ -586,7 +586,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 240000
+        "costoCop": 240000
       }
     ],
     "imagen": "/productos/bharara-niche-parfum.webp"
@@ -600,7 +600,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 265000
+        "costoCop": 265000
       }
     ],
     "imagen": "/productos/bharara-onix.webp"
@@ -614,7 +614,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 265000
+        "costoCop": 265000
       }
     ],
     "imagen": "/productos/bharara-rose.webp"
@@ -628,7 +628,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/bharara-rome-ivory-pour-homme.webp"
@@ -642,7 +642,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 155000
+        "costoCop": 155000
       }
     ],
     "imagen": "/productos/bharara-rome-imagine.webp"
@@ -656,7 +656,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 135000
+        "costoCop": 135000
       }
     ],
     "imagen": "/productos/bharara-rome-pour-homme.webp"
@@ -670,7 +670,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 160000
+        "costoCop": 160000
       }
     ],
     "imagen": "/productos/bharara-rome-extradose.webp"
@@ -684,7 +684,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 165000
+        "costoCop": 165000
       }
     ],
     "imagen": "/productos/bharara-rome-intense.webp"
@@ -698,7 +698,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 170000
+        "costoCop": 170000
       }
     ],
     "imagen": "/productos/bharara-melancholia-pour-homme.webp"
@@ -712,7 +712,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/bharara-rome-lucky.webp"
@@ -726,7 +726,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 135000
+        "costoCop": 135000
       }
     ],
     "imagen": "/productos/bharara-rome-pour-femme.webp"
@@ -740,7 +740,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 155000
+        "costoCop": 155000
       }
     ],
     "imagen": "/productos/bharara-rome-paradoxe.webp"
@@ -754,7 +754,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 160000
+        "costoCop": 160000
       }
     ],
     "imagen": "/productos/bharara-rome-fantasmagory.webp"
@@ -768,7 +768,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 155000
+        "costoCop": 155000
       }
     ],
     "imagen": "/productos/bharara-rome-melancholia-pour-femme.webp"
@@ -782,7 +782,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 160000
+        "costoCop": 160000
       }
     ],
     "imagen": "/productos/bharara-rome-la-bomba.webp"
@@ -796,7 +796,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 120000
+        "costoCop": 120000
       }
     ],
     "imagen": "/productos/bharara-rome-yum-yum.webp"
@@ -810,7 +810,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 160000
+        "costoCop": 160000
       }
     ],
     "imagen": "/productos/bharara-rome-pour-femme-extradose.webp"
@@ -824,7 +824,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 145000
+        "costoCop": 145000
       }
     ],
     "imagen": "/productos/bharara-rome-ivory-pour-femme.webp"
@@ -838,7 +838,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 145000
+        "costoCop": 145000
       }
     ],
     "imagen": "/productos/afnan-9pm-dive.webp"
@@ -852,7 +852,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/afnan-9pm.webp"
@@ -866,7 +866,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": null
+        "costoCop": null
       }
     ],
     "imagen": "/productos/afnan-9pm-night-out.webp"
@@ -880,7 +880,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 160000
+        "costoCop": 160000
       }
     ],
     "imagen": "/productos/afnan-9pm-elixir.webp"
@@ -894,7 +894,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/dumont-nitro-red.webp"
@@ -908,7 +908,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 185000
+        "costoCop": 185000
       }
     ],
     "imagen": "/productos/dumont-nitro-red-intensely.webp"
@@ -922,7 +922,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 150000
+        "costoCop": 150000
       }
     ],
     "imagen": "/productos/dumont-nitro-red-white.webp"
@@ -936,7 +936,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 210000
+        "costoCop": 210000
       }
     ],
     "imagen": "/productos/dumont-nitro-gold-extrait-de-parfum.webp"
@@ -950,7 +950,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 210000
+        "costoCop": 210000
       }
     ],
     "imagen": "/productos/dumont-nitro-elixir-extrait-de-parfum.webp"
@@ -964,7 +964,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 132000
+        "costoCop": 132000
       }
     ],
     "imagen": "/productos/dumont-nitro-black.webp"
@@ -978,7 +978,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 175000
+        "costoCop": 175000
       }
     ],
     "imagen": "/productos/french-avenue-liquid-brun.webp"
@@ -992,7 +992,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 170000
+        "costoCop": 170000
       }
     ],
     "imagen": "/productos/french-avenue-cocoa-morado.webp"
@@ -1006,7 +1006,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/french-avenue-azzure-aoud.webp"
@@ -1020,7 +1020,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 220000
+        "costoCop": 220000
       }
     ],
     "imagen": "/productos/french-avenue-aether-extrait-de-parfum.webp"
@@ -1034,7 +1034,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 220000
+        "costoCop": 220000
       }
     ],
     "imagen": "/productos/french-avenue-atlantis-extrait-de-parfum.webp"
@@ -1048,7 +1048,7 @@
     "variantes": [
       {
         "tamanoMl": 80,
-        "precioCop": 199000
+        "costoCop": 199000
       }
     ],
     "imagen": "/productos/french-avenue-ghost-spectre.webp"
@@ -1062,7 +1062,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/french-avenue-veneno-blanco.webp"
@@ -1076,7 +1076,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 220000
+        "costoCop": 220000
       }
     ],
     "imagen": "/productos/french-avenue-veneno-negro.webp"
@@ -1090,7 +1090,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 190000
+        "costoCop": 190000
       }
     ],
     "imagen": "/productos/french-avenue-vulcan-feu.webp"
@@ -1104,7 +1104,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/rasasi-hawas-for-him.webp"
@@ -1118,7 +1118,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/rasasi-hawas-ice.webp"
@@ -1132,7 +1132,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 210000
+        "costoCop": 210000
       }
     ],
     "imagen": "/productos/rasasi-hawas-fire.webp"
@@ -1146,7 +1146,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 190000
+        "costoCop": 190000
       }
     ],
     "imagen": "/productos/rasasi-hawas-kobra.webp"
@@ -1160,7 +1160,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 172000
+        "costoCop": 172000
       }
     ],
     "imagen": "/productos/rasasi-hawas-elixir.webp"
@@ -1174,7 +1174,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": null
+        "costoCop": null
       }
     ],
     "imagen": "/productos/rasasi-hawas-tropical.webp"
@@ -1188,7 +1188,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": null
+        "costoCop": null
       }
     ],
     "imagen": "/productos/rasasi-hawas-black.webp"
@@ -1202,7 +1202,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/rasasi-hawas-malibu.webp"
@@ -1216,7 +1216,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 210000
+        "costoCop": 210000
       }
     ],
     "imagen": "/productos/rasasi-hawas-chrome.webp"
@@ -1230,7 +1230,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 185000
+        "costoCop": 185000
       }
     ],
     "imagen": "/productos/rasasi-hawas-pink.webp"
@@ -1244,7 +1244,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 190000
+        "costoCop": 190000
       }
     ],
     "imagen": "/productos/rasasi-hawas-diva.webp"
@@ -1258,7 +1258,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 160000
+        "costoCop": 160000
       }
     ],
     "imagen": "/productos/rasasi-hawas-eclat.webp"
@@ -1272,7 +1272,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 220000
+        "costoCop": 220000
       }
     ],
     "imagen": "/productos/rasasi-hawas-rouge.webp"
@@ -1286,7 +1286,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 295000
+        "costoCop": 295000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-full-house-parfum.webp"
@@ -1300,7 +1300,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 320000
+        "costoCop": 320000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-full-house-refresh-extrait-de-parfum.webp"
@@ -1314,7 +1314,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 295000
+        "costoCop": 295000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-wildcard-parfum.webp"
@@ -1328,7 +1328,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 295000
+        "costoCop": 295000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-royale-parfum.webp"
@@ -1342,7 +1342,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 310000
+        "costoCop": 310000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-all-in-parfum.webp"
@@ -1356,7 +1356,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 320000
+        "costoCop": 320000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-esmerald-extrait-de-parfum.webp"
@@ -1370,7 +1370,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 295000
+        "costoCop": 295000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-esmerald-parfum.webp"
@@ -1384,7 +1384,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 295000
+        "costoCop": 295000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-bonus-parfum.webp"
@@ -1398,7 +1398,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 265000
+        "costoCop": 265000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-jackpot-parfum.webp"
@@ -1412,7 +1412,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 320000
+        "costoCop": 320000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-bluff-extrait-de-parfum.webp"
@@ -1426,7 +1426,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 295000
+        "costoCop": 295000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-platinum-parfum.webp"
@@ -1440,7 +1440,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 295000
+        "costoCop": 295000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-ruby-parfum.webp"
@@ -1454,7 +1454,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 310000
+        "costoCop": 310000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-trick-parfum.webp"
@@ -1468,7 +1468,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 270000
+        "costoCop": 270000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-bid-parfum.webp"
@@ -1482,7 +1482,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 285000
+        "costoCop": 285000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-topaz-parfum.webp"
@@ -1496,7 +1496,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 290000
+        "costoCop": 290000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-win-parfum.webp"
@@ -1510,7 +1510,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 295000
+        "costoCop": 295000
       }
     ],
     "imagen": "/productos/jo-milano-game-of-spades-moon-parfum.webp"
@@ -1524,7 +1524,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 150000
+        "costoCop": 150000
       }
     ],
     "imagen": "/productos/lattafa-his-confession.webp"
@@ -1538,7 +1538,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 150000
+        "costoCop": 150000
       }
     ],
     "imagen": "/productos/lattafa-her-confession.webp"
@@ -1552,7 +1552,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 135000
+        "costoCop": 135000
       }
     ],
     "imagen": "/productos/lattafa-ishq-al-shuyukh-gold.webp"
@@ -1566,7 +1566,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 145000
+        "costoCop": 145000
       }
     ],
     "imagen": "/productos/lattafa-ishq-al-shuyukh-silver.webp"
@@ -1580,7 +1580,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/lattafa-al-qiam-gold.webp"
@@ -1594,7 +1594,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": null
+        "costoCop": null
       }
     ],
     "imagen": "/productos/lattafa-al-qiam-silver.webp"
@@ -1608,7 +1608,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/lattafa-emeer.webp"
@@ -1622,7 +1622,7 @@
     "variantes": [
       {
         "tamanoMl": 55,
-        "precioCop": 160000
+        "costoCop": 160000
       }
     ],
     "imagen": "/productos/lattafa-atlas.webp"
@@ -1636,7 +1636,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 120000
+        "costoCop": 120000
       }
     ],
     "imagen": "/productos/lattafa-fakhar-black.webp"
@@ -1650,7 +1650,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 120000
+        "costoCop": 120000
       }
     ],
     "imagen": "/productos/lattafa-fakhar-rose.webp"
@@ -1664,7 +1664,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 120000
+        "costoCop": 120000
       }
     ],
     "imagen": "/productos/lattafa-fakhar-gold.webp"
@@ -1678,7 +1678,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-teriaq.webp"
@@ -1692,7 +1692,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 145000
+        "costoCop": 145000
       }
     ],
     "imagen": "/productos/lattafa-teriaq-intense.webp"
@@ -1706,7 +1706,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 120000
+        "costoCop": 120000
       }
     ],
     "imagen": "/productos/lattafa-yara-moi.webp"
@@ -1720,7 +1720,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 120000
+        "costoCop": 120000
       }
     ],
     "imagen": "/productos/lattafa-yara-candy.webp"
@@ -1734,7 +1734,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 120000
+        "costoCop": 120000
       }
     ],
     "imagen": "/productos/lattafa-yara-tous.webp"
@@ -1748,7 +1748,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 120000
+        "costoCop": 120000
       }
     ],
     "imagen": "/productos/lattafa-yara.webp"
@@ -1762,7 +1762,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 165000
+        "costoCop": 165000
       }
     ],
     "imagen": "/productos/lattafa-yara-elixir.webp"
@@ -1776,7 +1776,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 120000
+        "costoCop": 120000
       }
     ],
     "imagen": "/productos/lattafa-asad.webp"
@@ -1790,7 +1790,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 155000
+        "costoCop": 155000
       }
     ],
     "imagen": "/productos/lattafa-asad-elixir.webp"
@@ -1804,7 +1804,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/lattafa-asad-bourbon.webp"
@@ -1818,7 +1818,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 110000
+        "costoCop": 110000
       }
     ],
     "imagen": "/productos/lattafa-asad-zanzibar.webp"
@@ -1832,7 +1832,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 145000
+        "costoCop": 145000
       }
     ],
     "imagen": "/productos/lattafa-victoria.webp"
@@ -1846,7 +1846,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/lattafa-layaan.webp"
@@ -1860,7 +1860,7 @@
     "variantes": [
       {
         "tamanoMl": 75,
-        "precioCop": 190000
+        "costoCop": 190000
       }
     ],
     "imagen": "/productos/lattafa-give-me-gourmand-berry-on-top.webp"
@@ -1874,7 +1874,7 @@
     "variantes": [
       {
         "tamanoMl": 75,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/lattafa-give-me-gourmand-choco-overdose.webp"
@@ -1888,7 +1888,7 @@
     "variantes": [
       {
         "tamanoMl": 75,
-        "precioCop": 190000
+        "costoCop": 190000
       }
     ],
     "imagen": "/productos/lattafa-give-me-gourmand-vanilla-freak.webp"
@@ -1902,7 +1902,7 @@
     "variantes": [
       {
         "tamanoMl": 75,
-        "precioCop": 190000
+        "costoCop": 190000
       }
     ],
     "imagen": "/productos/lattafa-give-me-gourmand-cookie-crave.webp"
@@ -1916,7 +1916,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 190000
+        "costoCop": 190000
       }
     ],
     "imagen": "/productos/lattafa-give-me-gourmand-mallow-madness.webp"
@@ -1930,7 +1930,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 190000
+        "costoCop": 190000
       }
     ],
     "imagen": "/productos/lattafa-give-me-gourmand-whipped-pleasure.webp"
@@ -1944,7 +1944,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 135000
+        "costoCop": 135000
       }
     ],
     "imagen": "/productos/lattafa-bade-al-oud-noble-blush.webp"
@@ -1958,7 +1958,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-bade-al-oud-sublime.webp"
@@ -1972,7 +1972,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-bade-al-oud-amethiste.webp"
@@ -1986,7 +1986,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-oud-for-glory.webp"
@@ -2000,7 +2000,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-bade-al-oud-honor-y-glory.webp"
@@ -2014,7 +2014,7 @@
     "variantes": [
       {
         "tamanoMl": 90,
-        "precioCop": 110000
+        "costoCop": 110000
       }
     ],
     "imagen": "/productos/lattafa-qaed-al-fursan-negro.webp"
@@ -2028,7 +2028,7 @@
     "variantes": [
       {
         "tamanoMl": 90,
-        "precioCop": 118000
+        "costoCop": 118000
       }
     ],
     "imagen": "/productos/lattafa-qaed-al-fursan-untamed.webp"
@@ -2042,7 +2042,7 @@
     "variantes": [
       {
         "tamanoMl": 90,
-        "precioCop": 110000
+        "costoCop": 110000
       }
     ],
     "imagen": "/productos/lattafa-qaed-al-fursan-unlimited.webp"
@@ -2056,7 +2056,7 @@
     "variantes": [
       {
         "tamanoMl": 60,
-        "precioCop": 120000
+        "costoCop": 120000
       }
     ],
     "imagen": "/productos/lattafa-ajwad.webp"
@@ -2070,7 +2070,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 170000
+        "costoCop": 170000
       }
     ],
     "imagen": "/productos/lattafa-musamam-white-intense.webp"
@@ -2084,7 +2084,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 170000
+        "costoCop": 170000
       }
     ],
     "imagen": "/productos/lattafa-petra.webp"
@@ -2098,7 +2098,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 230000
+        "costoCop": 230000
       }
     ],
     "imagen": "/productos/lattafa-pride-pisa.webp"
@@ -2112,7 +2112,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-shaheen-gold.webp"
@@ -2126,7 +2126,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-shaheen-silver.webp"
@@ -2140,7 +2140,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 155000
+        "costoCop": 155000
       }
     ],
     "imagen": "/productos/lattafa-vintage-radio.webp"
@@ -2154,7 +2154,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 145000
+        "costoCop": 145000
       }
     ],
     "imagen": "/productos/lattafa-nebras.webp"
@@ -2168,7 +2168,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 95000
+        "costoCop": 95000
       }
     ],
     "imagen": "/productos/lattafa-hayaati-gold-elixir.webp"
@@ -2182,7 +2182,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 100000
+        "costoCop": 100000
       }
     ],
     "imagen": "/productos/lattafa-hayaati-al-maleky.webp"
@@ -2196,7 +2196,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 110000
+        "costoCop": 110000
       }
     ],
     "imagen": "/productos/lattafa-hayaati-clasico.webp"
@@ -2210,7 +2210,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-nasheet.webp"
@@ -2224,7 +2224,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-khamrah.webp"
@@ -2238,7 +2238,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-khamrah-qahwa.webp"
@@ -2252,7 +2252,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-khamrah-dukhan.webp"
@@ -2266,7 +2266,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 210000
+        "costoCop": 210000
       }
     ],
     "imagen": "/productos/lattafa-khamrah-waha.webp"
@@ -2280,7 +2280,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-qimmah-for-men.webp"
@@ -2294,7 +2294,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-qimmah-for-women.webp"
@@ -2308,7 +2308,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/lattafa-mahir-honor.webp"
@@ -2322,7 +2322,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-mahir-black.webp"
@@ -2336,7 +2336,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 145000
+        "costoCop": 145000
       }
     ],
     "imagen": "/productos/lattafa-jasoor.webp"
@@ -2350,7 +2350,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/lattafa-the-kingdom-for-men.webp"
@@ -2364,7 +2364,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/lattafa-the-kingdom-for-women.webp"
@@ -2378,7 +2378,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 155000
+        "costoCop": 155000
       }
     ],
     "imagen": "/productos/lattafa-eclaire.webp"
@@ -2392,7 +2392,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-eclaire-banoffi.webp"
@@ -2406,7 +2406,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-eclaire-pistacho.webp"
@@ -2420,7 +2420,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-mayar.webp"
@@ -2434,7 +2434,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-mayar-cherry-intense.webp"
@@ -2448,7 +2448,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/lattafa-mayar-natural-intense.webp"
@@ -2462,7 +2462,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 150000
+        "costoCop": 150000
       }
     ],
     "imagen": "/productos/lattafa-angham.webp"
@@ -2476,7 +2476,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 220000
+        "costoCop": 220000
       }
     ],
     "imagen": "/productos/lattafa-angham-second-song.webp"
@@ -2490,7 +2490,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 180000
+        "costoCop": 180000
       }
     ],
     "imagen": "/productos/lattafa-dalal.webp"
@@ -2504,7 +2504,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/lattafa-haya.webp"
@@ -2518,7 +2518,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 205000
+        "costoCop": 205000
       }
     ],
     "imagen": "/productos/lattafa-jouri.webp"
@@ -2532,7 +2532,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 110000
+        "costoCop": 110000
       }
     ],
     "imagen": "/productos/lattafa-rave-now-pink-women.webp"
@@ -2546,7 +2546,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 100000
+        "costoCop": 100000
       }
     ],
     "imagen": "/productos/lattafa-rave-now-white.webp"
@@ -2560,7 +2560,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 155000
+        "costoCop": 155000
       }
     ],
     "imagen": "/productos/maison-alhambra-jean-lowe-vibe.webp"
@@ -2574,7 +2574,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 155000
+        "costoCop": 155000
       }
     ],
     "imagen": "/productos/maison-alhambra-jean-lowe-fraiche.webp"
@@ -2588,7 +2588,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 155000
+        "costoCop": 155000
       }
     ],
     "imagen": "/productos/maison-alhambra-jean-lowe-azure.webp"
@@ -2602,7 +2602,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 155000
+        "costoCop": 155000
       }
     ],
     "imagen": "/productos/maison-alhambra-jean-lowe-nouveau.webp"
@@ -2616,7 +2616,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": null
+        "costoCop": null
       }
     ],
     "imagen": "/productos/maison-alhambra-jean-lowe-immortal.webp"
@@ -2630,7 +2630,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 135000
+        "costoCop": 135000
       }
     ],
     "imagen": "/productos/maison-alhambra-sceptre-malachite.webp"
@@ -2644,7 +2644,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 135000
+        "costoCop": 135000
       }
     ],
     "imagen": "/productos/maison-alhambra-sceptre-amazonite.webp"
@@ -2658,7 +2658,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": null
+        "costoCop": null
       }
     ],
     "imagen": "/productos/maison-alhambra-sceptre-bronzite.webp"
@@ -2672,7 +2672,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 152000
+        "costoCop": 152000
       }
     ],
     "imagen": "/productos/maison-alhambra-la-charmante-eclatant.webp"
@@ -2686,7 +2686,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 120000
+        "costoCop": 120000
       }
     ],
     "imagen": "/productos/maison-alhambra-zeno.webp"
@@ -2700,7 +2700,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 145000
+        "costoCop": 145000
       }
     ],
     "imagen": "/productos/maison-alhambra-delilah.webp"
@@ -2714,7 +2714,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 130000
+        "costoCop": 130000
       }
     ],
     "imagen": "/productos/maison-alhambra-delilah-white.webp"
@@ -2728,7 +2728,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 165000
+        "costoCop": 165000
       }
     ],
     "imagen": "/productos/maison-alhambra-delilah-viola.webp"
@@ -2742,7 +2742,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 120000
+        "costoCop": 120000
       }
     ],
     "imagen": "/productos/maison-alhambra-delilah-reyna.webp"
@@ -2756,7 +2756,7 @@
     "variantes": [
       {
         "tamanoMl": 80,
-        "precioCop": 270000
+        "costoCop": 270000
       }
     ],
     "imagen": "/productos/orientica-amber-rouge.webp"
@@ -2770,7 +2770,7 @@
     "variantes": [
       {
         "tamanoMl": 80,
-        "precioCop": 270000
+        "costoCop": 270000
       }
     ],
     "imagen": "/productos/orientica-royal-amber.webp"
@@ -2784,7 +2784,7 @@
     "variantes": [
       {
         "tamanoMl": 80,
-        "precioCop": 270000
+        "costoCop": 270000
       }
     ],
     "imagen": "/productos/orientica-velvet-gold.webp"
@@ -2798,7 +2798,7 @@
     "variantes": [
       {
         "tamanoMl": 80,
-        "precioCop": 270000
+        "costoCop": 270000
       }
     ],
     "imagen": "/productos/orientica-amber-noir.webp"
@@ -2812,7 +2812,7 @@
     "variantes": [
       {
         "tamanoMl": 80,
-        "precioCop": 320000
+        "costoCop": 320000
       }
     ],
     "imagen": "/productos/orientica-rose-eclat.webp"
@@ -2826,7 +2826,7 @@
     "variantes": [
       {
         "tamanoMl": 80,
-        "precioCop": 275000
+        "costoCop": 275000
       }
     ],
     "imagen": "/productos/orientica-oud-saffron.webp"
@@ -2840,7 +2840,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/rayhaan-lion.webp"
@@ -2854,7 +2854,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 140000
+        "costoCop": 140000
       }
     ],
     "imagen": "/productos/rayhaan-elixir.webp"
@@ -2868,7 +2868,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 185000
+        "costoCop": 185000
       }
     ],
     "imagen": "/productos/rayhaan-crimson.webp"
@@ -2882,7 +2882,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 185000
+        "costoCop": 185000
       }
     ],
     "imagen": "/productos/rayhaan-tropical-vibe.webp"
@@ -2896,7 +2896,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 170000
+        "costoCop": 170000
       }
     ],
     "imagen": "/productos/rayhaan-jungle-vibe.webp"
@@ -2910,7 +2910,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 185000
+        "costoCop": 185000
       }
     ],
     "imagen": "/productos/rayhaan-pacific-aloha.webp"
@@ -2924,7 +2924,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 185000
+        "costoCop": 185000
       }
     ],
     "imagen": "/productos/rayhaan-aquatica.webp"
@@ -2938,7 +2938,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 195000
+        "costoCop": 195000
       }
     ],
     "imagen": "/productos/rayhaan-azul.webp"
@@ -2952,7 +2952,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 195000
+        "costoCop": 195000
       }
     ],
     "imagen": "/productos/rayhaan-kiss.webp"
@@ -2966,7 +2966,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 195000
+        "costoCop": 195000
       }
     ],
     "imagen": "/productos/rayhaan-terra.webp"
@@ -2980,7 +2980,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 160000
+        "costoCop": 160000
       }
     ],
     "imagen": "/productos/rayhaan-obsidian.webp"
@@ -2994,7 +2994,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 185000
+        "costoCop": 185000
       }
     ],
     "imagen": "/productos/rayhaan-nocturno-elixir.webp"
@@ -3008,7 +3008,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 185000
+        "costoCop": 185000
       }
     ],
     "imagen": "/productos/rayhaan-italia.webp"
@@ -3022,7 +3022,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 195000
+        "costoCop": 195000
       }
     ],
     "imagen": "/productos/rayhaan-wolf.webp"
@@ -3036,7 +3036,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 160000
+        "costoCop": 160000
       }
     ],
     "imagen": "/productos/rayhaan-tiger.webp"
@@ -3050,7 +3050,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 195000
+        "costoCop": 195000
       }
     ],
     "imagen": "/productos/rayhaan-pharaoh.webp"
@@ -3064,7 +3064,7 @@
     "variantes": [
       {
         "tamanoMl": 100,
-        "precioCop": 195000
+        "costoCop": 195000
       }
     ],
     "imagen": "/productos/rayhaan-tonquin-giza.webp"

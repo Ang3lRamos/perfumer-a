@@ -62,7 +62,7 @@ function Linea({ linea }: { linea: LineaCarrito }) {
   );
 }
 
-export function CajonCarrito({ whatsapp, ciudades }: { whatsapp: string; ciudades: string }) {
+export function CajonCarrito({ whatsapp, ciudades, envio }: { whatsapp: string; ciudades: string; envio: string }) {
   const lineas = useCarrito();
   const { abierto, cerrar } = useEstadoCajon();
   const dialogo = useRef<HTMLDialogElement>(null);
@@ -112,7 +112,7 @@ export function CajonCarrito({ whatsapp, ciudades }: { whatsapp: string; ciudade
         {lineas.length > 0 && (
           <footer className="space-y-3 border-t border-linea px-5 py-4">
             <div className="flex items-baseline justify-between">
-              <span className="text-sm text-tinta-suave">Total</span>
+              <span className="text-sm text-tinta-suave">Total sin envío</span>
               <span className="text-2xl font-medium tabular-nums">{formatearCop(totalCop(lineas))}</span>
             </div>
             <a
@@ -124,7 +124,7 @@ export function CajonCarrito({ whatsapp, ciudades }: { whatsapp: string; ciudade
               Enviar pedido por WhatsApp
             </a>
             <p className="text-center text-xs text-tinta-suave">
-              Confirmamos disponibilidad por chat. Pagas al recibir en {ciudades}.
+              Pagas al recibir en {ciudades}. {envio}
             </p>
           </footer>
         )}

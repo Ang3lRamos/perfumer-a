@@ -76,7 +76,11 @@ export function FichaProducto({ producto }: { producto: Producto<Atributos> }) {
             <p className="mt-3 text-sm text-tinta-suave">{producto.inspiracionNota}</p>
           )}
         </header>
-        <SelectorCompra producto={producto} whatsapp={envPublico.NEXT_PUBLIC_WHATSAPP_NUMERO} />
+        <SelectorCompra
+          producto={producto}
+          whatsapp={envPublico.NEXT_PUBLIC_WHATSAPP_NUMERO}
+          envio={negocio.cobertura.envio}
+        />
         {producto.descripcion && <p className="leading-relaxed">{producto.descripcion}</p>}
         <Rasgos atributos={atributos} />
         {atributos.notas && <Piramide notas={atributos.notas} />}

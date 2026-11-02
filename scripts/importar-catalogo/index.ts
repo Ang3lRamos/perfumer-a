@@ -48,8 +48,8 @@ async function main(rutaPdf: string): Promise<void> {
   await mkdir(path.dirname(SALIDA_JSON), { recursive: true });
   await writeFile(SALIDA_JSON, JSON.stringify(salida, null, 2) + "\n");
 
-  const sinPrecio = salida.filter((p) => p.variantes.every((v) => v.precioCop === null)).length;
-  console.log(`${lineas.length} referencias → ${salida.length} productos (${sinPrecio} sin precio)`);
+  const sinCosto = salida.filter((p) => p.variantes.every((v) => v.costoCop === null)).length;
+  console.log(`${lineas.length} referencias → ${salida.length} productos (${sinCosto} sin precio del proveedor)`);
 }
 
 const rutaPdf = process.argv[2];

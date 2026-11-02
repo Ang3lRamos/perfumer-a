@@ -9,7 +9,7 @@ import { abrirCarrito } from "@/features/carrito/estado-cajon";
 
 const enlaceWhatsapp = (numero: string, texto: string) => `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
-export function SelectorCompra({ producto, whatsapp }: { producto: Producto; whatsapp: string }) {
+export function SelectorCompra({ producto, whatsapp, envio }: { producto: Producto; whatsapp: string; envio: string }) {
   const disponibles = producto.variantes.filter((v) => v.disponible && v.precioCop !== null);
   const [elegidaId, setElegidaId] = useState(disponibles[0]?.id);
   const elegida = disponibles.find((v) => v.id === elegidaId);
@@ -83,7 +83,9 @@ export function SelectorCompra({ producto, whatsapp }: { producto: Producto; wha
           Preguntar por WhatsApp
         </a>
       </div>
-      <p className="text-sm text-tinta-suave">Arma tu pedido y envíalo completo por WhatsApp. Pagas cuando lo recibes.</p>
+      <p className="text-sm text-tinta-suave">
+        Arma tu pedido y envíalo completo por WhatsApp. Pagas cuando lo recibes. {envio}
+      </p>
     </div>
   );
 }

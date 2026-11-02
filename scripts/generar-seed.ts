@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { negocio } from "../src/config/negocio";
+import { precioVenta } from "../src/core/catalogo/precio";
 import { FICHAS_BORRADOR } from "../supabase/datos/fichas-borrador";
 import imagenesManuales from "../supabase/datos/imagenes-manuales.json";
 import imagenesOficiales from "../supabase/datos/imagenes-oficiales.json";
@@ -49,10 +50,12 @@ function filaProducto(producto: ProductoCatalogo): string {
   ].join(", ")})`;
 }
 
+// Precio de venta = costo del proveedor + regla de la configuración. Sin costo no se vende.
 function filasVariantes(producto: ProductoCatalogo): string[] {
-  return producto.variantes.map(
-    (v) => `(${sql(producto.slug)}, ${v.tamanoMl}, ${sql(v.precioCop)}, ${v.precioCop !== null})`,
-  );
+  return producto.variantes.map((v) => {
+    const precio = v.costoCop === null ? null : precioVenta(v.costoCop, negocio.reglaPrecio);
+    return `(${sql(producto.slug)}, ${v.tamanoMl}, ${sql(precio)}, ${sql(v.costoCop)}, ${precio !== null})`;
+  });
 }
 
 async function main(): Promise<void> {
@@ -67,14 +70,26 @@ insert into productos (codigo, slug, marca, nombre, presentacion, atributos, ima
 ${productos.map(filaProducto).join(",\n")}
 on conflict (slug) do update set imagenes = excluded.imagenes;
 
+create temporary table lista_proveedor (slug text, tamano_ml int, precio_cop int, costo_cop int, disponible boolean);
+insert into lista_proveedor values
+${productos.flatMap(filasVariantes).join(",\n")};
+
 insert into variantes (producto_id, tamano_ml, precio_cop, disponible)
-select p.id, v.tamano_ml, v.precio_cop, v.disponible
-from (values
-${productos.flatMap(filasVariantes).join(",\n")}
-) as v (slug, tamano_ml, precio_cop, disponible)
-join productos p on p.slug = v.slug
+select p.id, l.tamano_ml, l.precio_cop, l.disponible
+from lista_proveedor l
+join productos p on p.slug = l.slug
 on conflict (producto_id, tamano_ml) do update
   set precio_cop = excluded.precio_cop, disponible = excluded.disponible;
+
+insert into costos_variante (variante_id, costo_cop)
+select v.id, l.costo_cop
+from lista_proveedor l
+join productos p on p.slug = l.slug
+join variantes v on v.producto_id = p.id and v.tamano_ml = l.tamano_ml
+where l.costo_cop is not null
+on conflict (variante_id) do update set costo_cop = excluded.costo_cop, actualizado_at = now();
+
+drop table lista_proveedor;
 `;
   await writeFile(SALIDA, contenido);
   console.log(`seed.sql: ${productos.length} productos, ${productos.length - sinFicha.length} con ficha borrador`);

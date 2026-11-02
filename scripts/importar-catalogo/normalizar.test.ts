@@ -51,8 +51,8 @@ describe("agruparEnProductos", () => {
     ]);
     expect(productos.map((p) => p.codigo)).toEqual(["ALH-001", "ALH-002"]);
     expect(productos[0].variantes).toEqual([
-      { tamanoMl: 100, precioCop: 210000 },
-      { tamanoMl: 120, precioCop: 240000 },
+      { tamanoMl: 100, costoCop: 210000 },
+      { tamanoMl: 120, costoCop: 240000 },
     ]);
   });
 

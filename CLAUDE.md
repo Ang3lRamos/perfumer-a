@@ -20,7 +20,9 @@ Next.js 16 (App Router, `cacheComponents`), TypeScript, Tailwind 4, Supabase, Zo
   `app_metadata.rol = 'admin'`. El servidor del agente usará la secret key.
 - Datos personales solo en `clientes`. `eventos` nunca guarda teléfono, nombre ni dirección.
 - Pedidos nacen en `pendiente_confirmacion` y las transiciones se validan en el dominio y en un trigger.
-- Costos en `costos_variante` (solo admin), no en `variantes`.
+- Costos en `costos_variante` (solo admin), no en `variantes`. El PDF del proveedor trae COSTOS: el precio de venta
+  se calcula al generar el seed con `negocio.reglaPrecio` (`core/catalogo/precio.ts → precioVenta`). Reimportar
+  recalcula precios: cuando el panel permita ajustes por producto, habrá que preservarlos.
 - Catálogo del distribuidor: `npm run catalogo:importar -- <pdf>` → `supabase/datos/catalogo-distribuidor.json` +
   `public/productos/*.webp`; luego `npm run catalogo:seed` → `supabase/seed.sql`. Se cruza por `slug`:
   reimportar actualiza precios y disponibilidad sin cambiar códigos. `supabase/datos/fichas-borrador.ts` es un

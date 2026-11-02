@@ -1,4 +1,5 @@
 import type { z } from "zod";
+import type { ReglaPrecio } from "@/core/catalogo/precio";
 
 export interface Opcion {
   valor: string;
@@ -17,6 +18,8 @@ export interface FiltroAtributo {
 export interface Cobertura {
   ciudadesContraentrega: string[];
   metodosPago: string[];
+  /** Texto que se muestra al cliente sobre el envío (en el carrito y la ficha). */
+  envio: string;
 }
 
 export interface ConfiguracionNegocio<A extends z.ZodType = z.ZodType> {
@@ -30,4 +33,6 @@ export interface ConfiguracionNegocio<A extends z.ZodType = z.ZodType> {
   /** Rangos de precio ofrecidos como filtro; valor con formato "min-max" en pesos (max vacío = sin tope). */
   rangosPrecio: Opcion[];
   cobertura: Cobertura;
+  /** Cómo se pasa del costo del proveedor al precio de venta al importar el catálogo. */
+  reglaPrecio: ReglaPrecio;
 }

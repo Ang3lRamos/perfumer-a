@@ -7,7 +7,7 @@ export interface ProductoImportado {
   nombre: string;
   concentracion: Concentracion | null;
   indiceImagen: number;
-  variantes: { tamanoMl: number; precioCop: number | null }[];
+  variantes: { tamanoMl: number; costoCop: number | null }[];
 }
 
 const PREFIJOS_CODIGO: Record<string, string> = {
@@ -51,7 +51,7 @@ export function agruparEnProductos(referencias: ReferenciaNormalizada[]): Produc
 
   for (const referencia of referencias) {
     const slug = slugDe(referencia);
-    const variante = { tamanoMl: referencia.tamanoMl, precioCop: referencia.precioCop };
+    const variante = { tamanoMl: referencia.tamanoMl, costoCop: referencia.costoCop };
     const existente = porSlug.get(slug);
     if (existente) {
       existente.variantes.push(variante);
