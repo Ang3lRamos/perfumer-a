@@ -11,7 +11,8 @@
     "typecheck": "next typegen && tsc --noEmit",
     "catalogo:importar": "tsx scripts/importar-catalogo/index.ts",
     "catalogo:seed": "tsx scripts/generar-seed.ts",
-    "catalogo:imagenes": "tsx scripts/imagenes-oficiales/index.ts"
+    "catalogo:imagenes": "tsx scripts/imagenes-oficiales/index.ts",
+    "catalogo:fichas": "tsx scripts/fichas-oficiales/index.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.3.0",

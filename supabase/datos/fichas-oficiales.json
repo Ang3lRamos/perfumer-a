@@ -1,0 +1,240 @@
+{
+  "french-avenue-liquid-brun": {
+    "fuente": "https://frenchavenue.com/products/liquid-brun",
+    "descripcion": "Una vuelta a la vainilla amaderada, llevada un paso más allá con cítricos especiados y canela. El equilibrio justo entre lo dulce y lo especiado.",
+    "notasClave": ["Vainilla", "Canela", "Cítricos especiados"]
+  },
+  "french-avenue-cocoa-morado": {
+    "fuente": "https://frenchavenue.com/products/cocoa-morado",
+    "descripcion": "Un oriental amaderado que abre cálido y especiado, gana profundidad con dátiles, oud e incienso, y termina aterciopelado con vainilla, tonka y cuero.",
+    "notas": {
+      "salida": ["Canela", "Azafrán", "Cardamomo", "Jengibre", "Pimienta rosa"],
+      "corazon": ["Dátiles", "Oud", "Incienso", "Mirra", "Davana"],
+      "fondo": ["Vainilla", "Haba tonka", "Cuero", "Pachulí", "Láudano", "Mate"]
+    }
+  },
+  "french-avenue-azzure-aoud": {
+    "fuente": "https://frenchavenue.com/products/azzure-aoud",
+    "descripcion": "Hoja de violeta terrosa con grosella oscura y ahumada, sobre un fondo profundo de resinas y maderas. Intenso y diferente.",
+    "notasClave": ["Hoja de violeta", "Grosella", "Resinas", "Maderas"]
+  },
+  "french-avenue-atlantis-extrait-de-parfum": {
+    "fuente": "https://frenchavenue.com/products/atlantis-extrait",
+    "descripcion": "Floral frutal, fresco y juvenil: naranja jugosa y sandía, un corazón de coco cremoso y flores blancas, y una estela cálida de vainilla y cacao. La marca indica hasta 12 horas de duración.",
+    "notas": {
+      "salida": ["Naranja", "Sandía"],
+      "corazon": ["Coco", "Flores blancas"],
+      "fondo": ["Vainilla", "Cacao"]
+    },
+    "ocasiones": ["dia", "noche"]
+  },
+  "french-avenue-ghost-spectre": {
+    "fuente": "https://frenchavenue.com/products/spectre-ghost",
+    "descripcion": "Arranca especiado y fresco con un toque cítrico, pasa a un corazón floral y dulce, y se asienta en una mezcla cálida y almizclada.",
+    "notasClave": ["Especias", "Cítricos", "Flores", "Almizcle"]
+  },
+  "french-avenue-veneno-blanco": {
+    "fuente": "https://frenchavenue.com/products/veneno-bianco",
+    "descripcion": "Floral ambarado, sofisticado y cálido: una apertura cremosa y cítrica, un corazón de flor de tiaré e ylang-ylang, y un fondo suave de coco, vainilla y maderas.",
+    "notas": {
+      "salida": ["Bergamota", "Neroli", "Leche"],
+      "corazon": ["Flor de tiaré", "Ylang-ylang", "Flores blancas"],
+      "fondo": ["Coco", "Vainilla", "Madera de guayaco", "Láudano"]
+    }
+  },
+  "french-avenue-vulcan-feu": {
+    "fuente": "https://frenchavenue.com/products/vulcan-feu",
+    "descripcion": "Un oriental amaderado potente: abre frutal y vibrante con jengibre y mango, sigue con jazmín y praliné, y deja una estela cálida de cedro, ámbar gris y tonka.",
+    "notas": {
+      "salida": ["Jengibre", "Mango", "Limón", "Ruibarbo"],
+      "corazon": ["Jazmín", "Violeta", "Praliné", "Pimienta rosa"],
+      "fondo": ["Cedro", "Ámbar gris", "Haba tonka", "Musgo"]
+    }
+  },
+  "arabiyat-uhud": {
+    "fuente": "https://arabiyatprestige.com/products/arabiyat-prestige-uhud-edp-100ml-unisex",
+    "descripcion": "Dulce, aterciopelado y adictivo: un gourmand con toques florales que se siente acogedor de día y cautivador de noche.",
+    "notas": {
+      "salida": ["Frutos rojos", "Rosa", "Caramelo"],
+      "corazon": ["Haba tonka", "Miel", "Frambuesa"],
+      "fondo": ["Almizcle", "Vainilla", "Ámbar"]
+    },
+    "ocasiones": ["dia", "noche"]
+  },
+  "arabiyat-marwa": {
+    "fuente": "https://arabiyatprestige.com/products/arabiyat-prestige-marwa-edp-100ml-unisex",
+    "descripcion": "Fresco, ahumado y refinado: arranca cítrico con un toque herbal, se vuelve sereno con té e incienso, y cierra limpio y amaderado. Versátil para cualquier momento.",
+    "notas": {
+      "salida": ["Bergamota", "Petit grain", "Jengibre"],
+      "corazon": ["Geranio", "Té", "Incienso"],
+      "fondo": ["Madera de guayaco", "Ambroxan", "Almizcle"]
+    }
+  },
+  "arabiyat-mahd-al-dhahab": {
+    "fuente": "https://arabiyatprestige.com/products/arabiyat-prestige-mahd-al-dahab-edp-100ml-unisex",
+    "descripcion": "Cítrico, aromático y dorado: una salida chispeante de toronja y bergamota, un corazón herbal y especiado, y un fondo cálido de sándalo, vainilla y ámbar.",
+    "notas": {
+      "salida": ["Toronja", "Bergamota", "Enebro", "Frutos rojos"],
+      "corazon": ["Salvia", "Ciprés", "Jengibre"],
+      "fondo": ["Sándalo", "Pachulí", "Vainilla", "Ámbar"]
+    }
+  },
+  "arabiyat-lutfah-first-love": {
+    "fuente": "https://arabiyatprestige.com/products/arabiyat-prestige-lutfah-first-love-edp-80ml-unisex",
+    "descripcion": "Dulce y romántico: abre fresco con limón y durazno, florece con jazmín e ylang-ylang, y envuelve con vainilla, caramelo y almizcle.",
+    "notas": {
+      "salida": ["Limón", "Durazno", "Ciprés"],
+      "corazon": ["Jazmín", "Ylang-ylang", "Violeta", "Notas lácteas"],
+      "fondo": ["Vainilla", "Caramelo", "Heliotropo", "Almizcle"]
+    }
+  },
+  "rayhaan-lion": {
+    "fuente": "https://rayhaanperfumes.com/products/rayhaan-lion",
+    "descripcion": "Audaz y masculino: una salida refrescante que se calienta en un corazón especiado y termina rica y sensual."
+  },
+  "rayhaan-elixir": {
+    "fuente": "https://rayhaanperfumes.com/products/elixir",
+    "descripcion": "Aromático, ambarado y amaderado: arranca cítrico con frescura de menta, se enriquece con lavanda, benjuí y vainilla, y cierra con tonka, miel y tabaco.",
+    "notasClave": ["Cítricos", "Menta", "Lavanda", "Benjuí", "Vainilla", "Haba tonka", "Miel", "Tabaco"]
+  },
+  "rayhaan-crimson": {
+    "fuente": "https://rayhaanperfumes.com/products/crimson",
+    "descripcion": "Cálido, especiado y profundo, con una estela intensa y duradera. Para quien quiere hacerse notar."
+  },
+  "rayhaan-tropical-vibe": {
+    "fuente": "https://rayhaanperfumes.com/products/tropical-vibe",
+    "descripcion": "Un atardecer de playa en frasco: frutas exóticas, aire marino y calidez ambarada.",
+    "notasClave": ["Mango", "Piña", "Coco", "Notas marinas", "Ámbar"],
+    "ocasiones": ["dia"]
+  },
+  "rayhaan-jungle-vibe": {
+    "fuente": "https://rayhaanperfumes.com/products/rayhaan-jungle-vibe",
+    "descripcion": "Fresco y vibrante, lleno de naturaleza: cítricos y verdes al frente, seguidos de higo y sándalo.",
+    "notasClave": ["Bergamota", "Toronja", "Higo", "Sándalo"],
+    "ocasiones": ["dia"]
+  },
+  "rayhaan-pacific-aloha": {
+    "fuente": "https://rayhaanperfumes.com/products/pacific-aloha",
+    "descripcion": "Un verano que no termina: un toque cítrico, una ola de sandía y frescura hawaiana en cada aplicación.",
+    "notasClave": ["Cítricos", "Sandía"],
+    "ocasiones": ["dia"]
+  },
+  "rayhaan-aquatica": {
+    "fuente": "https://rayhaanperfumes.com/products/rayhaan-aquatica",
+    "descripcion": "El espíritu de los veranos sin fin y la brisa del mar: fresco, elegante y aventurero.",
+    "ocasiones": ["dia"]
+  },
+  "rayhaan-azul": {
+    "fuente": "https://rayhaanperfumes.com/products/azul",
+    "descripcion": "Frescura para días de sol y noches de verano.",
+    "ocasiones": ["dia"]
+  },
+  "rayhaan-kiss": {
+    "fuente": "https://rayhaanperfumes.com/products/rayhaan-kiss",
+    "descripcion": "Una apertura de caramelo que juega entre lo dulce y lo ácido. Dulzura madura, sensualidad refinada.",
+    "notasClave": ["Caramelo"]
+  },
+  "rayhaan-terra": {
+    "fuente": "https://rayhaanperfumes.com/products/rayhaan-terra",
+    "descripcion": "Cálido, especiado y terroso: cardamomo e incienso sobre un fondo de ámbar y oud. Misterioso y profundo.",
+    "notasClave": ["Cardamomo", "Incienso", "Ámbar", "Oud"]
+  },
+  "rayhaan-obsidian": {
+    "fuente": "https://rayhaanperfumes.com/products/rayhaan-obsidian",
+    "descripcion": "Sofisticación, fuerza y misterio: de la frescura delicada del iris al abrazo cálido del oud, el cuero y el cedro.",
+    "notasClave": ["Iris", "Oud", "Cuero", "Cedro"]
+  },
+  "rayhaan-nocturno-elixir": {
+    "fuente": "https://rayhaanperfumes.com/products/nocturno-elixir",
+    "descripcion": "Hecho para la noche: ámbar dorado que se mueve entre sombras.",
+    "notasClave": ["Ámbar"],
+    "ocasiones": ["noche"]
+  },
+  "rayhaan-italia": {
+    "fuente": "https://rayhaanperfumes.com/products/rayhaan-italia",
+    "descripcion": "Elegancia atemporal con el espíritu de una mañana soleada: luminoso, dulce y complejo, de la bergamota a la hoja de tabaco y la miel.",
+    "notasClave": ["Bergamota", "Hoja de tabaco", "Miel"]
+  },
+  "rayhaan-wolf": {
+    "fuente": "https://rayhaanperfumes.com/products/wolf",
+    "descripcion": "El calor especiado del cardamomo con un toque gourmand de toffee, sobre un fondo de maderas ambaradas de larga duración.",
+    "notasClave": ["Cardamomo", "Toffee", "Maderas ambaradas"]
+  },
+  "rayhaan-tiger": {
+    "fuente": "https://rayhaanperfumes.com/products/rayhaan-tiger",
+    "descripcion": "Fuerza y elegancia: abre especiado y fresco, tiene un corazón de flores sensuales y maderas preciosas, y cierra con pachulí, incienso y ámbar.",
+    "notasClave": ["Especias", "Flores", "Maderas", "Pachulí", "Incienso", "Ámbar"]
+  },
+  "rayhaan-pharaoh": {
+    "fuente": "https://rayhaanperfumes.com/products/wolf-copy",
+    "descripcion": "Más que un perfume, una presencia: profundo, oscuro y con una calidez que perdura."
+  },
+  "rayhaan-tonquin-giza": {
+    "fuente": "https://rayhaanperfumes.com/products/tonquin-giza",
+    "descripcion": "Cálido, profundo e imponente: un aroma que se despliega despacio y deja presencia en cada momento."
+  },
+  "armaf-club-de-nuit-bling": {
+    "fuente": "https://armaf.com/products/club-de-nuit-bling",
+    "descripcion": "Rico y envolvente: abre con cítricos, revela un corazón luminoso y descansa sobre vainilla y maderas aterciopeladas.",
+    "notas": {
+      "salida": ["Cítricos"],
+      "corazon": ["Acorde floral", "Acorde brillante"],
+      "fondo": ["Vainilla", "Maderas aterciopeladas"]
+    }
+  },
+  "armaf-club-de-nuit-maleka": {
+    "fuente": "https://armaf.com/products/club-de-nuit-maleka",
+    "descripcion": "Un floral frutal luminoso firmado por el perfumista Olivier Cresp: lichi y pimienta rosa, un corazón de iris y un fondo de praliné y sándalo.",
+    "notas": {
+      "salida": ["Lichi", "Bergamota", "Pimienta rosa"],
+      "corazon": ["Iris"],
+      "fondo": ["Praliné", "Sándalo", "Ambroxan"]
+    }
+  },
+  "armaf-odyssey-mandarin-sky-elixir": {
+    "fuente": "https://armaf.com/products/odyssey-mandarin-sky-elixir",
+    "descripcion": "Calidez ambarada y amaderada con un giro cítrico y gourmand: mandarina y azafrán, caramelo y tonka, y un fondo de vetiver y cedro.",
+    "notas": {
+      "salida": ["Salvia", "Mandarina", "Naranja", "Azafrán"],
+      "corazon": ["Caramelo", "Haba tonka", "Tagetes"],
+      "fondo": ["Vetiver", "Cedro", "Ambroxan"]
+    }
+  },
+  "armaf-odyssey-go-mango": {
+    "fuente": "https://armaf.com/products/odyssey-go-mango",
+    "descripcion": "Un gourmand tropical y jugoso, dulce y juguetón como un día de sol.",
+    "notas": {
+      "salida": ["Limón", "Pimienta rosa", "Jengibre", "Flores blancas"],
+      "corazon": ["Mango", "Haba tonka", "Maderas secas"],
+      "fondo": ["Vainilla", "Ámbar", "Madera de guayaco", "Almizcle", "Notas de nueces"]
+    },
+    "ocasiones": ["dia"]
+  },
+  "armaf-odyssey-artisto": {
+    "fuente": "https://armaf.com/products/odyssey-artisto",
+    "descripcion": "Amaderado aromático con sofisticación tropical: bergamota y salvia, un corazón de coco, frutas tropicales y canela, y un fondo de ámbar y vainilla.",
+    "notas": {
+      "salida": ["Bergamota", "Notas de nueces", "Salvia"],
+      "corazon": ["Coco", "Frutas tropicales", "Canela"],
+      "fondo": ["Ámbar", "Vainilla", "Haba tonka"]
+    }
+  },
+  "armaf-odyssey-marshmallow": {
+    "fuente": "https://armaf.com/products/odyssey-marshmallow",
+    "descripcion": "Un gourmand floral frutal, cremoso y suave como un malvavisco: frutas, flores y un fondo de praliné y vainilla.",
+    "notas": {
+      "salida": ["Coco", "Manzana", "Limón", "Peonía", "Lirio de los valles"],
+      "corazon": ["Malvavisco", "Fresa", "Durazno", "Albaricoque", "Frambuesa", "Azahar"],
+      "fondo": ["Queso mascarpone", "Praliné", "Vainilla", "Almizcle", "Haba tonka", "Ámbar"]
+    }
+  },
+  "armaf-odyssey-nexus": {
+    "fuente": "https://armaf.com/products/odyssey-nexus",
+    "descripcion": "Fresco aromático y acuático: cítricos y brisa marina, un corazón verde y herbal, y un fondo resinoso de incienso y pachulí.",
+    "notas": {
+      "salida": ["Cítricos", "Notas marinas"],
+      "corazon": ["Salvia", "Geranio", "Romero", "Jengibre"],
+      "fondo": ["Incienso", "Pachulí", "Maderas"]
+    }
+  }
+}

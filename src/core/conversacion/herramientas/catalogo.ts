@@ -80,7 +80,7 @@ export function obtenerProducto(config: ConfigAgente) {
     async ejecutar({ codigo }, { deps }) {
       const producto = await deps.catalogo.obtenerPorCodigo(codigo);
       if (!producto) return { ok: false, error: `No existe el producto ${codigo}.` };
-      return { ok: true, datos: resumen(producto), montos: montosDe([producto]) };
+      return { ok: true, datos: { ...resumen(producto), descripcion: producto.descripcion }, montos: montosDe([producto]) };
     },
   } satisfies Herramienta<z.infer<typeof esquema>>;
 }

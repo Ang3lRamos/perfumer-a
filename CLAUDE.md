@@ -31,6 +31,9 @@ Next.js 16 (App Router, `cacheComponents`), TypeScript, Tailwind 4, Supabase, Zo
   las tiendas Shopify oficiales de cada marca y las guarda en `supabase/datos/imagenes-oficiales.json`; si una
   tienda responde con límite de peticiones se omite y conserva lo anterior (no se reintenta ni se disfraza el
   cliente). Las de `cdn.shopify.com` se piden al ancho exacto con `src/infra/imagenes/cargador.ts`.
+- Fichas (descripción, pirámide de notas, ocasiones): `supabase/datos/fichas-oficiales.json`, extraídas SOLO del
+  texto oficial de la marca (`textos-oficiales.json`, que guarda `catalogo:imagenes`). `npm run catalogo:fichas`
+  completa las que falten con Claude (salida estructurada). Si la marca no da notas, no se inventan.
 - El código de producto (`LAT-051`) es un contrato con el agente: va en el mensaje prellenado de WhatsApp
   (`core/catalogo/referencia.ts`).
 

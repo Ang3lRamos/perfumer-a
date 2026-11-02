@@ -18,18 +18,35 @@ const PAUSA_ENTRE_PAGINAS_MS = 2000;
 const RAIZ = path.resolve(import.meta.dirname, "../..");
 const CATALOGO = path.join(RAIZ, "supabase/datos/catalogo-distribuidor.json");
 const SALIDA = path.join(RAIZ, "supabase/datos/imagenes-oficiales.json");
+// Texto oficial de cada producto: insumo de `npm run catalogo:fichas`, que extrae notas y descripción.
+const TEXTOS = path.join(RAIZ, "supabase/datos/textos-oficiales.json");
 
 const feed = z.object({
-  products: z.array(z.object({ title: z.string(), handle: z.string(), images: z.array(z.object({ src: z.url() })) })),
+  products: z.array(
+    z.object({
+      title: z.string(),
+      handle: z.string(),
+      body_html: z.string().nullable(),
+      images: z.array(z.object({ src: z.url() })),
+    }),
+  ),
 });
 type ProductoTienda = z.infer<typeof feed>["products"][number];
+
+const aTexto = (html: string | null) =>
+  (html ?? "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 
 async function leerTienda(base: string): Promise<ProductoTienda[] | null> {
   const productos: ProductoTienda[] = [];
   for (let pagina = 1; ; pagina++) {
     const respuesta = await fetch(`${base}/products.json?limit=250&page=${pagina}`);
     if (!respuesta.ok) {
-      console.warn(`${base}: HTTP ${respuesta.status}, se omite`);
+      console.warn(`${base}: HTTP ${respuesta.status} en la página ${pagina}, se usa lo obtenido`);
       return pagina === 1 ? null : productos;
     }
     const { products } = feed.parse(await respuesta.json());
@@ -39,33 +56,38 @@ async function leerTienda(base: string): Promise<ProductoTienda[] | null> {
   }
 }
 
+async function leerJson<T>(ruta: string): Promise<T> {
+  return JSON.parse(await readFile(ruta, "utf8").catch(() => "{}"));
+}
+
 async function main(): Promise<void> {
-  const catalogo: { slug: string; marca: string; nombre: string; concentracion: string | null }[] = JSON.parse(await readFile(CATALOGO, "utf8"));
-  // Se parte de lo ya obtenido: una tienda que hoy no responde conserva sus resultados anteriores.
-  const resultado: Record<string, { fuente: string; titulo: string; urls: string[] }> = JSON.parse(
-    await readFile(SALIDA, "utf8").catch(() => "{}"),
-  );
+  const catalogo: { slug: string; marca: string; nombre: string; concentracion: string | null }[] = await leerJson(CATALOGO);
+  // Se acumula sobre lo ya obtenido: una tienda que hoy responde a medias no borra coincidencias anteriores.
+  const imagenes = await leerJson<Record<string, { fuente: string; titulo: string; urls: string[] }>>(SALIDA);
+  const textos = await leerJson<Record<string, string>>(TEXTOS);
 
   for (const [marca, base] of Object.entries(TIENDAS)) {
     const delCatalogo = catalogo.filter((p) => p.marca === marca);
     const tienda = await leerTienda(base);
     if (!tienda) continue;
     for (const producto of delCatalogo) {
-      delete resultado[producto.slug];
       const nombre = producto.concentracion === "Extrait de Parfum" ? `${producto.nombre} Extrait` : producto.nombre;
       const coincidencias = tienda.filter((t) => t.images.length && mismoPerfume(nombre, t.title, marca));
       if (coincidencias.length !== 1) continue;
       const [elegido] = coincidencias;
-      resultado[producto.slug] = {
+      imagenes[producto.slug] = {
         fuente: `${base}/products/${elegido.handle}`,
         titulo: elegido.title,
         urls: elegido.images.slice(0, MAX_IMAGENES).map((i) => i.src),
       };
+      const texto = aTexto(elegido.body_html);
+      if (texto) textos[producto.slug] = texto;
     }
-    console.log(`${marca}: ${delCatalogo.filter((p) => resultado[p.slug]).length}/${delCatalogo.length} con imágenes oficiales`);
+    console.log(`${marca}: ${delCatalogo.filter((p) => imagenes[p.slug]).length}/${delCatalogo.length} con imágenes oficiales`);
   }
 
-  await writeFile(SALIDA, JSON.stringify(resultado, null, 2) + "\n");
+  await writeFile(SALIDA, JSON.stringify(imagenes, null, 2) + "\n");
+  await writeFile(TEXTOS, JSON.stringify(textos, null, 2) + "\n");
 }
 
 await main();

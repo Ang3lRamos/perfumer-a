@@ -39,6 +39,8 @@ const atributosPerfume = z.object({
       fondo: z.array(z.string()).default([]),
     })
     .optional(),
+  /** Notas que la marca menciona sin decir si son de salida, corazón o fondo. */
+  notasClave: z.array(z.string()).default([]),
   duracion: z.enum(["moderada", "larga", "muy_larga"]).optional(),
   estela: z.enum(["suave", "moderada", "intensa"]).optional(),
 });

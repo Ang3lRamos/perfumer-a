@@ -4,12 +4,14 @@ import { estaDisponible, precioDesde } from "@/core/catalogo/filtrar";
 import { fotosDeCalidad } from "@/core/catalogo/imagenes";
 import { formatearCop } from "@/core/catalogo/precio";
 import type { Producto } from "@/core/catalogo/tipos";
+import type { Atributos } from "@/config/negocio";
+import { notasDestacadas } from "@/features/ficha-producto/PiramideOlfativa";
 import { EtiquetaProducto } from "@/ui/EtiquetaProducto";
 
 const CLASE_IMAGEN =
   "object-contain p-2 mix-blend-multiply transition-[opacity,transform] duration-[var(--dur-slow)] ease-[var(--ease-out)]";
 
-export function TarjetaProducto({ producto, prioridad }: { producto: Producto; prioridad: boolean }) {
+export function TarjetaProducto({ producto, prioridad }: { producto: Producto<Atributos>; prioridad: boolean }) {
   const disponible = estaDisponible(producto);
   const precio = precioDesde(producto);
   const tamanos = producto.variantes.map((v) => v.tamanoMl).join(" / ");
@@ -17,6 +19,7 @@ export function TarjetaProducto({ producto, prioridad }: { producto: Producto; p
   const fotos = fotosDeCalidad(producto);
   const [principal, segunda] = fotos;
   const alt = `${producto.marca} ${producto.nombre}`;
+  const notas = notasDestacadas(producto.atributos);
 
   return (
     <Link href={`/p/${producto.slug}`} className="group block">
@@ -67,6 +70,7 @@ export function TarjetaProducto({ producto, prioridad }: { producto: Producto; p
         <h3 className="font-display text-xl leading-tight group-hover:underline group-hover:decoration-1 group-hover:underline-offset-4">
           {producto.nombre}
         </h3>
+        {notas.length > 0 && <p className="line-clamp-1 text-xs text-tinta-suave">{notas.join(" · ")}</p>}
         <p className="text-sm font-medium">
           {precio === null ? (
             <span className="text-agotado">Sin precio por ahora</span>

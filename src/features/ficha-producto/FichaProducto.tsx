@@ -5,10 +5,14 @@ import { fotosDeCalidad } from "@/core/catalogo/imagenes";
 import type { Producto } from "@/core/catalogo/tipos";
 import { EtiquetaProducto } from "@/ui/EtiquetaProducto";
 import { GaleriaProducto } from "./GaleriaProducto";
+import { PiramideOlfativa } from "./PiramideOlfativa";
 import { SelectorCompra } from "./SelectorCompra";
 
 const etiquetaDe = (clave: string, valor: string) =>
   negocio.filtros.find((f) => f.clave === clave)?.opciones.find((o) => o.valor === valor)?.etiqueta ?? valor;
+
+const enumerar = (valores: string[]) =>
+  valores.length > 1 ? `${valores.slice(0, -1).join(", ")} y ${valores.at(-1)}` : (valores[0] ?? "");
 
 const TIPOS: Record<Producto["tipo"], string> = {
   original: "Original",
@@ -16,42 +20,38 @@ const TIPOS: Record<Producto["tipo"], string> = {
   marca_propia: "Marca propia",
 };
 
-function Piramide({ notas }: { notas: NonNullable<Atributos["notas"]> }) {
-  const niveles = [
-    ["Salida", notas.salida],
-    ["Corazón", notas.corazon],
-    ["Fondo", notas.fondo],
-  ] as const;
-  return (
-    <dl className="divide-y divide-linea border-y border-linea">
-      {niveles
-        .filter(([, lista]) => lista.length)
-        .map(([nivel, lista]) => (
-          <div key={nivel} className="grid grid-cols-[6rem_1fr] gap-4 py-3">
-            <dt className="font-mono text-xs uppercase tracking-wider text-tinta-suave">{nivel}</dt>
-            <dd>{lista.join(", ")}</dd>
-          </div>
-        ))}
-    </dl>
-  );
+const CONCENTRACIONES: Record<string, string> = {
+  EDP: "Eau de Parfum",
+  Parfum: "Parfum",
+  "Extrait de Parfum": "Extrait de Parfum",
+};
+
+/** Sin descripción de la marca, se arma una frase solo con datos de la ficha: nada inventado. */
+function descripcionBase(producto: Producto<Atributos>): string | null {
+  const familias = producto.atributos.familias.map((f) => etiquetaDe("familias", f).toLowerCase());
+  if (!familias.length) return null;
+  const para = producto.atributos.genero ? `, ${etiquetaDe("genero", producto.atributos.genero).toLowerCase()}` : "";
+  return `Una fragancia ${enumerar(familias)}${para}, de la casa ${producto.marca}.`;
 }
 
-function Rasgos({ atributos }: { atributos: Atributos }) {
+function Rasgos({ producto }: { producto: Producto<Atributos> }) {
+  const { atributos } = producto;
   const rasgos = [
     atributos.genero && ["Para", etiquetaDe("genero", atributos.genero)],
     atributos.familias.length && ["Familia", atributos.familias.map((f) => etiquetaDe("familias", f)).join(" · ")],
-    atributos.ocasiones.length && ["Ocasión", atributos.ocasiones.map((o) => etiquetaDe("ocasiones", o)).join(" · ")],
+    atributos.ocasiones.length && ["Ideal para", atributos.ocasiones.map((o) => etiquetaDe("ocasiones", o)).join(" · ")],
+    producto.presentacion && ["Concentración", CONCENTRACIONES[producto.presentacion] ?? producto.presentacion],
+    ["Tamaño", producto.variantes.map((v) => `${v.tamanoMl} ml`).join(" / ")],
     atributos.duracion && ["Duración", atributos.duracion.replace("_", " ")],
     atributos.estela && ["Estela", atributos.estela],
   ].filter((rasgo): rasgo is [string, string] => Array.isArray(rasgo));
 
-  if (!rasgos.length) return null;
   return (
-    <dl className="grid grid-cols-2 gap-x-6 gap-y-4">
+    <dl className="grid grid-cols-2 gap-px border border-linea bg-linea">
       {rasgos.map(([nombre, valor]) => (
-        <div key={nombre}>
-          <dt className="text-xs uppercase tracking-[0.14em] text-tinta-suave">{nombre}</dt>
-          <dd className="mt-0.5 first-letter:uppercase">{valor}</dd>
+        <div key={nombre} className="bg-papel p-4">
+          <dt className="text-[11px] uppercase tracking-[0.14em] text-tinta-suave">{nombre}</dt>
+          <dd className="mt-1 first-letter:uppercase">{valor}</dd>
         </div>
       ))}
     </dl>
@@ -59,8 +59,9 @@ function Rasgos({ atributos }: { atributos: Atributos }) {
 }
 
 export function FichaProducto({ producto }: { producto: Producto<Atributos> }) {
-  const { atributos } = producto;
   const fotos = fotosDeCalidad(producto);
+  const descripcion = producto.descripcion ?? descripcionBase(producto);
+
   return (
     <article className="grid gap-8 pt-6 lg:grid-cols-2 lg:gap-16 lg:pt-12">
       <div className="-mx-4 sm:mx-0 lg:sticky lg:top-6 lg:self-start">
@@ -77,27 +78,28 @@ export function FichaProducto({ producto }: { producto: Producto<Atributos> }) {
           </div>
         )}
       </div>
-      <div className="space-y-8">
-        <header>
-          <Link href={`/?marca=${encodeURIComponent(producto.marca)}`} className="text-xs uppercase tracking-[0.14em] text-tinta-suave hover:text-tinta">
-            {producto.marca}
-          </Link>
-          <h1 className="mt-1 font-display text-5xl leading-none sm:text-6xl">{producto.nombre}</h1>
-          <p className="mt-3 font-mono text-xs uppercase tracking-wider text-tinta-suave">
-            Ref. {producto.codigo} · {producto.presentacion ?? "Perfume"} · {TIPOS[producto.tipo]}
-          </p>
+      <div className="space-y-10">
+        <header className="space-y-4">
+          <div>
+            <Link
+              href={`/?marca=${encodeURIComponent(producto.marca)}`}
+              className="text-xs uppercase tracking-[0.14em] text-tinta-suave hover:text-tinta"
+            >
+              {producto.marca}
+            </Link>
+            <h1 className="mt-1 font-display text-5xl leading-none sm:text-6xl">{producto.nombre}</h1>
+            <p className="mt-3 font-mono text-xs uppercase tracking-wider text-tinta-suave">
+              Ref. {producto.codigo} · {TIPOS[producto.tipo]}
+            </p>
+          </div>
+          {descripcion && <p className="max-w-prose text-lg leading-relaxed">{descripcion}</p>}
           {producto.tipo === "inspirado" && producto.inspiracionNota && (
-            <p className="mt-3 text-sm text-tinta-suave">{producto.inspiracionNota}</p>
+            <p className="text-sm text-tinta-suave">{producto.inspiracionNota}</p>
           )}
         </header>
-        <SelectorCompra
-          producto={producto}
-          whatsapp={envPublico.NEXT_PUBLIC_WHATSAPP_NUMERO}
-          envio={negocio.cobertura.envio}
-        />
-        {producto.descripcion && <p className="leading-relaxed">{producto.descripcion}</p>}
-        <Rasgos atributos={atributos} />
-        {atributos.notas && <Piramide notas={atributos.notas} />}
+        <SelectorCompra producto={producto} whatsapp={envPublico.NEXT_PUBLIC_WHATSAPP_NUMERO} envio={negocio.cobertura.envio} />
+        <PiramideOlfativa atributos={producto.atributos} />
+        <Rasgos producto={producto} />
       </div>
     </article>
   );
