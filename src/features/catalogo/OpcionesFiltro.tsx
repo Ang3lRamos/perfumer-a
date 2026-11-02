@@ -82,7 +82,7 @@ export function FiltrosActivos({ grupos }: { grupos: GrupoFiltro[] }) {
           <span aria-hidden className="text-tinta-suave">×</span>
         </button>
       ))}
-      <button type="button" onClick={limpiarTodo} className="ml-1 text-sm underline underline-offset-4 hover:text-ambar">
+      <button type="button" onClick={limpiarTodo} className="ml-1 text-sm underline underline-offset-4 hover:text-acento">
         Limpiar todo
       </button>
     </div>

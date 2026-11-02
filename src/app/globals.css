@@ -1,16 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --papel: #f3eee5;
-  --superficie: #fbf8f2;
-  --vitrina: #ece5d8;
-  --tinta: #1d1813;
-  --tinta-suave: #62584d;
-  --linea: #d9cfbf;
-  --ambar: #8a4a1c;
-  --ambar-hover: #713b14;
-  --sobre-ambar: #fbf8f2;
-  --agotado: #9a8f82;
+  /* Blanco y negro: el color lo ponen las fotos de los frascos. */
+  --papel: #ffffff;
+  --superficie: #ffffff;
+  --vitrina: #f4f4f4;
+  --tinta: #111111;
+  --tinta-suave: #6b6b6b;
+  --linea: #e4e4e4;
+  --acento: #111111;
+  --acento-hover: #3a3a3a;
+  --sobre-acento: #ffffff;
+  --agotado: #9a9a9a;
 
   --radio: 2px;
 
@@ -28,9 +29,9 @@
   --color-tinta: var(--tinta);
   --color-tinta-suave: var(--tinta-suave);
   --color-linea: var(--linea);
-  --color-ambar: var(--ambar);
-  --color-ambar-hover: var(--ambar-hover);
-  --color-sobre-ambar: var(--sobre-ambar);
+  --color-acento: var(--acento);
+  --color-acento-hover: var(--acento-hover);
+  --color-sobre-acento: var(--sobre-acento);
   --color-agotado: var(--agotado);
   --radius-etiqueta: var(--radio);
   --font-display: var(--fuente-display);
@@ -46,7 +47,7 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid var(--ambar);
+  outline: 2px solid var(--acento);
   outline-offset: 2px;
 }
 

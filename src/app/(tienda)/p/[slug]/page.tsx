@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { precioDesde } from "@/core/catalogo/filtrar";
+import { fotosDeCalidad } from "@/core/catalogo/imagenes";
 import { formatearCop } from "@/core/catalogo/precio";
 import { obtenerCatalogo, obtenerProducto } from "@/features/catalogo/datos";
 import { FichaProducto } from "@/features/ficha-producto/FichaProducto";
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: PageProps<"/p/[slug]">): Prom
     title: titulo,
     description: descripcion,
     alternates: { canonical: `/p/${producto.slug}` },
-    openGraph: { title: titulo, description: descripcion, images: producto.imagenes.slice(0, 1) },
+    openGraph: { title: titulo, description: descripcion, images: fotosDeCalidad(producto).slice(0, 1) },
   };
 }
 

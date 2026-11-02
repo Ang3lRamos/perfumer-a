@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { envPublico } from "@/config/env";
 import { negocio, type Atributos } from "@/config/negocio";
+import { fotosDeCalidad } from "@/core/catalogo/imagenes";
 import type { Producto } from "@/core/catalogo/tipos";
+import { EtiquetaProducto } from "@/ui/EtiquetaProducto";
 import { GaleriaProducto } from "./GaleriaProducto";
 import { SelectorCompra } from "./SelectorCompra";
 
@@ -58,10 +60,22 @@ function Rasgos({ atributos }: { atributos: Atributos }) {
 
 export function FichaProducto({ producto }: { producto: Producto<Atributos> }) {
   const { atributos } = producto;
+  const fotos = fotosDeCalidad(producto);
   return (
     <article className="grid gap-8 pt-6 lg:grid-cols-2 lg:gap-16 lg:pt-12">
       <div className="-mx-4 sm:mx-0 lg:sticky lg:top-6 lg:self-start">
-        <GaleriaProducto imagenes={producto.imagenes} alt={`${producto.marca} ${producto.nombre}`} />
+        {fotos.length ? (
+          <GaleriaProducto imagenes={fotos} alt={`${producto.marca} ${producto.nombre}`} />
+        ) : (
+          <div className="relative aspect-square">
+            <EtiquetaProducto
+              grande
+              marca={producto.marca}
+              nombre={producto.nombre}
+              detalle={`${producto.variantes.map((v) => v.tamanoMl).join(" / ")} ml · ${producto.presentacion ?? ""}`}
+            />
+          </div>
+        )}
       </div>
       <div className="space-y-8">
         <header>

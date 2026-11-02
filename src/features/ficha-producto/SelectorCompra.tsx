@@ -20,7 +20,7 @@ export function SelectorCompra({ producto, whatsapp, envio }: { producto: Produc
         <p className="font-medium">Agotado por ahora</p>
         <a
           href={enlaceWhatsapp(whatsapp, `Hola, ¿cuándo vuelve el ${producto.marca} ${producto.nombre}? (ref. ${producto.codigo})`)}
-          className="mt-2 inline-block text-sm underline underline-offset-4 hover:text-ambar"
+          className="mt-2 inline-block text-sm underline underline-offset-4 hover:text-acento"
         >
           Pregúntanos cuándo llega
         </a>
@@ -70,7 +70,7 @@ export function SelectorCompra({ producto, whatsapp, envio }: { producto: Produc
         <button
           type="button"
           onClick={agregarAlCarrito}
-          className="flex-1 rounded-etiqueta bg-ambar px-6 py-4 font-medium text-sobre-ambar transition-colors duration-[var(--dur-fast)] hover:bg-ambar-hover"
+          className="flex-1 rounded-etiqueta bg-acento px-6 py-4 font-medium text-sobre-acento transition-colors duration-[var(--dur-fast)] hover:bg-acento-hover"
         >
           Agregar al carrito
         </button>

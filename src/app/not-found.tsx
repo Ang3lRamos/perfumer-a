@@ -10,7 +10,7 @@ export default function NoEncontrado() {
         <p className="mt-4 text-tinta-suave">Puede que ya no la tengamos o que el enlace esté incompleto.</p>
         <Link
           href="/"
-          className="mt-8 inline-block rounded-etiqueta bg-tinta px-6 py-3 text-sm font-medium text-papel hover:bg-ambar"
+          className="mt-8 inline-block rounded-etiqueta bg-tinta px-6 py-3 text-sm font-medium text-papel hover:bg-acento"
         >
           Ver el catálogo
         </Link>

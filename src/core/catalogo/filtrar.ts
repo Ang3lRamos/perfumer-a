@@ -1,4 +1,5 @@
 import { valoresDeAtributo } from "./facetas";
+import { fotosDeCalidad } from "./imagenes";
 import type { FiltrosCatalogo, Orden, Producto, Variante } from "./tipos";
 
 export function precioDesde(producto: Producto): number | null {
@@ -55,8 +56,10 @@ export function filtrarCatalogo<P extends Producto>(productos: P[], filtros: Fil
 export function ordenarCatalogo<P extends Producto>(productos: P[], orden: Orden): P[] {
   const conPrecio = (p: P) => precioDesde(p) ?? Number.POSITIVE_INFINITY;
   const comparadores: Record<Orden, (a: P, b: P) => number> = {
-    // Disponibles primero; dentro de cada grupo se respeta el orden de origen.
-    relevancia: (a, b) => Number(estaDisponible(b)) - Number(estaDisponible(a)),
+    // Disponibles primero y, entre ellos, los que tienen foto de calidad: es lo primero que ve el cliente.
+    relevancia: (a, b) =>
+      Number(estaDisponible(b)) - Number(estaDisponible(a)) ||
+      Number(fotosDeCalidad(b).length > 0) - Number(fotosDeCalidad(a).length > 0),
     precio_asc: (a, b) => conPrecio(a) - conPrecio(b),
     precio_desc: (a, b) => (precioDesde(b) ?? -1) - (precioDesde(a) ?? -1),
     nombre: (a, b) => `${a.marca} ${a.nombre}`.localeCompare(`${b.marca} ${b.nombre}`, "es"),

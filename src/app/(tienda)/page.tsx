@@ -20,7 +20,7 @@ export default function PaginaCatalogo({ searchParams }: PageProps<"/">) {
     <>
       <section className="py-10 sm:py-16">
         <h1 className="max-w-3xl font-display text-5xl leading-[0.95] tracking-tight sm:text-7xl">
-          Perfumería árabe original, <em className="text-ambar">a tu puerta.</em>
+          Perfumería árabe original, <em className="text-acento">a tu puerta.</em>
         </h1>
         <p className="mt-5 max-w-md text-tinta-suave">
           Elige tu fragancia, escríbenos por WhatsApp y paga cuando la tengas en la mano.

@@ -1,23 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
 import { estaDisponible, precioDesde } from "@/core/catalogo/filtrar";
+import { fotosDeCalidad } from "@/core/catalogo/imagenes";
 import { formatearCop } from "@/core/catalogo/precio";
 import type { Producto } from "@/core/catalogo/tipos";
+import { EtiquetaProducto } from "@/ui/EtiquetaProducto";
 
 const CLASE_IMAGEN =
-  "object-contain p-4 mix-blend-multiply transition-[opacity,transform] duration-[var(--dur-slow)] ease-[var(--ease-out)]";
+  "object-contain p-2 mix-blend-multiply transition-[opacity,transform] duration-[var(--dur-slow)] ease-[var(--ease-out)]";
 
 export function TarjetaProducto({ producto, prioridad }: { producto: Producto; prioridad: boolean }) {
   const disponible = estaDisponible(producto);
   const precio = precioDesde(producto);
   const tamanos = producto.variantes.map((v) => v.tamanoMl).join(" / ");
   const variasVariantes = producto.variantes.filter((v) => v.disponible).length > 1;
-  const [principal, segunda] = producto.imagenes;
+  const fotos = fotosDeCalidad(producto);
+  const [principal, segunda] = fotos;
   const alt = `${producto.marca} ${producto.nombre}`;
 
   return (
     <Link href={`/p/${producto.slug}`} className="group block">
       <div className="relative aspect-[4/5] overflow-hidden bg-vitrina data-[agotado=true]:opacity-50" data-agotado={!disponible}>
+        {!principal && (
+          <EtiquetaProducto
+            marca={producto.marca}
+            nombre={producto.nombre}
+            detalle={`${tamanos} ml · ${producto.presentacion ?? ""}`}
+          />
+        )}
         {principal && (
           <Image
             src={principal}
@@ -43,9 +53,9 @@ export function TarjetaProducto({ producto, prioridad }: { producto: Producto; p
             Agotado
           </span>
         )}
-        {producto.imagenes.length > 1 && (
+        {fotos.length > 1 && (
           <span className="absolute bottom-2 right-2 font-mono text-[10px] text-tinta-suave">
-            {producto.imagenes.length} fotos
+            {fotos.length} fotos
           </span>
         )}
       </div>

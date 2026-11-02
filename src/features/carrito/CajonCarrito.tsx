@@ -119,7 +119,7 @@ export function CajonCarrito({ whatsapp, ciudades, envio }: { whatsapp: string; 
               href={enlace}
               target="_blank"
               rel="noopener"
-              className="flex w-full items-center justify-center rounded-etiqueta bg-ambar px-6 py-4 font-medium text-sobre-ambar transition-colors duration-[var(--dur-fast)] hover:bg-ambar-hover"
+              className="flex w-full items-center justify-center rounded-etiqueta bg-acento px-6 py-4 font-medium text-sobre-acento transition-colors duration-[var(--dur-fast)] hover:bg-acento-hover"
             >
               Enviar pedido por WhatsApp
             </a>

@@ -35,7 +35,7 @@ export function GaleriaProducto({ imagenes, alt }: { imagenes: string[]; alt: st
                 fill
                 priority={i === 0}
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-contain p-8 mix-blend-multiply"
+                className="object-contain p-4 mix-blend-multiply"
               />
             </div>
           ))}
