@@ -9,6 +9,8 @@ const RAIZ = path.resolve(import.meta.dirname, "../..");
 const TEXTOS = path.join(RAIZ, "supabase/datos/textos-oficiales.json");
 const IMAGENES = path.join(RAIZ, "supabase/datos/imagenes-oficiales.json");
 const FICHAS = path.join(RAIZ, "supabase/datos/fichas-oficiales.json");
+// Textos revisados a mano que no sirven de fuente (contradictorios o copiados de otro producto).
+const NO_CONFIABLES = path.join(RAIZ, "supabase/datos/textos-no-confiables.json");
 
 const OCASIONES = negocio.filtros.find((f) => f.clave === "ocasiones")?.opciones.map((o) => o.valor) ?? [];
 
@@ -38,7 +40,8 @@ async function main(): Promise<void> {
   const textos = await leerJson<Record<string, string>>(TEXTOS);
   const imagenes = await leerJson<Record<string, { fuente: string }>>(IMAGENES);
   const fichas = await leerJson<Record<string, unknown>>(FICHAS);
-  const pendientes = Object.keys(textos).filter((slug) => !fichas[slug]);
+  const noConfiables = await leerJson<Record<string, string>>(NO_CONFIABLES);
+  const pendientes = Object.keys(textos).filter((slug) => !fichas[slug] && !noConfiables[slug]);
   console.log(`${pendientes.length} productos con texto oficial y sin ficha`);
 
   for (const slug of pendientes) {

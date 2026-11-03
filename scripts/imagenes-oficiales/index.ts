@@ -20,6 +20,8 @@ const CATALOGO = path.join(RAIZ, "supabase/datos/catalogo-distribuidor.json");
 const SALIDA = path.join(RAIZ, "supabase/datos/imagenes-oficiales.json");
 // Texto oficial de cada producto: insumo de `npm run catalogo:fichas`, que extrae notas y descripción.
 const TEXTOS = path.join(RAIZ, "supabase/datos/textos-oficiales.json");
+// Coincidencias revisadas a mano y descartadas (slug → página de la tienda): no se vuelven a aceptar.
+const RECHAZADAS = path.join(RAIZ, "supabase/datos/coincidencias-rechazadas.json");
 
 const feed = z.object({
   products: z.array(
@@ -74,6 +76,7 @@ async function main(): Promise<void> {
   // Se acumula sobre lo ya obtenido: una tienda que hoy responde a medias no borra coincidencias anteriores.
   const imagenes = await leerJson<Record<string, { fuente: string; titulo: string; urls: string[] }>>(SALIDA);
   const textos = await leerJson<Record<string, string>>(TEXTOS);
+  const rechazadas = await leerJson<Record<string, string>>(RECHAZADAS);
 
   for (const [marca, base] of Object.entries(TIENDAS)) {
     const delCatalogo = catalogo.filter((p) => p.marca === marca);
@@ -84,8 +87,10 @@ async function main(): Promise<void> {
       const coincidencias = tienda.filter((t) => t.images.length && mismoPerfume(nombre, t.title, marca));
       if (coincidencias.length !== 1) continue;
       const [elegido] = coincidencias;
+      const fuente = `${base}/products/${elegido.handle}`;
+      if (rechazadas[producto.slug] === fuente) continue;
       imagenes[producto.slug] = {
-        fuente: `${base}/products/${elegido.handle}`,
+        fuente,
         titulo: elegido.title,
         urls: elegido.images.slice(0, MAX_IMAGENES).map((i) => i.src),
       };

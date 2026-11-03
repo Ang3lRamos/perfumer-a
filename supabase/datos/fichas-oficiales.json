@@ -2,90 +2,218 @@
   "french-avenue-liquid-brun": {
     "fuente": "https://frenchavenue.com/products/liquid-brun",
     "descripcion": "Una vuelta a la vainilla amaderada, llevada un paso más allá con cítricos especiados y canela. El equilibrio justo entre lo dulce y lo especiado.",
-    "notasClave": ["Vainilla", "Canela", "Cítricos especiados"]
+    "notasClave": [
+      "Vainilla",
+      "Canela",
+      "Cítricos especiados"
+    ]
   },
   "french-avenue-cocoa-morado": {
     "fuente": "https://frenchavenue.com/products/cocoa-morado",
     "descripcion": "Un oriental amaderado que abre cálido y especiado, gana profundidad con dátiles, oud e incienso, y termina aterciopelado con vainilla, tonka y cuero.",
     "notas": {
-      "salida": ["Canela", "Azafrán", "Cardamomo", "Jengibre", "Pimienta rosa"],
-      "corazon": ["Dátiles", "Oud", "Incienso", "Mirra", "Davana"],
-      "fondo": ["Vainilla", "Haba tonka", "Cuero", "Pachulí", "Láudano", "Mate"]
+      "salida": [
+        "Canela",
+        "Azafrán",
+        "Cardamomo",
+        "Jengibre",
+        "Pimienta rosa"
+      ],
+      "corazon": [
+        "Dátiles",
+        "Oud",
+        "Incienso",
+        "Mirra",
+        "Davana"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Haba tonka",
+        "Cuero",
+        "Pachulí",
+        "Láudano",
+        "Mate"
+      ]
     }
   },
   "french-avenue-azzure-aoud": {
     "fuente": "https://frenchavenue.com/products/azzure-aoud",
     "descripcion": "Hoja de violeta terrosa con grosella oscura y ahumada, sobre un fondo profundo de resinas y maderas. Intenso y diferente.",
-    "notasClave": ["Hoja de violeta", "Grosella", "Resinas", "Maderas"]
+    "notasClave": [
+      "Hoja de violeta",
+      "Grosella",
+      "Resinas",
+      "Maderas"
+    ]
   },
   "french-avenue-atlantis-extrait-de-parfum": {
     "fuente": "https://frenchavenue.com/products/atlantis-extrait",
     "descripcion": "Floral frutal, fresco y juvenil: naranja jugosa y sandía, un corazón de coco cremoso y flores blancas, y una estela cálida de vainilla y cacao. La marca indica hasta 12 horas de duración.",
     "notas": {
-      "salida": ["Naranja", "Sandía"],
-      "corazon": ["Coco", "Flores blancas"],
-      "fondo": ["Vainilla", "Cacao"]
+      "salida": [
+        "Naranja",
+        "Sandía"
+      ],
+      "corazon": [
+        "Coco",
+        "Flores blancas"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Cacao"
+      ]
     },
-    "ocasiones": ["dia", "noche"]
+    "ocasiones": [
+      "dia",
+      "noche"
+    ]
   },
   "french-avenue-ghost-spectre": {
     "fuente": "https://frenchavenue.com/products/spectre-ghost",
     "descripcion": "Arranca especiado y fresco con un toque cítrico, pasa a un corazón floral y dulce, y se asienta en una mezcla cálida y almizclada.",
-    "notasClave": ["Especias", "Cítricos", "Flores", "Almizcle"]
+    "notasClave": [
+      "Especias",
+      "Cítricos",
+      "Flores",
+      "Almizcle"
+    ]
   },
   "french-avenue-veneno-blanco": {
     "fuente": "https://frenchavenue.com/products/veneno-bianco",
     "descripcion": "Floral ambarado, sofisticado y cálido: una apertura cremosa y cítrica, un corazón de flor de tiaré e ylang-ylang, y un fondo suave de coco, vainilla y maderas.",
     "notas": {
-      "salida": ["Bergamota", "Neroli", "Leche"],
-      "corazon": ["Flor de tiaré", "Ylang-ylang", "Flores blancas"],
-      "fondo": ["Coco", "Vainilla", "Madera de guayaco", "Láudano"]
+      "salida": [
+        "Bergamota",
+        "Neroli",
+        "Leche"
+      ],
+      "corazon": [
+        "Flor de tiaré",
+        "Ylang-ylang",
+        "Flores blancas"
+      ],
+      "fondo": [
+        "Coco",
+        "Vainilla",
+        "Madera de guayaco",
+        "Láudano"
+      ]
     }
   },
   "french-avenue-vulcan-feu": {
     "fuente": "https://frenchavenue.com/products/vulcan-feu",
     "descripcion": "Un oriental amaderado potente: abre frutal y vibrante con jengibre y mango, sigue con jazmín y praliné, y deja una estela cálida de cedro, ámbar gris y tonka.",
     "notas": {
-      "salida": ["Jengibre", "Mango", "Limón", "Ruibarbo"],
-      "corazon": ["Jazmín", "Violeta", "Praliné", "Pimienta rosa"],
-      "fondo": ["Cedro", "Ámbar gris", "Haba tonka", "Musgo"]
+      "salida": [
+        "Jengibre",
+        "Mango",
+        "Limón",
+        "Ruibarbo"
+      ],
+      "corazon": [
+        "Jazmín",
+        "Violeta",
+        "Praliné",
+        "Pimienta rosa"
+      ],
+      "fondo": [
+        "Cedro",
+        "Ámbar gris",
+        "Haba tonka",
+        "Musgo"
+      ]
     }
   },
   "arabiyat-uhud": {
     "fuente": "https://arabiyatprestige.com/products/arabiyat-prestige-uhud-edp-100ml-unisex",
     "descripcion": "Dulce, aterciopelado y adictivo: un gourmand con toques florales que se siente acogedor de día y cautivador de noche.",
     "notas": {
-      "salida": ["Frutos rojos", "Rosa", "Caramelo"],
-      "corazon": ["Haba tonka", "Miel", "Frambuesa"],
-      "fondo": ["Almizcle", "Vainilla", "Ámbar"]
+      "salida": [
+        "Frutos rojos",
+        "Rosa",
+        "Caramelo"
+      ],
+      "corazon": [
+        "Haba tonka",
+        "Miel",
+        "Frambuesa"
+      ],
+      "fondo": [
+        "Almizcle",
+        "Vainilla",
+        "Ámbar"
+      ]
     },
-    "ocasiones": ["dia", "noche"]
+    "ocasiones": [
+      "dia",
+      "noche"
+    ]
   },
   "arabiyat-marwa": {
     "fuente": "https://arabiyatprestige.com/products/arabiyat-prestige-marwa-edp-100ml-unisex",
     "descripcion": "Fresco, ahumado y refinado: arranca cítrico con un toque herbal, se vuelve sereno con té e incienso, y cierra limpio y amaderado. Versátil para cualquier momento.",
     "notas": {
-      "salida": ["Bergamota", "Petit grain", "Jengibre"],
-      "corazon": ["Geranio", "Té", "Incienso"],
-      "fondo": ["Madera de guayaco", "Ambroxan", "Almizcle"]
+      "salida": [
+        "Bergamota",
+        "Petit grain",
+        "Jengibre"
+      ],
+      "corazon": [
+        "Geranio",
+        "Té",
+        "Incienso"
+      ],
+      "fondo": [
+        "Madera de guayaco",
+        "Ambroxan",
+        "Almizcle"
+      ]
     }
   },
   "arabiyat-mahd-al-dhahab": {
     "fuente": "https://arabiyatprestige.com/products/arabiyat-prestige-mahd-al-dahab-edp-100ml-unisex",
     "descripcion": "Cítrico, aromático y dorado: una salida chispeante de toronja y bergamota, un corazón herbal y especiado, y un fondo cálido de sándalo, vainilla y ámbar.",
     "notas": {
-      "salida": ["Toronja", "Bergamota", "Enebro", "Frutos rojos"],
-      "corazon": ["Salvia", "Ciprés", "Jengibre"],
-      "fondo": ["Sándalo", "Pachulí", "Vainilla", "Ámbar"]
+      "salida": [
+        "Toronja",
+        "Bergamota",
+        "Enebro",
+        "Frutos rojos"
+      ],
+      "corazon": [
+        "Salvia",
+        "Ciprés",
+        "Jengibre"
+      ],
+      "fondo": [
+        "Sándalo",
+        "Pachulí",
+        "Vainilla",
+        "Ámbar"
+      ]
     }
   },
   "arabiyat-lutfah-first-love": {
     "fuente": "https://arabiyatprestige.com/products/arabiyat-prestige-lutfah-first-love-edp-80ml-unisex",
     "descripcion": "Dulce y romántico: abre fresco con limón y durazno, florece con jazmín e ylang-ylang, y envuelve con vainilla, caramelo y almizcle.",
     "notas": {
-      "salida": ["Limón", "Durazno", "Ciprés"],
-      "corazon": ["Jazmín", "Ylang-ylang", "Violeta", "Notas lácteas"],
-      "fondo": ["Vainilla", "Caramelo", "Heliotropo", "Almizcle"]
+      "salida": [
+        "Limón",
+        "Durazno",
+        "Ciprés"
+      ],
+      "corazon": [
+        "Jazmín",
+        "Ylang-ylang",
+        "Violeta",
+        "Notas lácteas"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Caramelo",
+        "Heliotropo",
+        "Almizcle"
+      ]
     }
   },
   "rayhaan-lion": {
@@ -95,7 +223,16 @@
   "rayhaan-elixir": {
     "fuente": "https://rayhaanperfumes.com/products/elixir",
     "descripcion": "Aromático, ambarado y amaderado: arranca cítrico con frescura de menta, se enriquece con lavanda, benjuí y vainilla, y cierra con tonka, miel y tabaco.",
-    "notasClave": ["Cítricos", "Menta", "Lavanda", "Benjuí", "Vainilla", "Haba tonka", "Miel", "Tabaco"]
+    "notasClave": [
+      "Cítricos",
+      "Menta",
+      "Lavanda",
+      "Benjuí",
+      "Vainilla",
+      "Haba tonka",
+      "Miel",
+      "Tabaco"
+    ]
   },
   "rayhaan-crimson": {
     "fuente": "https://rayhaanperfumes.com/products/crimson",
@@ -104,66 +241,121 @@
   "rayhaan-tropical-vibe": {
     "fuente": "https://rayhaanperfumes.com/products/tropical-vibe",
     "descripcion": "Un atardecer de playa en frasco: frutas exóticas, aire marino y calidez ambarada.",
-    "notasClave": ["Mango", "Piña", "Coco", "Notas marinas", "Ámbar"],
-    "ocasiones": ["dia"]
+    "notasClave": [
+      "Mango",
+      "Piña",
+      "Coco",
+      "Notas marinas",
+      "Ámbar"
+    ],
+    "ocasiones": [
+      "dia"
+    ]
   },
   "rayhaan-jungle-vibe": {
     "fuente": "https://rayhaanperfumes.com/products/rayhaan-jungle-vibe",
     "descripcion": "Fresco y vibrante, lleno de naturaleza: cítricos y verdes al frente, seguidos de higo y sándalo.",
-    "notasClave": ["Bergamota", "Toronja", "Higo", "Sándalo"],
-    "ocasiones": ["dia"]
+    "notasClave": [
+      "Bergamota",
+      "Toronja",
+      "Higo",
+      "Sándalo"
+    ],
+    "ocasiones": [
+      "dia"
+    ]
   },
   "rayhaan-pacific-aloha": {
     "fuente": "https://rayhaanperfumes.com/products/pacific-aloha",
     "descripcion": "Un verano que no termina: un toque cítrico, una ola de sandía y frescura hawaiana en cada aplicación.",
-    "notasClave": ["Cítricos", "Sandía"],
-    "ocasiones": ["dia"]
+    "notasClave": [
+      "Cítricos",
+      "Sandía"
+    ],
+    "ocasiones": [
+      "dia"
+    ]
   },
   "rayhaan-aquatica": {
     "fuente": "https://rayhaanperfumes.com/products/rayhaan-aquatica",
     "descripcion": "El espíritu de los veranos sin fin y la brisa del mar: fresco, elegante y aventurero.",
-    "ocasiones": ["dia"]
+    "ocasiones": [
+      "dia"
+    ]
   },
   "rayhaan-azul": {
     "fuente": "https://rayhaanperfumes.com/products/azul",
     "descripcion": "Frescura para días de sol y noches de verano.",
-    "ocasiones": ["dia"]
+    "ocasiones": [
+      "dia"
+    ]
   },
   "rayhaan-kiss": {
     "fuente": "https://rayhaanperfumes.com/products/rayhaan-kiss",
     "descripcion": "Una apertura de caramelo que juega entre lo dulce y lo ácido. Dulzura madura, sensualidad refinada.",
-    "notasClave": ["Caramelo"]
+    "notasClave": [
+      "Caramelo"
+    ]
   },
   "rayhaan-terra": {
     "fuente": "https://rayhaanperfumes.com/products/rayhaan-terra",
     "descripcion": "Cálido, especiado y terroso: cardamomo e incienso sobre un fondo de ámbar y oud. Misterioso y profundo.",
-    "notasClave": ["Cardamomo", "Incienso", "Ámbar", "Oud"]
+    "notasClave": [
+      "Cardamomo",
+      "Incienso",
+      "Ámbar",
+      "Oud"
+    ]
   },
   "rayhaan-obsidian": {
     "fuente": "https://rayhaanperfumes.com/products/rayhaan-obsidian",
     "descripcion": "Sofisticación, fuerza y misterio: de la frescura delicada del iris al abrazo cálido del oud, el cuero y el cedro.",
-    "notasClave": ["Iris", "Oud", "Cuero", "Cedro"]
+    "notasClave": [
+      "Iris",
+      "Oud",
+      "Cuero",
+      "Cedro"
+    ]
   },
   "rayhaan-nocturno-elixir": {
     "fuente": "https://rayhaanperfumes.com/products/nocturno-elixir",
     "descripcion": "Hecho para la noche: ámbar dorado que se mueve entre sombras.",
-    "notasClave": ["Ámbar"],
-    "ocasiones": ["noche"]
+    "notasClave": [
+      "Ámbar"
+    ],
+    "ocasiones": [
+      "noche"
+    ]
   },
   "rayhaan-italia": {
     "fuente": "https://rayhaanperfumes.com/products/rayhaan-italia",
     "descripcion": "Elegancia atemporal con el espíritu de una mañana soleada: luminoso, dulce y complejo, de la bergamota a la hoja de tabaco y la miel.",
-    "notasClave": ["Bergamota", "Hoja de tabaco", "Miel"]
+    "notasClave": [
+      "Bergamota",
+      "Hoja de tabaco",
+      "Miel"
+    ]
   },
   "rayhaan-wolf": {
     "fuente": "https://rayhaanperfumes.com/products/wolf",
     "descripcion": "El calor especiado del cardamomo con un toque gourmand de toffee, sobre un fondo de maderas ambaradas de larga duración.",
-    "notasClave": ["Cardamomo", "Toffee", "Maderas ambaradas"]
+    "notasClave": [
+      "Cardamomo",
+      "Toffee",
+      "Maderas ambaradas"
+    ]
   },
   "rayhaan-tiger": {
     "fuente": "https://rayhaanperfumes.com/products/rayhaan-tiger",
     "descripcion": "Fuerza y elegancia: abre especiado y fresco, tiene un corazón de flores sensuales y maderas preciosas, y cierra con pachulí, incienso y ámbar.",
-    "notasClave": ["Especias", "Flores", "Maderas", "Pachulí", "Incienso", "Ámbar"]
+    "notasClave": [
+      "Especias",
+      "Flores",
+      "Maderas",
+      "Pachulí",
+      "Incienso",
+      "Ámbar"
+    ]
   },
   "rayhaan-pharaoh": {
     "fuente": "https://rayhaanperfumes.com/products/wolf-copy",
@@ -177,64 +369,1363 @@
     "fuente": "https://armaf.com/products/club-de-nuit-bling",
     "descripcion": "Rico y envolvente: abre con cítricos, revela un corazón luminoso y descansa sobre vainilla y maderas aterciopeladas.",
     "notas": {
-      "salida": ["Cítricos"],
-      "corazon": ["Acorde floral", "Acorde brillante"],
-      "fondo": ["Vainilla", "Maderas aterciopeladas"]
+      "salida": [
+        "Cítricos"
+      ],
+      "corazon": [
+        "Acorde floral",
+        "Acorde brillante"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Maderas aterciopeladas"
+      ]
     }
   },
   "armaf-club-de-nuit-maleka": {
     "fuente": "https://armaf.com/products/club-de-nuit-maleka",
     "descripcion": "Un floral frutal luminoso firmado por el perfumista Olivier Cresp: lichi y pimienta rosa, un corazón de iris y un fondo de praliné y sándalo.",
     "notas": {
-      "salida": ["Lichi", "Bergamota", "Pimienta rosa"],
-      "corazon": ["Iris"],
-      "fondo": ["Praliné", "Sándalo", "Ambroxan"]
+      "salida": [
+        "Lichi",
+        "Bergamota",
+        "Pimienta rosa"
+      ],
+      "corazon": [
+        "Iris"
+      ],
+      "fondo": [
+        "Praliné",
+        "Sándalo",
+        "Ambroxan"
+      ]
     }
   },
   "armaf-odyssey-mandarin-sky-elixir": {
     "fuente": "https://armaf.com/products/odyssey-mandarin-sky-elixir",
     "descripcion": "Calidez ambarada y amaderada con un giro cítrico y gourmand: mandarina y azafrán, caramelo y tonka, y un fondo de vetiver y cedro.",
     "notas": {
-      "salida": ["Salvia", "Mandarina", "Naranja", "Azafrán"],
-      "corazon": ["Caramelo", "Haba tonka", "Tagetes"],
-      "fondo": ["Vetiver", "Cedro", "Ambroxan"]
+      "salida": [
+        "Salvia",
+        "Mandarina",
+        "Naranja",
+        "Azafrán"
+      ],
+      "corazon": [
+        "Caramelo",
+        "Haba tonka",
+        "Tagetes"
+      ],
+      "fondo": [
+        "Vetiver",
+        "Cedro",
+        "Ambroxan"
+      ]
     }
   },
   "armaf-odyssey-go-mango": {
     "fuente": "https://armaf.com/products/odyssey-go-mango",
     "descripcion": "Un gourmand tropical y jugoso, dulce y juguetón como un día de sol.",
     "notas": {
-      "salida": ["Limón", "Pimienta rosa", "Jengibre", "Flores blancas"],
-      "corazon": ["Mango", "Haba tonka", "Maderas secas"],
-      "fondo": ["Vainilla", "Ámbar", "Madera de guayaco", "Almizcle", "Notas de nueces"]
+      "salida": [
+        "Limón",
+        "Pimienta rosa",
+        "Jengibre",
+        "Flores blancas"
+      ],
+      "corazon": [
+        "Mango",
+        "Haba tonka",
+        "Maderas secas"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Ámbar",
+        "Madera de guayaco",
+        "Almizcle",
+        "Notas de nueces"
+      ]
     },
-    "ocasiones": ["dia"]
+    "ocasiones": [
+      "dia"
+    ]
   },
   "armaf-odyssey-artisto": {
     "fuente": "https://armaf.com/products/odyssey-artisto",
     "descripcion": "Amaderado aromático con sofisticación tropical: bergamota y salvia, un corazón de coco, frutas tropicales y canela, y un fondo de ámbar y vainilla.",
     "notas": {
-      "salida": ["Bergamota", "Notas de nueces", "Salvia"],
-      "corazon": ["Coco", "Frutas tropicales", "Canela"],
-      "fondo": ["Ámbar", "Vainilla", "Haba tonka"]
+      "salida": [
+        "Bergamota",
+        "Notas de nueces",
+        "Salvia"
+      ],
+      "corazon": [
+        "Coco",
+        "Frutas tropicales",
+        "Canela"
+      ],
+      "fondo": [
+        "Ámbar",
+        "Vainilla",
+        "Haba tonka"
+      ]
     }
   },
   "armaf-odyssey-marshmallow": {
     "fuente": "https://armaf.com/products/odyssey-marshmallow",
     "descripcion": "Un gourmand floral frutal, cremoso y suave como un malvavisco: frutas, flores y un fondo de praliné y vainilla.",
     "notas": {
-      "salida": ["Coco", "Manzana", "Limón", "Peonía", "Lirio de los valles"],
-      "corazon": ["Malvavisco", "Fresa", "Durazno", "Albaricoque", "Frambuesa", "Azahar"],
-      "fondo": ["Queso mascarpone", "Praliné", "Vainilla", "Almizcle", "Haba tonka", "Ámbar"]
+      "salida": [
+        "Coco",
+        "Manzana",
+        "Limón",
+        "Peonía",
+        "Lirio de los valles"
+      ],
+      "corazon": [
+        "Malvavisco",
+        "Fresa",
+        "Durazno",
+        "Albaricoque",
+        "Frambuesa",
+        "Azahar"
+      ],
+      "fondo": [
+        "Queso mascarpone",
+        "Praliné",
+        "Vainilla",
+        "Almizcle",
+        "Haba tonka",
+        "Ámbar"
+      ]
     }
   },
   "armaf-odyssey-nexus": {
     "fuente": "https://armaf.com/products/odyssey-nexus",
     "descripcion": "Fresco aromático y acuático: cítricos y brisa marina, un corazón verde y herbal, y un fondo resinoso de incienso y pachulí.",
     "notas": {
-      "salida": ["Cítricos", "Notas marinas"],
-      "corazon": ["Salvia", "Geranio", "Romero", "Jengibre"],
-      "fondo": ["Incienso", "Pachulí", "Maderas"]
+      "salida": [
+        "Cítricos",
+        "Notas marinas"
+      ],
+      "corazon": [
+        "Salvia",
+        "Geranio",
+        "Romero",
+        "Jengibre"
+      ],
+      "fondo": [
+        "Incienso",
+        "Pachulí",
+        "Maderas"
+      ]
+    }
+  },
+  "lattafa-his-confession": {
+    "fuente": "https://lattafa-usa.com/products/his-confession",
+    "descripcion": "Masculino moderno que abre fresco y especiado con mandarina, canela y lavanda, gana profundidad con iris y ciprés, y termina cálido con vainilla, tonka e incienso. Versátil de día o de noche.",
+    "notas": {
+      "salida": [
+        "Canela",
+        "Lavanda",
+        "Mandarina"
+      ],
+      "corazon": [
+        "Iris",
+        "Benjuí",
+        "Ciprés",
+        "Mahonial"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Haba tonka",
+        "Ámbar",
+        "Cedro",
+        "Incienso",
+        "Pachulí"
+      ]
+    },
+    "ocasiones": [
+      "dia",
+      "noche"
+    ]
+  },
+  "lattafa-her-confession": {
+    "fuente": "https://lattafa-usa.com/products/her-confession",
+    "descripcion": "Cálido, misterioso y elegante: canela al inicio, un corazón floral de jazmín y nardo con incienso, y un fondo sensual de tonka, almizcle y vainilla.",
+    "notas": {
+      "salida": [
+        "Mystikal",
+        "Canela"
+      ],
+      "corazon": [
+        "Nardo",
+        "Jazmín",
+        "Incienso",
+        "Mahonial"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Haba tonka",
+        "Almizcle"
+      ]
+    }
+  },
+  "lattafa-ishq-al-shuyukh-gold": {
+    "fuente": "https://lattafa-usa.com/products/ishq-al-shuyukh-gold",
+    "descripcion": "Lujoso y cálido, de notas ricas y opulentas: caramelo y azafrán sobre gamuza y cuero, con un fondo de vainilla y ámbar.",
+    "notas": {
+      "salida": [
+        "Caramelo",
+        "Azafrán"
+      ],
+      "corazon": [
+        "Gamuza",
+        "Cuero",
+        "Haba tonka"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Ámbar",
+        "Almizcle"
+      ]
+    }
+  },
+  "lattafa-ishq-al-shuyukh-silver": {
+    "fuente": "https://lattafa-usa.com/products/ishq-al-shuyukh-silver",
+    "descripcion": "Fresco y elegante, para cualquier ocasión: cítricos brillantes, piña con pimienta negra y un fondo de vainilla y maderas.",
+    "notas": {
+      "salida": [
+        "Limón",
+        "Bergamota"
+      ],
+      "corazon": [
+        "Piña",
+        "Pimienta negra"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Cedro",
+        "Madera ambarada",
+        "Pachulí"
+      ]
+    }
+  },
+  "lattafa-al-qiam-gold": {
+    "fuente": "https://lattafa-usa.com/products/al-qiam-gold",
+    "descripcion": "Amaderado y dulce con toques aromáticos: el ámbar se mezcla con oud, guayaco y vetiver para dar calidez. Pensado para el día a día.",
+    "notas": {
+      "salida": [
+        "Frambuesa",
+        "Azafrán"
+      ],
+      "corazon": [
+        "Cuero",
+        "Pachulí"
+      ],
+      "fondo": [
+        "Oud",
+        "Ámbar",
+        "Benjuí",
+        "Madera de guayaco",
+        "Vetiver"
+      ]
+    },
+    "ocasiones": [
+      "dia"
+    ]
+  },
+  "lattafa-al-qiam-silver": {
+    "fuente": "https://lattafa-usa.com/products/al-qiam-silver",
+    "descripcion": "Un cítrico intenso al inicio que se seca en un cítrico dulce y te acompaña todo el día.",
+    "notas": {
+      "salida": [
+        "Toronja",
+        "Jengibre"
+      ],
+      "corazon": [
+        "Ambroxan",
+        "Sándalo"
+      ],
+      "fondo": [
+        "Almizcle",
+        "Vetiver"
+      ]
+    },
+    "ocasiones": [
+      "dia"
+    ]
+  },
+  "lattafa-emeer": {
+    "fuente": "https://lattafa-usa.com/products/emeer-1",
+    "descripcion": "Cítricos especiados y oud amaderado en un aroma audaz, inspirado en la gran perfumería árabe. Sirve para el día a día y para la noche.",
+    "notas": {
+      "salida": [
+        "Cítricos",
+        "Especias"
+      ],
+      "corazon": [
+        "Cuero",
+        "Incienso",
+        "Ámbar"
+      ],
+      "fondo": [
+        "Oud",
+        "Pachulí",
+        "Notas amaderadas"
+      ]
+    },
+    "ocasiones": [
+      "dia",
+      "noche"
+    ]
+  },
+  "lattafa-atlas": {
+    "fuente": "https://lattafa-usa.com/products/atlas",
+    "descripcion": "Un viaje al mar: abre con notas acuáticas como brisa marina, florece con iris y se asienta en ámbar gris, sándalo y musgo.",
+    "notas": {
+      "salida": [
+        "Sal",
+        "Notas marinas",
+        "Limón"
+      ],
+      "corazon": [
+        "Iris",
+        "Davana"
+      ],
+      "fondo": [
+        "Ámbar gris",
+        "Sándalo",
+        "Musgo de roble"
+      ]
+    }
+  },
+  "lattafa-teriaq": {
+    "fuente": "https://lattafa-usa.com/products/teriaq",
+    "descripcion": "Creado por el perfumista Quentin Bisch: caramelo, almendra amarga y albaricoque, un corazón de miel y flores, y un fondo de cuero y vainilla.",
+    "notas": {
+      "salida": [
+        "Caramelo",
+        "Almendra amarga",
+        "Albaricoque",
+        "Pimienta rosa"
+      ],
+      "corazon": [
+        "Miel",
+        "Ruibarbo",
+        "Flores blancas",
+        "Rosa"
+      ],
+      "fondo": [
+        "Cuero",
+        "Vainilla",
+        "Almizcle",
+        "Vetiver",
+        "Láudano"
+      ]
+    }
+  },
+  "lattafa-teriaq-intense": {
+    "fuente": "https://lattafa-usa.com/products/teriaq-intense",
+    "descripcion": "La versión intensa de Teriaq, de Quentin Bisch: azafrán y bergamota, licor de ciruela con canela y un fondo de ámbar y tonka.",
+    "notas": {
+      "salida": [
+        "Azafrán",
+        "Bergamota"
+      ],
+      "corazon": [
+        "Licor de ciruela",
+        "Canela"
+      ],
+      "fondo": [
+        "Ámbar",
+        "Haba tonka",
+        "Benjuí"
+      ]
+    }
+  },
+  "lattafa-yara-moi": {
+    "fuente": "https://lattafa-usa.com/products/yara-moi",
+    "descripcion": "Elegante y sensual: pera, pimienta rosa y grosella negra al inicio, nardo, jazmín y almendra en el corazón, y un fondo de vainilla y pachulí.",
+    "notas": {
+      "salida": [
+        "Pera",
+        "Pimienta rosa",
+        "Grosella negra"
+      ],
+      "corazon": [
+        "Nardo",
+        "Jazmín",
+        "Almendra"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Cashmeran",
+        "Pachulí"
+      ]
+    }
+  },
+  "lattafa-yara-candy": {
+    "fuente": "https://lattafa-usa.com/products/yara-candy",
+    "descripcion": "La versión de caramelo de la familia Yara: frutas confitadas y sirope de vainilla, con mandarina verde y un corazón de gardenia y fresa.",
+    "notas": {
+      "salida": [
+        "Grosella negra",
+        "Mandarina verde"
+      ],
+      "corazon": [
+        "Caramelo efervescente de fresa",
+        "Gardenia"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Almizcle",
+        "Ámbar",
+        "Sándalo"
+      ]
+    }
+  },
+  "lattafa-yara-tous": {
+    "fuente": "https://lattafa-usa.com/products/yara-tous",
+    "descripcion": "Tropical y floral: mango, coco y maracuyá sobre jazmín y azahar, con un fondo cremoso de vainilla.",
+    "notas": {
+      "salida": [
+        "Mango",
+        "Coco",
+        "Maracuyá"
+      ],
+      "corazon": [
+        "Jazmín",
+        "Azahar",
+        "Heliotropo"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Almizcle",
+        "Cashmeran"
+      ]
+    }
+  },
+  "lattafa-yara": {
+    "fuente": "https://lattafa-usa.com/products/yara",
+    "descripcion": "Jugoso, floral y adictivo: orquídea, mandarina y vainilla en un aroma dulce pero sofisticado. Para la elegancia de todos los días.",
+    "notas": {
+      "salida": [
+        "Orquídea",
+        "Heliotropo",
+        "Mandarina"
+      ],
+      "corazon": [
+        "Acorde gourmand",
+        "Frutas tropicales"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Almizcle",
+        "Sándalo"
+      ]
+    },
+    "ocasiones": [
+      "dia"
+    ]
+  },
+  "lattafa-yara-elixir": {
+    "fuente": "https://lattafa-usa.com/products/yara-elixir",
+    "descripcion": "Una evolución más rica del Yara original: s'mores de fresa y grosella negra, un corazón de jazmín y azahar, y un fondo de vainilla y caramelo.",
+    "notas": {
+      "salida": [
+        "S'mores de fresa",
+        "Grosella negra"
+      ],
+      "corazon": [
+        "Jazmín",
+        "Azahar"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Caramelo",
+        "Ámbar",
+        "Almizcle"
+      ]
+    }
+  },
+  "lattafa-asad-elixir": {
+    "fuente": "https://lattafa-usa.com/products/asad-elixir",
+    "descripcion": "Una evolución más profunda y concentrada del Asad original: especiado al inicio, tabaco y cedro ahumados en el corazón, y un fondo de pachulí y olíbano.",
+    "notas": {
+      "salida": [
+        "Pimienta rosa",
+        "Azafrán",
+        "Toronja"
+      ],
+      "corazon": [
+        "Tabaco",
+        "Cedro",
+        "Vainilla"
+      ],
+      "fondo": [
+        "Pachulí",
+        "Olíbano",
+        "Cashmeran",
+        "Ámbar seco"
+      ]
+    }
+  },
+  "lattafa-victoria": {
+    "fuente": "https://lattafa-usa.com/products/victoria",
+    "descripcion": "Unisex, cálido y dulce: abre con la frescura de un pie de limón, pasa por el neroli y termina en una vainilla suave.",
+    "notas": {
+      "salida": [
+        "Pie de limón"
+      ],
+      "corazon": [
+        "Neroli"
+      ],
+      "fondo": [
+        "Vainilla"
+      ]
+    }
+  },
+  "lattafa-layaan": {
+    "fuente": "https://lattafa-usa.com/products/layaan",
+    "descripcion": "Frescura luminosa al aplicarlo, un corazón floral radiante y una estela cálida y sensual.",
+    "notas": {
+      "salida": [
+        "Pera verde",
+        "Mandarina"
+      ],
+      "corazon": [
+        "Gardenia",
+        "Jazmín",
+        "Lirio de los valles"
+      ],
+      "fondo": [
+        "Cedro",
+        "Almizcle"
+      ]
+    }
+  },
+  "lattafa-qaed-al-fursan-unlimited": {
+    "fuente": "https://lattafa-usa.com/products/qaed-al-fursan-unlimited-1",
+    "descripcion": "Tropical y suave: cítricos, coco cremoso y piña, un corazón de flores blancas y un fondo de vainilla y sándalo.",
+    "notas": {
+      "salida": [
+        "Coco",
+        "Cítricos",
+        "Piña"
+      ],
+      "corazon": [
+        "Ylang-ylang",
+        "Frangipani",
+        "Jazmín"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Sándalo",
+        "Almizcle blanco"
+      ]
+    }
+  },
+  "lattafa-musamam-white-intense": {
+    "fuente": "https://lattafa-usa.com/products/musamam-white-intense",
+    "descripcion": "Especias, bergamota y naranja sobre un corazón de coco e ylang-ylang, con un fondo de sándalo, almizcle y benjuí.",
+    "notas": {
+      "salida": [
+        "Especias",
+        "Bergamota",
+        "Naranja"
+      ],
+      "corazon": [
+        "Coco",
+        "Ylang-ylang",
+        "Ambroxan",
+        "Mahonial"
+      ],
+      "fondo": [
+        "Sándalo",
+        "Almizcle",
+        "Benjuí"
+      ]
+    }
+  },
+  "lattafa-petra": {
+    "fuente": "https://lattafa-usa.com/products/petra",
+    "descripcion": "Un verano mediterráneo en frasco: ciruela y ron, nardo y coco, y un fondo de praliné y vainilla.",
+    "notas": {
+      "salida": [
+        "Ciruela",
+        "Ron"
+      ],
+      "corazon": [
+        "Nardo",
+        "Coco"
+      ],
+      "fondo": [
+        "Praliné",
+        "Almizcle",
+        "Vainilla"
+      ]
+    }
+  },
+  "lattafa-shaheen-gold": {
+    "fuente": "https://lattafa-usa.com/products/shaheen-gold",
+    "descripcion": "Arranca cítrico y fuerte, y se asienta poco a poco en un floral cálido.",
+    "notas": {
+      "salida": [
+        "Piña",
+        "Toronja"
+      ],
+      "corazon": [
+        "Higo",
+        "Lavanda"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Haba tonka",
+        "Pachulí"
+      ]
+    }
+  },
+  "lattafa-shaheen-silver": {
+    "fuente": "https://lattafa-usa.com/products/shaheen-silver",
+    "descripcion": "Cítrico, especiado y amaderado a la vez.",
+    "notas": {
+      "salida": [
+        "Bergamota",
+        "Grosella negra"
+      ],
+      "corazon": [
+        "Pachulí",
+        "Rosa"
+      ],
+      "fondo": [
+        "Musgo de roble",
+        "Almizcle",
+        "Ámbar"
+      ]
+    }
+  },
+  "lattafa-vintage-radio": {
+    "fuente": "https://lattafa-usa.com/products/vintage-radio",
+    "descripcion": "Nostálgico y aromático: lavanda, salvia y bergamota, un corazón de ciruela y palo santo, y un fondo de sándalo y oud.",
+    "notas": {
+      "salida": [
+        "Lavanda",
+        "Salvia",
+        "Bergamota"
+      ],
+      "corazon": [
+        "Ciruela",
+        "Palo santo",
+        "Pimienta negra"
+      ],
+      "fondo": [
+        "Sándalo",
+        "Oud"
+      ]
+    }
+  },
+  "lattafa-nebras": {
+    "fuente": "https://lattafa-usa.com/products/nebras",
+    "descripcion": "Dulzura profunda y sensual con un leve toque aromático. Llama la atención.",
+    "notas": {
+      "salida": [
+        "Frutos rojos",
+        "Mandarina"
+      ],
+      "corazon": [
+        "Vainilla",
+        "Cacao",
+        "Rosa"
+      ],
+      "fondo": [
+        "Azúcar",
+        "Haba tonka",
+        "Ámbar",
+        "Almizcle"
+      ]
+    }
+  },
+  "lattafa-hayaati-gold-elixir": {
+    "fuente": "https://lattafa-usa.com/products/hayaati-gold-elixir",
+    "descripcion": "Unisex: cítricos y grosella negra al inicio, cuero, durazno y azafrán en el corazón, y un fondo de vainilla y ámbar.",
+    "notas": {
+      "salida": [
+        "Bergamota",
+        "Toronja",
+        "Grosella negra"
+      ],
+      "corazon": [
+        "Cuero",
+        "Durazno",
+        "Azafrán"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Ámbar",
+        "Almizcle",
+        "Vetiver"
+      ]
+    }
+  },
+  "lattafa-hayaati-al-maleky": {
+    "fuente": "https://lattafa-usa.com/products/hayaati-al-maleky",
+    "descripcion": "Ámbar especiado y unisex: nuez moscada, pimienta rosa y jengibre sobre cedro e incienso, con un fondo de ámbar y almizcle.",
+    "notas": {
+      "salida": [
+        "Pimienta rosa",
+        "Nuez moscada",
+        "Bergamota",
+        "Jengibre"
+      ],
+      "corazon": [
+        "Cedro",
+        "Notas amaderadas",
+        "Incienso",
+        "Láudano"
+      ],
+      "fondo": [
+        "Almizcle",
+        "Ámbar",
+        "Ámbar gris"
+      ]
+    }
+  },
+  "lattafa-khamrah": {
+    "fuente": "https://lattafa-usa.com/products/khamrah",
+    "descripcion": "Aromático y especiado, unisex: canela y nuez moscada al inicio, un corazón de dátiles y praliné, y un fondo cálido de vainilla, tonka y mirra.",
+    "notas": {
+      "salida": [
+        "Canela",
+        "Nuez moscada",
+        "Bergamota"
+      ],
+      "corazon": [
+        "Dátiles",
+        "Praliné",
+        "Nardo",
+        "Mahonial"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Haba tonka",
+        "Madera ambarada",
+        "Mirra",
+        "Benjuí",
+        "Akigalawood"
+      ]
+    }
+  },
+  "lattafa-khamrah-qahwa": {
+    "fuente": "https://lattafa-usa.com/products/khamrah-qahwa",
+    "descripcion": "La versión con café de Khamrah: canela, cardamomo y jengibre, praliné y frutas confitadas, y un fondo de café, vainilla y tonka.",
+    "notas": {
+      "salida": [
+        "Canela",
+        "Cardamomo",
+        "Jengibre"
+      ],
+      "corazon": [
+        "Praliné",
+        "Frutas confitadas",
+        "Flores blancas"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Café",
+        "Haba tonka",
+        "Benjuí",
+        "Almizcle"
+      ]
+    }
+  },
+  "lattafa-khamrah-dukhan": {
+    "fuente": "https://lattafa-usa.com/products/khamrah-dukhan",
+    "descripcion": "Dukhan significa humo: especias, tabaco y ámbar en una versión ahumada e intensa de Khamrah, unisex con un ángulo más masculino.",
+    "notas": {
+      "salida": [
+        "Especias",
+        "Pimienta de Jamaica",
+        "Mandarina"
+      ],
+      "corazon": [
+        "Incienso",
+        "Láudano",
+        "Azahar",
+        "Pachulí"
+      ],
+      "fondo": [
+        "Tabaco",
+        "Praliné",
+        "Ámbar",
+        "Haba tonka",
+        "Benjuí"
+      ]
+    }
+  },
+  "lattafa-khamrah-waha": {
+    "fuente": "https://lattafa-usa.com/products/khamrah-waha",
+    "descripcion": "El contraste entre el calor del desierto y una brisa fresca: cítricos y enebro, iris con pepino y sal marina, y un fondo de tonka y vainilla. Sirve de día y de noche.",
+    "notas": {
+      "salida": [
+        "Bergamota",
+        "Enebro",
+        "Yuzu",
+        "Jengibre"
+      ],
+      "corazon": [
+        "Iris",
+        "Pepino",
+        "Salvia",
+        "Acorde de sal marina"
+      ],
+      "fondo": [
+        "Akigalawood",
+        "Haba tonka",
+        "Vainilla",
+        "Almizcle",
+        "Ambrofix"
+      ]
+    },
+    "ocasiones": [
+      "dia",
+      "noche"
+    ]
+  },
+  "lattafa-mahir-honor": {
+    "fuente": "https://lattafa-usa.com/products/maahir-honor",
+    "descripcion": "Frescura, calidez y profundidad: cítricos con menta y tomillo, un corazón aromático de romero y lavanda, y un fondo de almizcle y cedro. Para el día a día y ocasiones especiales.",
+    "notas": {
+      "salida": [
+        "Limón",
+        "Menta",
+        "Bergamota",
+        "Tomillo"
+      ],
+      "corazon": [
+        "Romero",
+        "Jazmín",
+        "Lavanda",
+        "Flor de moringa"
+      ],
+      "fondo": [
+        "Almizcle",
+        "Cedro",
+        "Ámbar"
+      ]
+    },
+    "ocasiones": [
+      "dia",
+      "eventos"
+    ]
+  },
+  "lattafa-jasoor": {
+    "fuente": "https://lattafa-usa.com/products/untitled-sep7_12-04",
+    "descripcion": "Unisex: bergamota y especias al inicio, lavanda y tabaco en el corazón, y un fondo de cuero, tonka y vetiver.",
+    "notas": {
+      "salida": [
+        "Bergamota",
+        "Cardamomo",
+        "Pimienta",
+        "Canela"
+      ],
+      "corazon": [
+        "Lavanda",
+        "Geranio",
+        "Tabaco"
+      ],
+      "fondo": [
+        "Haba tonka",
+        "Vetiver",
+        "Cuero",
+        "Pachulí"
+      ]
+    }
+  },
+  "lattafa-the-kingdom-for-men": {
+    "fuente": "https://lattafa-usa.com/products/the-kingdom",
+    "descripcion": "Salvia, lavanda y menta refrescantes, un corazón cálido de tabaco, vainilla y azahar, y un fondo de benjuí y tonka.",
+    "notas": {
+      "salida": [
+        "Lavanda",
+        "Menta",
+        "Salvia"
+      ],
+      "corazon": [
+        "Vainilla",
+        "Tabaco",
+        "Azahar"
+      ],
+      "fondo": [
+        "Haba tonka",
+        "Benjuí",
+        "Láudano"
+      ]
+    }
+  },
+  "lattafa-eclaire-banoffi": {
+    "fuente": "https://lattafa-usa.com/products/eclaire-banoffi",
+    "descripcion": "Un gourmand inspirado en el postre banoffee: banano cremoso y arequipe, crema batida y vainilla, y un fondo de praliné y galleta.",
+    "notas": {
+      "salida": [
+        "Crema de banano",
+        "Arequipe"
+      ],
+      "corazon": [
+        "Crema batida",
+        "Vainilla"
+      ],
+      "fondo": [
+        "Praliné",
+        "Galleta",
+        "Almizcle"
+      ]
+    }
+  },
+  "lattafa-eclaire-pistacho": {
+    "fuente": "https://lattafa-usa.com/products/eclaire-pistache",
+    "descripcion": "Gourmand cremoso de pistacho: crema y pistacho tostado, coco y cacao, y un fondo de vainilla y leche. Fácil de llevar todos los días.",
+    "notas": {
+      "salida": [
+        "Crema de pistacho",
+        "Pistacho tostado"
+      ],
+      "corazon": [
+        "Coco",
+        "Cacao",
+        "Crema batida"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Leche",
+        "Almizcle"
+      ]
+    },
+    "ocasiones": [
+      "dia"
+    ]
+  },
+  "lattafa-mayar-cherry-intense": {
+    "fuente": "https://lattafa-usa.com/products/mayar-cherry-intense",
+    "descripcion": "Unisex: la dulzura de la cereza con notas orientales y gourmand, sobre un fondo de vainilla, pachulí y ámbar.",
+    "notas": {
+      "salida": [
+        "Fresa",
+        "Bergamota"
+      ],
+      "corazon": [
+        "Mermelada de cereza",
+        "Cacao"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Pachulí",
+        "Ámbar"
+      ]
+    }
+  },
+  "lattafa-mayar-natural-intense": {
+    "fuente": "https://lattafa-usa.com/products/mayar-natural-intense",
+    "descripcion": "Fresco y acuático: higo, mandarina verde, melón y agua de coco, un corazón de flores de agua, y un fondo de vainilla y sándalo.",
+    "notas": {
+      "salida": [
+        "Higo",
+        "Mandarina verde",
+        "Melón",
+        "Agua de coco"
+      ],
+      "corazon": [
+        "Loto",
+        "Nenúfar",
+        "Jazmín"
+      ],
+      "fondo": [
+        "Ambroxan",
+        "Almizcle",
+        "Sándalo",
+        "Vainilla"
+      ]
+    }
+  },
+  "lattafa-angham-second-song": {
+    "fuente": "https://lattafa-usa.com/products/angham-second-song",
+    "descripcion": "Una melodía floral y dulce: bergamota y pera, azahar y peonía con un toque de praliné, y un fondo limpio de vainilla y tonka.",
+    "notas": {
+      "salida": [
+        "Bergamota",
+        "Pera"
+      ],
+      "corazon": [
+        "Azahar",
+        "Peonía",
+        "Praliné"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Haba tonka",
+        "Ambroxan",
+        "Almizcle"
+      ]
+    }
+  },
+  "lattafa-dalal": {
+    "fuente": "https://lattafa-usa.com/products/dalal",
+    "descripcion": "Un gourmand floral cálido, suave y acogedor, con una dulzura que brilla entre flores.",
+    "notas": {
+      "salida": [
+        "Manzana Golden",
+        "Mandarina"
+      ],
+      "corazon": [
+        "Ylang-ylang",
+        "Jazmín",
+        "Azahar"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Almizcle",
+        "Musgo de roble"
+      ]
+    }
+  },
+  "lattafa-jouri": {
+    "fuente": "https://lattafa-usa.com/products/jouri",
+    "descripcion": "Abre frutal y alegre con pitaya, naranja y cereza confitada, florece con peonía y frangipani, y termina en vainilla, tonka y pachulí.",
+    "notas": {
+      "salida": [
+        "Pitaya",
+        "Naranja",
+        "Cereza confitada"
+      ],
+      "corazon": [
+        "Peonía",
+        "Frangipani",
+        "Frambuesa",
+        "Nenúfar"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Haba tonka",
+        "Pachulí"
+      ]
+    }
+  },
+  "lattafa-rave-now-white": {
+    "fuente": "https://lattafa-usa.com/products/rave-now-white",
+    "descripcion": "Unisex y fresco: toronja y bergamota, manzana verde con pachulí, y un fondo de almizcle y ámbar.",
+    "notas": {
+      "salida": [
+        "Toronja",
+        "Bergamota"
+      ],
+      "corazon": [
+        "Manzana verde",
+        "Pachulí"
+      ],
+      "fondo": [
+        "Almizcle",
+        "Cashmeran",
+        "Ámbar"
+      ]
+    }
+  },
+  "armaf-club-de-nuit-untold": {
+    "fuente": "https://armaf.com/products/armaf-club-de-nuit-untold",
+    "descripcion": "Rico y envolvente: azafrán y jazmín, madera ambarada y ámbar gris, sobre resina de abeto y cedro.",
+    "notas": {
+      "salida": [
+        "Azafrán",
+        "Jazmín"
+      ],
+      "corazon": [
+        "Madera ambarada",
+        "Ámbar gris"
+      ],
+      "fondo": [
+        "Resina de abeto",
+        "Cedro"
+      ]
+    }
+  },
+  "armaf-club-de-nuit-iconic": {
+    "fuente": "https://armaf.com/products/club-de-nuit-blue-iconic-200ml",
+    "descripcion": "Abre fresco con cítricos, menta y pimienta rosa, sigue con jengibre y nuez moscada, y se asienta en incienso, ámbar y maderas.",
+    "notas": {
+      "salida": [
+        "Toronja",
+        "Limón",
+        "Menta",
+        "Pimienta rosa",
+        "Cilantro"
+      ],
+      "corazon": [
+        "Jengibre",
+        "Nuez moscada",
+        "Jazmín",
+        "Melón"
+      ],
+      "fondo": [
+        "Incienso",
+        "Ámbar",
+        "Cedro",
+        "Sándalo",
+        "Pachulí",
+        "Láudano"
+      ]
+    }
+  },
+  "armaf-club-de-nuit-urban-man-elixir": {
+    "fuente": "https://armaf.com/products/club-de-nuit-urban-elixir-100ml",
+    "descripcion": "Bergamota y pimienta rosa con toques florales, un corazón aromático de lavanda y geranio, y un fondo de ambroxan, ámbar y cedro.",
+    "notas": {
+      "salida": [
+        "Bergamota",
+        "Pimienta rosa",
+        "Azahar",
+        "Jazmín"
+      ],
+      "corazon": [
+        "Lavanda",
+        "Tagetes",
+        "Geranio",
+        "Vetiver",
+        "Elemí",
+        "Azafrán"
+      ],
+      "fondo": [
+        "Ambroxan",
+        "Ámbar",
+        "Pachulí",
+        "Cedro",
+        "Láudano"
+      ]
+    }
+  },
+  "armaf-club-de-nuit-imperiale": {
+    "fuente": "https://armaf.com/products/armaf-club-de-nuit-white-imperial-buy-original-perfumes-online-uae",
+    "descripcion": "Floral amaderado y elegante: lichi y bergamota, rosa turca y peonía, y un fondo de cashmeran, cedro e incienso.",
+    "notas": {
+      "salida": [
+        "Lichi",
+        "Bergamota",
+        "Nuez moscada"
+      ],
+      "corazon": [
+        "Rosa turca",
+        "Peonía",
+        "Almizcle",
+        "Vainilla"
+      ],
+      "fondo": [
+        "Cashmeran",
+        "Cedro",
+        "Incienso",
+        "Vetiver"
+      ]
+    }
+  },
+  "armaf-club-de-nuit-sillage": {
+    "fuente": "https://armaf.com/products/armaf-club-de-nuit-silage-men",
+    "descripcion": "Cítricos frescos con grosella negra y hoja de violeta, un corazón floral de jazmín, iris y rosa, y un fondo de sándalo y almizcle.",
+    "notas": {
+      "salida": [
+        "Bergamota",
+        "Limón",
+        "Lima",
+        "Jengibre",
+        "Grosella negra",
+        "Hoja de violeta"
+      ],
+      "corazon": [
+        "Jazmín",
+        "Iris",
+        "Rosa"
+      ],
+      "fondo": [
+        "Sándalo",
+        "Cedro",
+        "Almizcle",
+        "Ambroxan"
+      ]
+    }
+  },
+  "armaf-club-de-nuit-milestone": {
+    "fuente": "https://armaf.com/products/club-de-nuit-milestone",
+    "descripcion": "Fresco y marino: bergamota, frutos rojos y acordes de mar, violeta y maderas blancas, y un fondo de vetiver y almizcle.",
+    "notas": {
+      "salida": [
+        "Bergamota",
+        "Frutos rojos",
+        "Notas marinas"
+      ],
+      "corazon": [
+        "Violeta",
+        "Sándalo",
+        "Maderas blancas"
+      ],
+      "fondo": [
+        "Vetiver",
+        "Almizcle",
+        "Ambroxan"
+      ]
+    }
+  },
+  "armaf-yum-yum": {
+    "fuente": "https://armaf.com/products/yum-yum-spr",
+    "descripcion": "Frutal floral inspirado en una malteada: frutos del bosque, cereza y naranja, rosa y vainilla, y un fondo empolvado de almizcle y ámbar.",
+    "notas": {
+      "salida": [
+        "Frutos del bosque",
+        "Cereza",
+        "Naranja",
+        "Bergamota"
+      ],
+      "corazon": [
+        "Rosa",
+        "Flores blancas",
+        "Vainilla"
+      ],
+      "fondo": [
+        "Notas empolvadas",
+        "Almizcle",
+        "Ámbar"
+      ]
+    }
+  },
+  "armaf-island-bliss": {
+    "fuente": "https://armaf.com/products/island-bliss-delights-spr",
+    "descripcion": "Gourmand tropical cremoso: frutos del bosque y notas verdes, coco y azahar, y un fondo de vainilla y tonka.",
+    "notas": {
+      "salida": [
+        "Frutos del bosque",
+        "Notas verdes"
+      ],
+      "corazon": [
+        "Coco",
+        "Azahar",
+        "Notas lácteas",
+        "Nenúfar"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Haba tonka",
+        "Almizcle"
+      ]
+    }
+  },
+  "armaf-odyssey-mega": {
+    "fuente": "https://armaf.com/products/odyssey-mega-man",
+    "descripcion": "Limpio y energizante: jengibre, cítricos y menta, piña con salvia y enebro, y un fondo de almizcle, cedro y vetiver.",
+    "notas": {
+      "salida": [
+        "Jengibre",
+        "Bergamota",
+        "Naranja",
+        "Limón",
+        "Menta"
+      ],
+      "corazon": [
+        "Piña",
+        "Salvia",
+        "Enebro",
+        "Geranio"
+      ],
+      "fondo": [
+        "Almizcle",
+        "Cedro",
+        "Vetiver",
+        "Haba tonka"
+      ]
+    }
+  },
+  "armaf-odyssey-homme": {
+    "fuente": "https://armaf.com/products/odyssey-homme-man",
+    "descripcion": "Intenso y misterioso: mandarina, neroli y cardamomo, rosa y azahar, y un fondo de sándalo, vainilla y ámbar.",
+    "notas": {
+      "salida": [
+        "Mandarina",
+        "Neroli",
+        "Cardamomo"
+      ],
+      "corazon": [
+        "Rosa",
+        "Azahar"
+      ],
+      "fondo": [
+        "Sándalo",
+        "Vainilla",
+        "Ámbar",
+        "Acordes amaderados"
+      ]
+    }
+  },
+  "armaf-odyssey-aqua": {
+    "fuente": "https://armaf.com/products/odyssey-aqua-edition",
+    "descripcion": "Limpio y energizante: toronja, naranja y artemisa, lavanda con menta, y un fondo de ciprés y ambroxan.",
+    "notas": {
+      "salida": [
+        "Toronja",
+        "Naranja",
+        "Artemisa"
+      ],
+      "corazon": [
+        "Lavanda",
+        "Menta"
+      ],
+      "fondo": [
+        "Ciprés",
+        "Pachulí",
+        "Ambroxan"
+      ]
+    }
+  },
+  "armaf-odyssey-limoni": {
+    "fuente": "https://armaf.com/products/armaf-odyssey-limoni-fresh-edition",
+    "descripcion": "Frescura de verano: limón, naranja dulce y mandarina, jengibre con notas marinas, y un fondo de ámbar y té azul.",
+    "notas": {
+      "salida": [
+        "Limón",
+        "Naranja dulce",
+        "Bergamota",
+        "Mandarina"
+      ],
+      "corazon": [
+        "Jengibre",
+        "Azahar",
+        "Notas marinas"
+      ],
+      "fondo": [
+        "Ámbar",
+        "Almizcle",
+        "Té azul"
+      ]
+    },
+    "ocasiones": [
+      "dia"
+    ]
+  },
+  "armaf-odyssey-spectra": {
+    "fuente": "https://armaf.com/products/armaf-odyssey-spectra-rainbow-edition",
+    "descripcion": "Intenso: canela, bergamota y manzana, un corazón de lavanda y flores, y un fondo de tabaco, ámbar y vainilla.",
+    "notas": {
+      "salida": [
+        "Canela",
+        "Bergamota",
+        "Manzana"
+      ],
+      "corazon": [
+        "Lavanda",
+        "Canela",
+        "Lirio de los valles",
+        "Azahar"
+      ],
+      "fondo": [
+        "Tabaco",
+        "Ámbar",
+        "Haba tonka",
+        "Pachulí",
+        "Vainilla"
+      ]
     }
   }
 }
