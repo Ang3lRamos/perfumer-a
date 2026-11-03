@@ -44,7 +44,16 @@ const aTexto = (html: string | null) =>
 async function leerTienda(base: string): Promise<ProductoTienda[] | null> {
   const productos: ProductoTienda[] = [];
   for (let pagina = 1; ; pagina++) {
-    const respuesta = await fetch(`${base}/products.json?limit=250&page=${pagina}`);
+    let respuesta: Response;
+    try {
+      respuesta = await fetch(`${base}/products.json?limit=250&page=${pagina}`);
+    } catch (error) {
+      // fetch solo lanza TypeError por fallas de red (DNS, TLS, conexión): se omite la tienda y se sigue.
+      if (!(error instanceof TypeError)) throw error;
+      const causa = (error.cause as { code?: string } | undefined)?.code ?? error.message;
+      console.warn(`${base}: sin conexión (${causa}), se omite`);
+      return pagina === 1 ? null : productos;
+    }
     if (!respuesta.ok) {
       console.warn(`${base}: HTTP ${respuesta.status} en la página ${pagina}, se usa lo obtenido`);
       return pagina === 1 ? null : productos;
