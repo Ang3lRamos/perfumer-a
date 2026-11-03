@@ -1727,5 +1727,166 @@
         "Vainilla"
       ]
     }
+  },
+  "lattafa-asad": {
+    "fuente": "https://lattafa-usa.com/products/asad",
+    "descripcion": "Ambarado y masculino: pimienta negra, tabaco y piña al inicio, pachulí, café e iris en el corazón, y un fondo de vainilla, ámbar y maderas secas.",
+    "notas": {
+      "salida": [
+        "Pimienta negra",
+        "Tabaco",
+        "Piña"
+      ],
+      "corazon": [
+        "Pachulí",
+        "Café",
+        "Iris"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Ámbar",
+        "Maderas secas",
+        "Benjuí",
+        "Láudano"
+      ]
+    }
+  },
+  "lattafa-asad-zanzibar": {
+    "fuente": "https://lattafa-usa.com/products/asad-zanzibar",
+    "descripcion": "Inspirado en la isla de Zanzíbar y sus playas: lavanda y pimienta negra, agua de coco, iris y sal, y un fondo de vainilla e incienso.",
+    "notas": {
+      "salida": [
+        "Lavanda",
+        "Pimienta negra"
+      ],
+      "corazon": [
+        "Agua de coco",
+        "Iris",
+        "Sal"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Incienso"
+      ]
+    }
+  },
+  "lattafa-eclaire": {
+    "fuente": "https://lattafa-usa.com/products/eclaire",
+    "descripcion": "Dulce y cremoso como un postre: caramelo, leche y azúcar, un corazón de miel y flores blancas, y un fondo de vainilla, praliné y almizcle.",
+    "notas": {
+      "salida": [
+        "Caramelo",
+        "Leche",
+        "Azúcar"
+      ],
+      "corazon": [
+        "Miel",
+        "Flores blancas"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Praliné",
+        "Almizcle"
+      ]
+    }
+  },
+  "lattafa-angham": {
+    "fuente": "https://lattafa-usa.com/products/angham",
+    "descripcion": "Inspirado en el ritmo de la música: jengibre, mandarina y pimienta rosa, un corazón de lavanda, praliné, cacao y jazmín, y un fondo cálido de vainilla y ámbar.",
+    "notas": {
+      "salida": [
+        "Jengibre",
+        "Mandarina",
+        "Pimienta rosa"
+      ],
+      "corazon": [
+        "Lavanda",
+        "Praliné",
+        "Cacao",
+        "Jazmín"
+      ],
+      "fondo": [
+        "Vainilla",
+        "Ámbar",
+        "Almizcle"
+      ]
+    }
+  },
+  "lattafa-haya": {
+    "fuente": "https://lattafa-usa.com/products/haya",
+    "descripcion": "Festivo y frutal: champaña, fresa, mandarina y naranja sanguina con rosa, un corazón de gardenia y orquídea de vainilla, y un fondo de ámbar, sándalo y castaña.",
+    "notas": {
+      "salida": [
+        "Champaña",
+        "Fresa",
+        "Mandarina",
+        "Naranja sanguina",
+        "Rosa"
+      ],
+      "corazon": [
+        "Gardenia",
+        "Jazmín",
+        "Orquídea de vainilla"
+      ],
+      "fondo": [
+        "Ámbar",
+        "Sándalo",
+        "Castaña"
+      ]
+    }
+  },
+  "afnan-9pm-night-out": {
+    "fuente": "https://afnan.com/products/9pm-night-out",
+    "descripcion": "Para noches que dejan huella: abre vibrante con pitaya, coñac y manzana, se vuelve cálido y elegante con toffee y gamuza, y termina profundo con tonka y pachulí.",
+    "notas": {
+      "salida": [
+        "Pitaya",
+        "Bergamota",
+        "Coñac",
+        "Lavanda",
+        "Manzana"
+      ],
+      "corazon": [
+        "Cardamomo",
+        "Mahonial",
+        "Gamuza",
+        "Toffee",
+        "Cedro"
+      ],
+      "fondo": [
+        "Haba tonka",
+        "Akigalawood",
+        "Ambrofix",
+        "Pachulí"
+      ]
+    },
+    "ocasiones": [
+      "noche"
+    ]
+  },
+  "afnan-9pm-elixir": {
+    "fuente": "https://afnan.com/products/9-pm-elixir",
+    "descripcion": "Cálido, profundo y especiado, con un toque ahumado y un fondo cremoso. Pensado para la noche.",
+    "notas": {
+      "salida": [
+        "Nuez moscada",
+        "Elemí",
+        "Cardamomo"
+      ],
+      "corazon": [
+        "Pimienta de Jamaica",
+        "Lavandín",
+        "Cuero"
+      ],
+      "fondo": [
+        "Cisto",
+        "Láudano",
+        "Pachulí",
+        "Vainilla"
+      ]
+    },
+    "ocasiones": [
+      "noche"
+    ]
   }
 }

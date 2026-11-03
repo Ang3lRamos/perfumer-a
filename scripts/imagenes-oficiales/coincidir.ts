@@ -2,7 +2,7 @@
 // "extrait" sí se conserva: distingue el extracto de la versión EDP del mismo nombre.
 const RUIDO = /\b(eau de parfum|parfum|edp|\d+ ?ml|unisex|for|long lasting.*|perfume.*)\b/g;
 const OTROS_FORMATOS =
-  /\b(duo|combo|set|gift|bundle|sample|tester|miniature|stick|deodorant|mist|lotion|shower|oil)\b|&/;
+  /\b(duo|combo|set|gift|bundle|sample|tester|miniature|stick|deodorant|deo|mist|lotion|shower|oil|kit)\b|&/;
 const GENEROS: Record<string, "m" | "f"> = {
   men: "m", man: "m", him: "m", homme: "m", male: "m",
   women: "f", woman: "f", her: "f", femme: "f", female: "f",
@@ -20,6 +20,8 @@ export function analizar(texto: string, marca: string): Nombre {
     .normalize("NFD")
     .replace(/[̀-ͯ]/g, "")
     .replace(/extrait de parfum/g, "extrait")
+    // "9 PM" y "9PM" son el mismo nombre.
+    .replace(/\b(\d+)\s+(am|pm)\b/g, "$1$2")
     .replace(/[|–\-()]/g, " ")
     .replace(RUIDO, " ")
     .replace(/[^a-z0-9 ]/g, "")

@@ -943,5 +943,38 @@
       "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/2_ffd42a17-c013-4f05-901d-b969b9105a4b.png?v=1759429729",
       "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/3_3b69650e-0776-4632-8325-890651c58f90.png?v=1759429729"
     ]
+  },
+  "afnan-9pm": {
+    "fuente": "https://afnan.com/products/9-pm",
+    "titulo": "9 PM",
+    "urls": [
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/9PM-Product-01_ac1d61da-68bc-4cf8-8086-8cdc3accfbdf.jpg?v=1727709082",
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/9PM-Product-02_d126191d-c5db-4607-b51c-d00be87fba3a.jpg?v=1727709082",
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/03_9PM_4a939ec1-6ca1-4efb-9943-2956a7cf1311.jpg?v=1727709082",
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/24_9PM_75e8fcca-46ac-4379-8d94-e6d82d3788b7.jpg?v=1727709082",
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/28_9PM_61f33b16-a7a4-4541-b48a-7ca0abd41923.jpg?v=1727709082"
+    ]
+  },
+  "afnan-9pm-night-out": {
+    "fuente": "https://afnan.com/products/9pm-night-out",
+    "titulo": "9 PM Night Out",
+    "urls": [
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/72.png?v=1768480402",
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/73.png?v=1768480402",
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/74.png?v=1768480402",
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/250903_AFNAN.EDPHASEONE369167-6cropped.bootle_1.jpg?v=1768480402",
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/1_2_f6a0599f-2b6b-4c1a-b6d7-f84372906625.png?v=1768480402"
+    ]
+  },
+  "afnan-9pm-elixir": {
+    "fuente": "https://afnan.com/products/9-pm-elixir",
+    "titulo": "9 PM Elixir",
+    "urls": [
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/9PM_ELIXIR-1.png?v=1753259405",
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/9PM_ELIXIR-2.png?v=1753259405",
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/9PM_ELIXIR-3.png?v=1753259405",
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/STILL_ELIXIR_SQUARE_03_2048x2048_011f0531-c430-4df7-815e-3388bce51475.png?v=1753259406",
+      "https://cdn.shopify.com/s/files/1/0655/0473/9421/files/STILL_ELIXIR_SQUARE_05_2048x2048_67eab63d-8e13-45a5-9858-cc1d7831e172.png?v=1753259406"
+    ]
   }
 }

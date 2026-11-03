@@ -17,6 +17,12 @@ describe("mismoPerfume", () => {
     expect(mismoPerfume("Liquid Brun", "Liquid Brun & Aromatix Naughty Dates Duo", "French Avenue")).toBe(false);
     expect(mismoPerfume("Vulcan Feu", "Vulcan Baie", "French Avenue")).toBe(false);
     expect(mismoPerfume("Odyssey Candee", "Odyssey Candee Perfumed Stick", "Armaf")).toBe(false);
+    expect(mismoPerfume("9PM Elixir", "9 PM ELIXIR DEO", "Afnan")).toBe(false);
+  });
+
+  it("une números con AM/PM escritos con o sin espacio", () => {
+    expect(mismoPerfume("9PM Elixir", "9 PM Elixir", "Afnan")).toBe(true);
+    expect(mismoPerfume("9PM", "9 PM", "Afnan")).toBe(true);
   });
 
   it("usa el género solo cuando ambos nombres lo declaran", () => {
