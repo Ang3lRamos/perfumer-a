@@ -20,6 +20,8 @@
   --dur-slow: 320ms;
   --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
   --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  /* Sin rebote: solo se justificaría si un gesto le hubiera dado impulso. */
+  --ease-hoja: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 @theme inline {
@@ -37,6 +39,64 @@
   --font-display: var(--fuente-display);
   --font-sans: var(--fuente-texto);
   --font-mono: var(--fuente-mono);
+  --text-micro: 0.6875rem;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scrollbar-gutter: stable;
+  }
+
+  html:has(dialog[open]) {
+    overflow: hidden;
+  }
+
+  button,
+  a,
+  [role="button"] {
+    touch-action: manipulation;
+  }
+
+  button {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* iOS amplía la página al enfocar un campo de menos de 16px. */
+  @media (pointer: coarse) {
+    input,
+    select,
+    textarea {
+      font-size: 1rem;
+    }
+  }
+}
+
+/* La respuesta llega al presionar, no al soltar. */
+@utility presion {
+  transition:
+    transform var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    background-color var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out);
+
+  &:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+}
+
+/* Capa flotante: el contenido pasa por debajo sin que la barra le quite espacio. */
+@utility material {
+  background-color: color-mix(in srgb, var(--papel) 80%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+
+  @media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+    background-color: var(--papel);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
 }
 
 body {
@@ -51,26 +111,71 @@ body {
   outline-offset: 2px;
 }
 
-@keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
+/* Transiciones, no keyframes: se pueden interrumpir a medio camino y salen por donde entraron. */
+.hoja {
+  transform: var(--hoja-fuera);
+  transition:
+    transform var(--dur-slow) var(--ease-hoja),
+    opacity var(--dur-slow) var(--ease-hoja),
+    overlay var(--dur-slow) allow-discrete,
+    display var(--dur-slow) allow-discrete;
+}
+
+.hoja-abajo {
+  --hoja-fuera: translateY(100%);
+}
+
+.hoja-lado {
+  --hoja-fuera: translateX(100%);
+}
+
+.hoja[open] {
+  transform: none;
+}
+
+.hoja::backdrop {
+  opacity: 0;
+  transition:
+    opacity var(--dur-slow) var(--ease-hoja),
+    overlay var(--dur-slow) allow-discrete,
+    display var(--dur-slow) allow-discrete;
+}
+
+.hoja[open]::backdrop {
+  opacity: var(--hoja-velo, 1);
+}
+
+.hoja[data-arrastrando],
+.hoja[data-arrastrando]::backdrop {
+  transition: none;
+}
+
+@starting-style {
+  .hoja[open] {
+    transform: var(--hoja-fuera);
   }
-  to {
-    opacity: 1;
-    transform: none;
+
+  .hoja[open]::backdrop {
+    opacity: 0;
   }
 }
 
-@keyframes deslizar {
-  from {
-    opacity: 0;
-    transform: translateX(24px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
+.panel {
+  opacity: 0;
+  visibility: hidden;
+  transform: var(--panel-fuera, translateY(-4px) scale(0.98));
+  transform-origin: top left;
+  transition:
+    opacity var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out),
+    visibility var(--dur-fast);
+}
+
+.panel[data-abierto="true"] {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-duration: var(--dur-base);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -81,5 +186,23 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  /* Sin desplazamiento, pero con un fundido que explica qué apareció. */
+  .hoja,
+  .panel {
+    --hoja-fuera: none;
+    --panel-fuera: none;
+    transition-duration: var(--dur-base) !important;
+  }
+
+  .hoja:not([open]) {
+    opacity: 0;
+  }
+
+  @starting-style {
+    .hoja[open] {
+      opacity: 0;
+    }
   }
 }

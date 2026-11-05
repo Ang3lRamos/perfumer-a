@@ -57,7 +57,7 @@ export function SelectorCompra({ producto, whatsapp, envio }: { producto: Produc
                 type="button"
                 aria-pressed={variante.id === elegidaId}
                 onClick={() => setElegidaId(variante.id)}
-                className="rounded-etiqueta border border-linea px-4 py-2 font-mono text-sm transition-colors duration-[var(--dur-fast)] hover:border-tinta aria-pressed:border-tinta aria-pressed:bg-tinta aria-pressed:text-papel"
+                className="presion rounded-etiqueta border border-linea px-4 py-2 font-mono text-sm hover:border-tinta aria-pressed:border-tinta aria-pressed:bg-tinta aria-pressed:text-papel"
               >
                 {variante.tamanoMl} ml
               </button>
@@ -70,7 +70,7 @@ export function SelectorCompra({ producto, whatsapp, envio }: { producto: Produc
         <button
           type="button"
           onClick={agregarAlCarrito}
-          className="flex-1 rounded-etiqueta bg-acento px-6 py-4 font-medium text-sobre-acento transition-colors duration-[var(--dur-fast)] hover:bg-acento-hover"
+          className="presion flex-1 rounded-etiqueta bg-acento px-6 py-4 font-medium text-sobre-acento hover:bg-acento-hover"
         >
           Agregar al carrito
         </button>
@@ -78,7 +78,7 @@ export function SelectorCompra({ producto, whatsapp, envio }: { producto: Produc
           href={enlaceWhatsapp(whatsapp, mensajeDeInteres(producto, elegida))}
           target="_blank"
           rel="noopener"
-          className="flex flex-1 items-center justify-center rounded-etiqueta border border-tinta px-6 py-4 font-medium transition-colors duration-[var(--dur-fast)] hover:bg-tinta hover:text-papel"
+          className="presion flex flex-1 items-center justify-center rounded-etiqueta border border-tinta px-6 py-4 font-medium hover:bg-tinta hover:text-papel"
         >
           Preguntar por WhatsApp
         </a>

@@ -57,7 +57,7 @@ export async function VistaCatalogo({ parametros }: { parametros: Promise<Parame
   return (
     <ProveedorNavegacion consulta={aConsulta(params)}>
       {/* Barra fija al hacer scroll: los filtros siempre a mano, sin bajar por todo el inventario. */}
-      <div className="sticky top-0 z-20 -mx-4 mb-6 space-y-3 border-b border-linea bg-papel px-4 py-3">
+      <div className="sticky top-0 z-20 -mx-4 mb-6 space-y-3 border-b border-linea px-4 py-3 material">
         <div className="flex items-center gap-2">
           <BarraBusqueda />
           <SelectorOrden />

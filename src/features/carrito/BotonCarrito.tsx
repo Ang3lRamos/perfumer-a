@@ -11,7 +11,7 @@ export function BotonCarrito() {
       type="button"
       onClick={abrirCarrito}
       aria-label={`Abrir carrito, ${unidades} ${unidades === 1 ? "producto" : "productos"}`}
-      className="relative flex items-center gap-2 rounded-etiqueta border border-tinta px-3 py-2 text-sm hover:bg-tinta hover:text-papel"
+      className="presion relative flex items-center gap-2 rounded-etiqueta border border-tinta px-3 py-2 text-sm hover:bg-tinta hover:text-papel"
     >
       <svg aria-hidden viewBox="0 0 20 20" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M4 6h12l-1 11H5L4 6z" />

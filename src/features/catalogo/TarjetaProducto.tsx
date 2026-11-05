@@ -22,7 +22,7 @@ export function TarjetaProducto({ producto, prioridad }: { producto: Producto<At
   const notas = notasDestacadas(producto.atributos);
 
   return (
-    <Link href={`/p/${producto.slug}`} className="group block">
+    <Link href={`/p/${producto.slug}`} className="presion group block">
       <div className="relative aspect-[4/5] overflow-hidden bg-vitrina data-[agotado=true]:opacity-50" data-agotado={!disponible}>
         {!principal && (
           <EtiquetaProducto
@@ -52,18 +52,18 @@ export function TarjetaProducto({ producto, prioridad }: { producto: Producto<At
           />
         )}
         {!disponible && (
-          <span className="absolute left-2 top-2 bg-superficie px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-tinta-suave">
+          <span className="absolute left-2 top-2 bg-superficie px-1.5 py-0.5 font-mono text-micro uppercase tracking-wider text-tinta-suave">
             Agotado
           </span>
         )}
         {fotos.length > 1 && (
-          <span className="absolute bottom-2 right-2 font-mono text-[10px] text-tinta-suave">
+          <span className="absolute bottom-2 right-2 font-mono text-micro text-tinta-suave">
             {fotos.length} fotos
           </span>
         )}
       </div>
       <div className="mt-3 space-y-1">
-        <p className="font-mono text-[10px] uppercase tracking-wider text-tinta-suave">
+        <p className="font-mono text-micro uppercase tracking-wider text-tinta-suave">
           {producto.codigo} · {tamanos} ml
         </p>
         <p className="text-xs uppercase tracking-[0.14em] text-tinta-suave">{producto.marca}</p>

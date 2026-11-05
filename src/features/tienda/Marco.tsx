@@ -8,7 +8,7 @@ import { CajonCarrito } from "@/features/carrito/CajonCarrito";
 function Encabezado() {
   return (
     <header className="border-b border-linea">
-      <p className="bg-tinta px-4 py-1.5 text-center font-mono text-[11px] uppercase tracking-wider text-papel">
+      <p className="bg-tinta px-4 py-1.5 text-center font-mono text-micro uppercase tracking-wider text-papel">
         Pagas al recibir · Contraentrega en {negocio.cobertura.ciudadesContraentrega.join(", ")}
       </p>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
@@ -16,7 +16,7 @@ function Encabezado() {
           {negocio.nombreTienda}
         </Link>
         <div className="flex items-center gap-4">
-          <span className="hidden font-mono text-[11px] uppercase tracking-wider text-tinta-suave sm:inline">
+          <span className="hidden font-mono text-micro uppercase tracking-wider text-tinta-suave sm:inline">
             Perfumería original
           </span>
           <BotonCarrito />

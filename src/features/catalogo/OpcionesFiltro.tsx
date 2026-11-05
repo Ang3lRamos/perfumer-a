@@ -40,10 +40,10 @@ export function OpcionesFiltro({ grupo }: { grupo: GrupoFiltro }) {
           aria-pressed={grupo.unico ? undefined : elegidos.includes(opcion.valor)}
           data-elegido={elegidos.includes(opcion.valor)}
           onClick={() => alternar(opcion.valor)}
-          className="rounded-etiqueta border border-linea px-2.5 py-1.5 text-sm transition-colors duration-[var(--dur-fast)] hover:border-tinta data-[elegido=true]:border-tinta data-[elegido=true]:bg-tinta data-[elegido=true]:text-papel"
+          className="presion rounded-etiqueta border border-linea px-2.5 py-2 text-sm hover:border-tinta data-[elegido=true]:border-tinta data-[elegido=true]:bg-tinta data-[elegido=true]:text-papel"
         >
           {opcion.etiqueta}
-          <span className="ml-1.5 font-mono text-[10px] opacity-60">{opcion.conteo}</span>
+          <span className="ml-1.5 font-mono text-micro opacity-60">{opcion.conteo}</span>
         </button>
       ))}
     </div>
@@ -76,7 +76,7 @@ export function FiltrosActivos({ grupos }: { grupos: GrupoFiltro[] }) {
           type="button"
           onClick={() => navegar(alternarValor(parametros, grupo.clave, valor))}
           aria-label={`Quitar ${etiqueta}`}
-          className="flex items-center gap-1.5 rounded-etiqueta bg-vitrina px-2.5 py-1 text-sm hover:bg-linea"
+          className="presion flex items-center gap-1.5 rounded-etiqueta bg-vitrina px-2.5 py-1.5 text-sm hover:bg-linea"
         >
           {etiqueta}
           <span aria-hidden className="text-tinta-suave">×</span>

@@ -10,7 +10,9 @@ export function GaleriaProducto({ imagenes, alt }: { imagenes: string[]; alt: st
 
   function irA(indice: number) {
     const elemento = pista.current;
-    if (elemento) elemento.scrollTo({ left: indice * elemento.clientWidth, behavior: "smooth" });
+    if (!elemento) return;
+    const sinMovimiento = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    elemento.scrollTo({ left: indice * elemento.clientWidth, behavior: sinMovimiento ? "auto" : "smooth" });
   }
 
   function alDesplazar() {
@@ -55,7 +57,7 @@ export function GaleriaProducto({ imagenes, alt }: { imagenes: string[]; alt: st
               onClick={() => irA(i)}
               aria-label={`Ver foto ${i + 1}`}
               aria-current={i === actual}
-              className="relative aspect-square w-16 shrink-0 border border-transparent bg-vitrina transition-colors duration-[var(--dur-fast)] hover:border-linea aria-[current=true]:border-tinta"
+              className="presion relative aspect-square w-16 shrink-0 border border-transparent bg-vitrina hover:border-linea aria-[current=true]:border-tinta"
             >
               <Image src={src} alt="" fill sizes="64px" className="object-contain p-1 mix-blend-multiply" />
             </button>

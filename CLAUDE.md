@@ -58,3 +58,6 @@ Next.js 16 (App Router, `cacheComponents`), TypeScript, Tailwind 4, Supabase, Zo
   foto de calidad (`core/catalogo/imagenes.ts`) se muestran con `ui/EtiquetaProducto`, nunca con la foto borrosa del PDF. Tipografías:
   Instrument Serif (display), Hanken Grotesk (texto), JetBrains Mono (etiquetas y códigos).
 - Movimiento: solo `transform`/`opacity`, tokens `--dur-*`/`--ease-*`, respetar `prefers-reduced-motion`.
+- Interacción (skills en `.claude/skills/`, sobre todo `apple-design`): lo tocable lleva `presion`; las barras flotantes,
+  `material`; los `<dialog>` deslizables, `hoja` + `hoja-abajo`/`hoja-lado` y `ui/useArrastreCierre` en su encabezado;
+  los paneles flotantes, `panel`. Entran y salen por el mismo camino, con transiciones interrumpibles, no keyframes.

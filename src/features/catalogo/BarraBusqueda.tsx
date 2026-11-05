@@ -27,6 +27,7 @@ export function BarraBusqueda() {
       type="search"
       value={texto}
       onChange={(evento) => setTexto(evento.target.value)}
+      enterKeyHint="search"
       placeholder="Buscar por nombre, casa o código"
       aria-label="Buscar perfumes"
       className="min-w-0 flex-1 rounded-etiqueta border border-linea bg-superficie px-3 py-2 text-sm placeholder:text-tinta-suave focus:border-tinta focus:outline-none"
