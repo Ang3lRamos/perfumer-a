@@ -1,5 +1,6 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { z } from "zod";
+import { fotosDeCalidad } from "@/core/catalogo/imagenes";
 import type { FilaPrecio, GestionRepositorio } from "@/core/panel/gestion";
 import { aCombo, aPromocion, COLUMNAS_COMBO, COLUMNAS_PROMOCION, filaCombo, filaPromocion } from "./catalogo-repositorio";
 
@@ -9,6 +10,7 @@ const filaProducto = z.object({
   marca: z.string(),
   nombre: z.string(),
   activo: z.boolean(),
+  imagenes: z.array(z.string()),
   variantes: z.array(
     z.object({
       id: z.uuid(),
@@ -38,7 +40,7 @@ export function crearGestionRepositorio(cliente: SupabaseClient): GestionReposit
       const { data, error } = await cliente
         .from("productos")
         .select(
-          "id, codigo, marca, nombre, activo, variantes (id, tamano_ml, precio_cop, disponible, precio_manual, costos_variante (costo_cop))",
+          "id, codigo, marca, nombre, activo, imagenes, variantes (id, tamano_ml, precio_cop, disponible, precio_manual, costos_variante (costo_cop))",
         )
         .order("marca")
         .order("codigo");
@@ -61,6 +63,7 @@ export function crearGestionRepositorio(cliente: SupabaseClient): GestionReposit
                 disponible: v.disponible,
                 precioManual: v.precio_manual,
                 productoActivo: producto.activo,
+                imagen: fotosDeCalidad(producto)[0] ?? null,
               }),
             )
             .sort((a, b) => a.tamanoMl - b.tamanoMl),

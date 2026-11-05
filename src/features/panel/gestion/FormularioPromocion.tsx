@@ -4,6 +4,7 @@ import { useMemo, useRef, useState } from "react";
 import { leerEnteroCop, type FilaPrecio } from "@/core/panel/gestion";
 import { impactoPromocion, instanteALocal, type AlcancePromocion, type Promocion, type TipoDescuento } from "@/core/promociones/promociones";
 import { guardarPromocion } from "./acciones";
+import { Miniatura } from "./Miniatura";
 import { Aviso, Campo, CamposVigencia, CLASE_BOTON_PRINCIPAL, CLASE_CAMPO, noEnviarConEnter, useFormularioAccion } from "./comunes";
 
 const MAX_RESULTADOS = 30;
@@ -103,6 +104,7 @@ export function FormularioPromocion({ promocion, filas, zona }: { promocion?: Pr
                     }
                     className="h-4 w-4 accent-tinta"
                   />
+                  <Miniatura src={p.imagen} />
                   <span className="min-w-0 flex-1 truncate">
                     {p.marca} {p.nombre}
                   </span>

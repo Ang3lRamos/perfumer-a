@@ -8,6 +8,7 @@ import { activarCombo, activarPromocion, eliminarCombo, eliminarPromocion } from
 import { AccionesFila } from "./comunes";
 import { FormularioCombo } from "./FormularioCombo";
 import { FormularioPromocion } from "./FormularioPromocion";
+import { Miniatura } from "./Miniatura";
 
 const ETIQUETA_VIGENCIA = { programada: "Programada", vigente: "Activa", terminada: "Terminada" } as const;
 
@@ -98,6 +99,11 @@ export function ListaCombos({ combos, filas, zona, ahora }: { combos: Combo[]; f
               <h3 className="font-display text-2xl leading-tight">{combo.nombre}</h3>
               <span className="font-mono text-micro text-tinta-suave">{combo.codigo}</span>
               <Estado activo={combo.activo} vigencia={combo} ahora={ahora} />
+            </div>
+            <div className="flex flex-wrap gap-1">
+              {piezas.map((pieza) => (
+                <Miniatura key={pieza.varianteId} src={pieza.imagen} />
+              ))}
             </div>
             <p className="text-sm">
               <span className="font-medium tabular-nums">{formatearCop(combo.precioCop)}</span> · {piezas.map(describirPieza).join(" + ")}

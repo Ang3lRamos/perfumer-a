@@ -6,6 +6,7 @@ import type { Combo, ItemCombo } from "@/core/combos/combos";
 import { FORMATO_MARGEN, leerEnteroCop, margenSobreCosto, type FilaPrecio } from "@/core/panel/gestion";
 import { instanteALocal } from "@/core/promociones/promociones";
 import { guardarCombo } from "./acciones";
+import { Miniatura } from "./Miniatura";
 import { Aviso, Campo, CamposVigencia, CLASE_BOTON_PRINCIPAL, CLASE_CAMPO, noEnviarConEnter, useFormularioAccion } from "./comunes";
 
 const MAX_RESULTADOS = 20;
@@ -86,8 +87,9 @@ export function FormularioCombo({ combo, filas, zona }: { combo?: Combo; filas: 
                   setItems((actual) => [...actual, { varianteId: fila.varianteId, cantidad: 1 }]);
                   setBusqueda("");
                 }}
-                className="presion flex w-full items-center gap-3 px-3 py-2.5 text-left text-sm hover:bg-vitrina"
+                className="presion flex w-full items-center gap-3 px-3 py-2 text-left text-sm hover:bg-vitrina"
               >
+                <Miniatura src={fila.imagen} />
                 <span className="min-w-0 flex-1 truncate">
                   {fila.marca} {fila.nombre} {fila.tamanoMl} ml
                 </span>
@@ -101,6 +103,7 @@ export function FormularioCombo({ combo, filas, zona }: { combo?: Combo; filas: 
         <ul className="divide-y divide-linea border border-linea">
           {elegidas.map(({ item, fila }) => (
             <li key={item.varianteId} className="flex items-center gap-3 px-3 py-2 text-sm">
+              <Miniatura src={fila.imagen} />
               <span className="min-w-0 flex-1 truncate">
                 {fila.marca} {fila.nombre} {fila.tamanoMl} ml
               </span>

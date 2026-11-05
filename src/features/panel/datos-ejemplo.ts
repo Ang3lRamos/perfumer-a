@@ -29,6 +29,8 @@ export const PRODUCTOS_EJEMPLO: ProductoPanel[] = [
   ),
 ];
 
+const FOTO_EJEMPLO = "/productos/afnan-9pm-dive.webp";
+
 const uuid = (n: number) => `00000000-0000-4000-8000-${String(n).padStart(12, "0")}`;
 
 const fila = (n: number, marca: string, nombre: string, tamanoMl: number, precioCop: number | null, costoCop: number | null): FilaPrecio => ({
@@ -43,6 +45,7 @@ const fila = (n: number, marca: string, nombre: string, tamanoMl: number, precio
   disponible: precioCop !== null,
   precioManual: n === 2,
   productoActivo: true,
+  imagen: n % 4 === 0 ? null : FOTO_EJEMPLO,
 });
 
 export const FILAS_EJEMPLO: FilaPrecio[] = [

@@ -14,6 +14,8 @@ export interface FilaPrecio {
   disponible: boolean;
   precioManual: boolean;
   productoActivo: boolean;
+  /** Primera foto de calidad del producto. */
+  imagen: string | null;
 }
 
 export type NuevaPromocion = Omit<Promocion, "id" | "activa">;
