@@ -51,6 +51,7 @@ export const perfumes = {
   nombreTienda: "Oud & Ámbar",
   descripcionTienda: "Perfumería árabe y de nicho original. Pago contraentrega en Bogotá.",
   moneda: "COP",
+  zonaHoraria: "America/Bogota",
   nombreProducto: { singular: "perfume", plural: "perfumes" },
   atributos: atributosPerfume,
   filtros: [

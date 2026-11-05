@@ -26,6 +26,8 @@ export interface ConfiguracionNegocio<A extends z.ZodType = z.ZodType> {
   nombreTienda: string;
   descripcionTienda: string;
   moneda: "COP";
+  /** Zona IANA del negocio: define qué día "cae" un pedido en las métricas. */
+  zonaHoraria: string;
   /** Cómo se llama a un producto en la interfaz ("perfume", "zapato"...). */
   nombreProducto: { singular: string; plural: string };
   atributos: A;

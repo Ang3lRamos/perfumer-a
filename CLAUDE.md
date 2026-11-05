@@ -48,6 +48,14 @@ Next.js 16 (App Router, `cacheComponents`), TypeScript, Tailwind 4, Supabase, Zo
 - Chat de pruebas: `npm run dev` → `/dev/chat` (solo en desarrollo; conversaciones y pedidos en memoria).
 - Modelo por `ANTHROPIC_MODEL` (por defecto `claude-opus-5-5`), esfuerzo por `ANTHROPIC_EFFORT` (por defecto `low`).
 
+## Panel (features/panel)
+- `/admin` (solo lectura por ahora) y `/admin/entrar`. Sesión de Supabase en cookies; `exigirAdmin()` valida con
+  `auth.getUser()` antes de consultar y RLS vuelve a filtrar. Lo que lea la sesión va dentro de `<Suspense>`, sin `use cache`.
+- Dar acceso: crear el usuario en Supabase Auth y `update auth.users set raw_app_meta_data = raw_app_meta_data ||
+  '{"rol":"admin"}' where email = '...';`. Debe volver a entrar para que el token traiga el rol.
+- Métricas puras en `core/panel/metricas.ts`. El tablero no pide datos personales. Vista previa: `/dev/panel` (solo desarrollo).
+- Ventas = pedidos `entregado` (contraentrega: antes no se ha cobrado). Días según `negocio.zonaHoraria`.
+
 ## Comandos
 - `npm run dev` · `npm test` · `npm run typecheck` · `npm run lint`
 - Red corporativa con inspección TLS: exportar `NODE_OPTIONS=--use-system-ca` antes de `dev`/`build`.
