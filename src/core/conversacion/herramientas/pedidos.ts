@@ -19,7 +19,12 @@ export function crearPedido(config: ConfigAgente) {
           cantidad: z.number().int().min(1).max(MAX_UNIDADES),
         }),
       )
-      .min(1),
+      .optional()
+      .describe("Productos sueltos"),
+    combos: z
+      .array(z.object({ codigo: z.string().describe("Código del combo, ej. CMB-001"), cantidad: z.number().int().min(1).max(MAX_UNIDADES) }))
+      .optional()
+      .describe("Combos pedidos. Sus productos no se repiten en items."),
     notas: z.string().optional().describe("Indicaciones de entrega, ej. 'apto 302, dejar en portería'"),
   });
 
@@ -38,10 +43,11 @@ export function crearPedido(config: ConfigAgente) {
         ciudad: entrada.ciudad,
       };
       const armado = armarPedido(
-        entrada.items.map((i) => ({ codigo: i.codigo, tamanoMl: i.tamano_ml, cantidad: i.cantidad })),
+        (entrada.items ?? []).map((i) => ({ codigo: i.codigo, tamanoMl: i.tamano_ml, cantidad: i.cantidad })),
         envio,
         await deps.catalogo.listarActivos(),
         config.ciudadesCobertura,
+        { solicitados: entrada.combos ?? [], disponibles: entrada.combos?.length ? await deps.catalogo.listarCombos() : [] },
       );
       if (!armado.ok) return { ok: false, error: armado.motivo };
 

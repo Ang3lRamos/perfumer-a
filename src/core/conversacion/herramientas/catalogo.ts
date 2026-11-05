@@ -2,6 +2,7 @@ import { z } from "zod";
 import { valoresDeAtributo } from "../../catalogo/facetas";
 import { estaDisponible, filtrarCatalogo, ordenarCatalogo } from "../../catalogo/filtrar";
 import type { Producto } from "../../catalogo/tipos";
+import { describirPieza } from "../../combos/combos";
 import type { ConfigAgente, Herramienta } from "./tipos";
 
 const MAX_RESULTADOS = 8;
@@ -16,12 +17,19 @@ function resumen(producto: Producto) {
     tipo: producto.tipo,
     presentacion: producto.presentacion,
     atributos: producto.atributos,
-    tamanos: producto.variantes.map((v) => ({ ml: v.tamanoMl, precio: v.precioCop, disponible: v.disponible })),
+    tamanos: producto.variantes.map((v) => ({
+      ml: v.tamanoMl,
+      precio: v.precioCop,
+      disponible: v.disponible,
+      ...(v.precioAnteriorCop && { precio_anterior: v.precioAnteriorCop, promocion: v.promocion }),
+    })),
   };
 }
 
 const montosDe = (productos: Producto[]) =>
-  productos.flatMap((p) => p.variantes.map((v) => v.precioCop).filter((precio): precio is number => precio !== null));
+  productos.flatMap((p) =>
+    p.variantes.flatMap((v) => [v.precioCop, v.precioAnteriorCop]).filter((precio): precio is number => typeof precio === "number"),
+  );
 
 function esquemaAtributos(config: ConfigAgente) {
   return z
@@ -81,6 +89,34 @@ export function obtenerProducto(config: ConfigAgente) {
       const producto = await deps.catalogo.obtenerPorCodigo(codigo);
       if (!producto) return { ok: false, error: `No existe el producto ${codigo}.` };
       return { ok: true, datos: { ...resumen(producto), descripcion: producto.descripcion }, montos: montosDe([producto]) };
+    },
+  } satisfies Herramienta<z.infer<typeof esquema>>;
+}
+
+export function verCombos() {
+  const esquema = z.object({});
+  return {
+    nombre: "ver_combos",
+    descripcion: "Combos disponibles hoy (códigos CMB-000) con su precio fijo, lo que incluyen y lo que costaría por separado.",
+    esquema,
+    async ejecutar(_entrada, { deps }) {
+      const combos = await deps.catalogo.listarCombos();
+      const ahorro = (c: (typeof combos)[number]) => Math.max(0, c.precioSueltoCop - c.precioCop);
+      return {
+        ok: true,
+        datos: {
+          combos: combos.map((c) => ({
+            codigo: c.codigo,
+            nombre: c.nombre,
+            descripcion: c.descripcion,
+            precio: c.precioCop,
+            precio_por_separado: c.precioSueltoCop,
+            ahorro: ahorro(c),
+            incluye: c.piezas.map(describirPieza),
+          })),
+        },
+        montos: combos.flatMap((c) => [c.precioCop, c.precioSueltoCop, ahorro(c)]).filter((monto) => monto > 0),
+      };
     },
   } satisfies Herramienta<z.infer<typeof esquema>>;
 }

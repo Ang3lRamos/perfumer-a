@@ -15,11 +15,12 @@ const esquema = z.array(
     codigo: z.string(),
     marca: z.string(),
     nombre: z.string(),
-    slug: z.string(),
-    tamanoMl: z.number(),
+    slug: z.string().nullable(),
+    tamanoMl: z.number().nullable(),
     precioCop: z.number(),
     imagen: z.string().nullable(),
     cantidad: z.number(),
+    detalle: z.string().optional(),
   }),
 );
 

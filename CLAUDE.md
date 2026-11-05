@@ -22,7 +22,7 @@ Next.js 16 (App Router, `cacheComponents`), TypeScript, Tailwind 4, Supabase, Zo
 - Pedidos nacen en `pendiente_confirmacion` y las transiciones se validan en el dominio y en un trigger.
 - Costos en `costos_variante` (solo admin), no en `variantes`. El PDF del proveedor trae COSTOS: el precio de venta
   se calcula al generar el seed con `negocio.reglaPrecio` (`core/catalogo/precio.ts → precioVenta`). Reimportar
-  recalcula precios: cuando el panel permita ajustes por producto, habrá que preservarlos.
+  recalcula los precios, salvo los marcados `precio_manual` desde el panel; la disponibilidad siempre manda el proveedor.
 - Catálogo del distribuidor: `npm run catalogo:importar -- <pdf>` → `supabase/datos/catalogo-distribuidor.json` +
   `public/productos/*.webp`; luego `npm run catalogo:seed` → `supabase/seed.sql`. Se cruza por `slug`:
   reimportar actualiza precios y disponibilidad sin cambiar códigos. `supabase/datos/fichas-borrador.ts` es un
@@ -49,12 +49,24 @@ Next.js 16 (App Router, `cacheComponents`), TypeScript, Tailwind 4, Supabase, Zo
 - Modelo por `ANTHROPIC_MODEL` (por defecto `claude-opus-5-5`), esfuerzo por `ANTHROPIC_EFFORT` (por defecto `low`).
 
 ## Panel (features/panel)
-- `/admin` (solo lectura por ahora) y `/admin/entrar`. Sesión de Supabase en cookies; `exigirAdmin()` valida con
+- `/admin` (tablero de solo lectura) y `/admin/entrar`. Sesión de Supabase en cookies; `exigirAdmin()` valida con
   `auth.getUser()` antes de consultar y RLS vuelve a filtrar. Lo que lea la sesión va dentro de `<Suspense>`, sin `use cache`.
 - Dar acceso: crear el usuario en Supabase Auth y `update auth.users set raw_app_meta_data = raw_app_meta_data ||
   '{"rol":"admin"}' where email = '...';`. Debe volver a entrar para que el token traiga el rol.
 - Métricas puras en `core/panel/metricas.ts`. El tablero no pide datos personales. Vista previa: `/dev/panel` (solo desarrollo).
 - Ventas = pedidos `entregado` (contraentrega: antes no se ha cobrado). Días según `negocio.zonaHoraria`.
+- Gestión (`features/panel/gestion`): `/admin/precios`, `/admin/promociones`, `/admin/combos`; vista previa en `/dev/panel/gestion`.
+  Toda acción pasa por `ejecutar()`, que exige admin y refresca la tienda con `updateTag`.
+
+## Precios, promociones y combos
+- `variantes.precio_cop` es el precio base. `aplicarPromociones` lo convierte en precio efectivo al leer el catálogo, así
+  tienda, filtros, carrito, agente y `armarPedido` usan la misma cifra (`precioAnteriorCop` es el tachado). No se acumulan:
+  gana el menor precio. El panel lee siempre el precio base.
+- Guardar un precio distinto al de la regla marca `precio_manual`, y `catalogo:seed` lo respeta al reimportar. Igual a la regla: vuelve a automático.
+- Combos (`CMB-000`): precio fijo, sin promociones encima. Se ocultan si un producto se agota. En un pedido van como una
+  fila por unidad (`repartirCombo`) con la parte proporcional del precio, para que la suma cuadre exacta.
+- La caché de la tienda dura hasta el próximo inicio o fin de promoción/combo (entre 5 min y 1 h, `segundosHastaProximoCambio`).
+- Migrar antes de desplegar: el código nuevo lee `promociones` y `combos` al compilar. Sin las tablas el build falla y sigue la versión anterior.
 
 ## Comandos
 - `npm run dev` · `npm test` · `npm run typecheck` · `npm run lint`

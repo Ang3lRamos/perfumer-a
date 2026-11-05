@@ -5,11 +5,14 @@ export interface LineaCarrito {
   codigo: string;
   marca: string;
   nombre: string;
-  slug: string;
-  tamanoMl: number;
+  /** Un combo no tiene ficha propia ni un solo tamaño. */
+  slug: string | null;
+  tamanoMl: number | null;
   precioCop: number;
   imagen: string | null;
   cantidad: number;
+  /** Lo que incluye un combo. */
+  detalle?: string;
 }
 
 export const CANTIDAD_MAXIMA = 10;
@@ -44,7 +47,7 @@ export const totalCop = (lineas: LineaCarrito[]) => lineas.reduce((suma, l) => s
 export function mensajePedido(lineas: LineaCarrito[]): string {
   const detalle = lineas.map(
     (l) =>
-      `• ${l.cantidad} × ${l.marca} ${l.nombre} ${l.tamanoMl} ml (ref. ${l.codigo}) — ${formatearCop(l.precioCop * l.cantidad)}`,
+      `• ${l.cantidad} × ${l.marca} ${l.nombre}${l.tamanoMl ? ` ${l.tamanoMl} ml` : ""} (ref. ${l.codigo}) — ${formatearCop(l.precioCop * l.cantidad)}`,
   );
   return ["Hola, quiero hacer este pedido:", ...detalle, `Total sin envío: ${formatearCop(totalCop(lineas))}`].join("\n");
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { estaDisponible, precioDesde } from "@/core/catalogo/filtrar";
+import { estaDisponible, precioAnteriorDesde, precioDesde } from "@/core/catalogo/filtrar";
 import { fotosDeCalidad } from "@/core/catalogo/imagenes";
 import { formatearCop } from "@/core/catalogo/precio";
 import type { Producto } from "@/core/catalogo/tipos";
@@ -14,6 +14,7 @@ const CLASE_IMAGEN =
 export function TarjetaProducto({ producto, prioridad }: { producto: Producto<Atributos>; prioridad: boolean }) {
   const disponible = estaDisponible(producto);
   const precio = precioDesde(producto);
+  const precioAnterior = precioAnteriorDesde(producto);
   const tamanos = producto.variantes.map((v) => v.tamanoMl).join(" / ");
   const variasVariantes = producto.variantes.filter((v) => v.disponible).length > 1;
   const fotos = fotosDeCalidad(producto);
@@ -56,6 +57,11 @@ export function TarjetaProducto({ producto, prioridad }: { producto: Producto<At
             Agotado
           </span>
         )}
+        {disponible && precioAnterior && (
+          <span className="absolute left-2 top-2 bg-tinta px-1.5 py-0.5 font-mono text-micro uppercase tracking-wider text-papel">
+            Promo
+          </span>
+        )}
         {fotos.length > 1 && (
           <span className="absolute bottom-2 right-2 font-mono text-micro text-tinta-suave">
             {fotos.length} fotos
@@ -78,6 +84,12 @@ export function TarjetaProducto({ producto, prioridad }: { producto: Producto<At
             <>
               {variasVariantes && <span className="font-normal text-tinta-suave">desde </span>}
               {formatearCop(precio)}
+              {precioAnterior && (
+                <s className="ml-2 font-normal text-tinta-suave">
+                  <span className="sr-only">Antes </span>
+                  {formatearCop(precioAnterior)}
+                </s>
+              )}
             </>
           )}
         </p>

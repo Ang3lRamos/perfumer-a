@@ -448,7 +448,8 @@ from (values
 ) as l (slug, tamano_ml, precio_cop, costo_cop, disponible)
 join productos p on p.slug = l.slug
 on conflict (producto_id, tamano_ml) do update
-  set precio_cop = excluded.precio_cop, disponible = excluded.disponible;
+  set precio_cop = case when variantes.precio_manual then variantes.precio_cop else excluded.precio_cop end,
+      disponible = excluded.disponible;
 
 insert into costos_variante (variante_id, costo_cop)
 select v.id, l.costo_cop

@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { VistaCatalogo } from "@/features/catalogo/VistaCatalogo";
+import { SeccionCombos } from "@/features/combos/SeccionCombos";
 
 function EsqueletoCatalogo() {
   return (
@@ -26,6 +27,9 @@ export default function PaginaCatalogo({ searchParams }: PageProps<"/">) {
           Elige tu fragancia, escríbenos por WhatsApp y paga cuando la tengas en la mano.
         </p>
       </section>
+      <Suspense fallback={null}>
+        <SeccionCombos />
+      </Suspense>
       <Suspense fallback={<EsqueletoCatalogo />}>
         <VistaCatalogo parametros={searchParams} />
       </Suspense>

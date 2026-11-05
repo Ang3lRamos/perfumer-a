@@ -4,6 +4,7 @@ import { crearAgente } from "@/core/conversacion/orquestador";
 import type { Dependencias, Llm } from "@/core/conversacion/puertos";
 import type { RespuestaModelo, Turno } from "@/core/conversacion/tipos";
 import type { Producto, Variante } from "@/core/catalogo/tipos";
+import type { ComboResuelto } from "@/core/combos/combos";
 import { crearConversacionesEnMemoria } from "@/infra/memoria/conversaciones";
 import { crearEventosEnMemoria, crearNotificadorEnMemoria } from "@/infra/memoria/eventos";
 import { crearPedidosEnMemoria } from "@/infra/memoria/pedidos";
@@ -65,7 +66,7 @@ export function modeloFalso(guion: unknown[][]) {
   return { llm, recibidos };
 }
 
-export function montarAgente(guion: unknown[][], catalogo = CATALOGO) {
+export function montarAgente(guion: unknown[][], catalogo = CATALOGO, combos: ComboResuelto[] = []) {
   const modelo = modeloFalso(guion);
   const conversaciones = crearConversacionesEnMemoria();
   const pedidos = crearPedidosEnMemoria();
@@ -78,6 +79,7 @@ export function montarAgente(guion: unknown[][], catalogo = CATALOGO) {
     catalogo: {
       listarActivos: async () => catalogo,
       obtenerPorCodigo: async (codigo) => catalogo.find((p) => p.codigo === codigo.toUpperCase()) ?? null,
+      listarCombos: async () => combos,
     },
     conversaciones,
     pedidos,

@@ -1,6 +1,6 @@
 import { z } from "zod";
 import type { DefinicionHerramienta } from "../tipos";
-import { buscarProductos, obtenerProducto, recomendar } from "./catalogo";
+import { buscarProductos, obtenerProducto, recomendar, verCombos } from "./catalogo";
 import { escalarAHumano } from "./escalar";
 import { consultarEstadoPedido, crearPedido } from "./pedidos";
 import type { ConfigAgente, Herramienta } from "./tipos";
@@ -10,6 +10,7 @@ export function crearHerramientas(config: ConfigAgente): Herramienta[] {
     buscarProductos(config),
     obtenerProducto(config),
     recomendar(config),
+    verCombos(),
     crearPedido(config),
     consultarEstadoPedido(),
     escalarAHumano(),

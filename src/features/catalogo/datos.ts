@@ -6,12 +6,19 @@ export const ETIQUETA_CACHE_CATALOGO = "catalogo";
 
 // ~200 productos caben de sobra en memoria: se trae el catálogo completo una vez (cacheado)
 // y se filtra en el servidor con funciones puras, en vez de una consulta por combinación de filtros.
-export async function obtenerCatalogo() {
+async function obtenerTienda() {
   "use cache";
   cacheTag(ETIQUETA_CACHE_CATALOGO);
-  cacheLife("hours");
-  return crearCatalogoRepositorio(crearClientePublico()).listarActivos();
+  const { catalogo, combos, segundosVigentes } = await crearCatalogoRepositorio(crearClientePublico()).leerTienda();
+  // Pasado este plazo, la primera visita aún recibe lo anterior mientras se renueva. Por eso los precios se
+  // reconfirman por WhatsApp; desde el panel, en cambio, un cambio se ve de inmediato (updateTag).
+  cacheLife({ revalidate: segundosVigentes, expire: 86_400 });
+  return { catalogo, combos };
 }
+
+export const obtenerCatalogo = async () => (await obtenerTienda()).catalogo;
+
+export const obtenerCombos = async () => (await obtenerTienda()).combos;
 
 export async function obtenerProducto(slug: string) {
   const catalogo = await obtenerCatalogo();

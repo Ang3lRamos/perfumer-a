@@ -3,6 +3,14 @@ import { z } from "zod";
 import { negocio, type Atributos } from "@/config/negocio";
 import type { CatalogoRepositorio } from "@/core/catalogo/puertos";
 import type { Producto } from "@/core/catalogo/tipos";
+import { resolverCombos, type Combo } from "@/core/combos/combos";
+import {
+  ALCANCES_PROMOCION,
+  aplicarPromociones,
+  segundosHastaProximoCambio,
+  TIPOS_DESCUENTO,
+  type Promocion,
+} from "@/core/promociones/promociones";
 
 const COLUMNAS = `
   id, codigo, slug, marca, nombre, tipo, inspiracion_nota, presentacion, descripcion,
@@ -33,6 +41,62 @@ const filaProducto = z.object({
   ),
 });
 
+const fechaIso = z.iso.datetime({ offset: true }).nullable();
+
+export const COLUMNAS_PROMOCION = "id, nombre, tipo, valor, alcance, marca, producto_ids, activa, inicia_at, termina_at";
+
+export const filaPromocion = z.object({
+  id: z.uuid(),
+  nombre: z.string(),
+  tipo: z.enum(TIPOS_DESCUENTO),
+  valor: z.number().int(),
+  alcance: z.enum(ALCANCES_PROMOCION),
+  marca: z.string().nullable(),
+  producto_ids: z.array(z.uuid()),
+  activa: z.boolean(),
+  inicia_at: fechaIso,
+  termina_at: fechaIso,
+});
+
+export const aPromocion = (fila: z.infer<typeof filaPromocion>): Promocion => ({
+  id: fila.id,
+  nombre: fila.nombre,
+  tipo: fila.tipo,
+  valor: fila.valor,
+  alcance: fila.alcance,
+  marca: fila.marca,
+  productoIds: fila.producto_ids,
+  activa: fila.activa,
+  iniciaAt: fila.inicia_at,
+  terminaAt: fila.termina_at,
+});
+
+export const COLUMNAS_COMBO = "id, codigo, nombre, descripcion, precio_cop, activo, inicia_at, termina_at, combo_items (variante_id, cantidad)";
+
+export const filaCombo = z.object({
+  id: z.uuid(),
+  codigo: z.string(),
+  nombre: z.string(),
+  descripcion: z.string().nullable(),
+  precio_cop: z.number().int(),
+  activo: z.boolean(),
+  inicia_at: fechaIso,
+  termina_at: fechaIso,
+  combo_items: z.array(z.object({ variante_id: z.uuid(), cantidad: z.number().int() })),
+});
+
+export const aCombo = (fila: z.infer<typeof filaCombo>): Combo => ({
+  id: fila.id,
+  codigo: fila.codigo,
+  nombre: fila.nombre,
+  descripcion: fila.descripcion,
+  precioCop: fila.precio_cop,
+  activo: fila.activo,
+  iniciaAt: fila.inicia_at,
+  terminaAt: fila.termina_at,
+  items: fila.combo_items.map((i) => ({ varianteId: i.variante_id, cantidad: i.cantidad })),
+});
+
 function aProducto(fila: z.infer<typeof filaProducto>): Producto<Atributos> {
   return {
     id: fila.id,
@@ -53,29 +117,40 @@ function aProducto(fila: z.infer<typeof filaProducto>): Producto<Atributos> {
   };
 }
 
-export function crearCatalogoRepositorio(cliente: SupabaseClient): CatalogoRepositorio<Atributos> {
-  async function obtenerPorCodigo(codigo: string): Promise<Producto<Atributos> | null> {
-    const { data, error } = await cliente
-      .from("productos")
-      .select(COLUMNAS)
-      .eq("activo", true)
-      .eq("codigo", codigo.toUpperCase())
-      .maybeSingle();
-    if (error) throw new Error(`Error consultando producto ${codigo}: ${error.message}`);
-    return data ? aProducto(filaProducto.parse(data)) : null;
+async function leerProductos(cliente: SupabaseClient) {
+  const { data, error } = await cliente.from("productos").select(COLUMNAS).eq("activo", true).order("marca").order("codigo");
+  if (error) throw new Error(`Error listando catálogo: ${error.message}`);
+  return z.array(filaProducto).parse(data).map(aProducto);
+}
+
+async function leerPromociones(cliente: SupabaseClient) {
+  const { data, error } = await cliente.from("promociones").select(COLUMNAS_PROMOCION);
+  if (error) throw new Error(`Error listando promociones: ${error.message}`);
+  return z.array(filaPromocion).parse(data).map(aPromocion);
+}
+
+async function leerCombos(cliente: SupabaseClient) {
+  const { data, error } = await cliente.from("combos").select(COLUMNAS_COMBO).order("codigo");
+  if (error) throw new Error(`Error listando combos: ${error.message}`);
+  return z.array(filaCombo).parse(data).map(aCombo);
+}
+
+export function crearCatalogoRepositorio(cliente: SupabaseClient, reloj: () => Date = () => new Date()) {
+  async function leerTienda() {
+    const [productos, promociones, combos] = await Promise.all([leerProductos(cliente), leerPromociones(cliente), leerCombos(cliente)]);
+    const ahora = reloj();
+    const catalogo = aplicarPromociones(productos, promociones, ahora);
+    return {
+      catalogo,
+      combos: resolverCombos(combos, catalogo, ahora),
+      segundosVigentes: segundosHastaProximoCambio([...promociones, ...combos], ahora),
+    };
   }
 
   return {
-    async listarActivos() {
-      const { data, error } = await cliente
-        .from("productos")
-        .select(COLUMNAS)
-        .eq("activo", true)
-        .order("marca")
-        .order("codigo");
-      if (error) throw new Error(`Error listando catálogo: ${error.message}`);
-      return z.array(filaProducto).parse(data).map(aProducto);
-    },
-    obtenerPorCodigo,
-  };
+    leerTienda,
+    listarActivos: async () => (await leerTienda()).catalogo,
+    obtenerPorCodigo: async (codigo: string) => (await leerTienda()).catalogo.find((p) => p.codigo === codigo.toUpperCase()) ?? null,
+    listarCombos: async () => (await leerTienda()).combos,
+  } satisfies CatalogoRepositorio<Atributos> & { leerTienda: unknown };
 }

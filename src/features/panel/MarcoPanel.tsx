@@ -1,7 +1,8 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
+import { Suspense, type ReactNode } from "react";
 import { negocio } from "@/config/negocio";
 import { salir } from "./acciones";
+import { NavPanel } from "./NavPanel";
 
 export function MarcoPanel({ children }: { children: ReactNode }) {
   return (
@@ -24,6 +25,9 @@ export function MarcoPanel({ children }: { children: ReactNode }) {
           </nav>
         </div>
       </header>
+      <Suspense fallback={<div className="h-[45px] border-b border-linea" />}>
+        <NavPanel />
+      </Suspense>
       <main className="mx-auto max-w-7xl px-4 pb-20 pt-8">{children}</main>
     </>
   );

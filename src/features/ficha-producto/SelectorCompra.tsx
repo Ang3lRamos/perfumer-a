@@ -65,7 +65,18 @@ export function SelectorCompra({ producto, whatsapp, envio }: { producto: Produc
           </div>
         </fieldset>
       )}
-      <p className="text-3xl font-medium tabular-nums">{formatearCop(elegida.precioCop)}</p>
+      <div>
+        <p className="flex flex-wrap items-baseline gap-x-3 text-3xl font-medium tabular-nums">
+          {formatearCop(elegida.precioCop)}
+          {elegida.precioAnteriorCop && (
+            <s className="text-lg font-normal text-tinta-suave">
+              <span className="sr-only">Antes </span>
+              {formatearCop(elegida.precioAnteriorCop)}
+            </s>
+          )}
+        </p>
+        {elegida.promocion && <p className="mt-1 font-mono text-micro uppercase tracking-wider">{elegida.promocion}</p>}
+      </div>
       <div className="flex flex-col gap-2 sm:flex-row">
         <button
           type="button"

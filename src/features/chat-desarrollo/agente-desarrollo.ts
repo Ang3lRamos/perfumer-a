@@ -3,7 +3,7 @@ import { configAgente } from "@/config/agente";
 import { envServidor } from "@/config/env-servidor";
 import { crearHerramientas } from "@/core/conversacion/herramientas";
 import { crearAgente } from "@/core/conversacion/orquestador";
-import { obtenerCatalogo } from "@/features/catalogo/datos";
+import { obtenerCatalogo, obtenerCombos } from "@/features/catalogo/datos";
 import { crearLlmAnthropic } from "@/infra/anthropic/llm";
 import { crearConversacionesEnMemoria } from "@/infra/memoria/conversaciones";
 import { crearEventosEnMemoria, crearNotificadorEnMemoria } from "@/infra/memoria/eventos";
@@ -21,6 +21,7 @@ function montar() {
       catalogo: {
         listarActivos: obtenerCatalogo,
         obtenerPorCodigo: async (codigo) => (await obtenerCatalogo()).find((p) => p.codigo === codigo.toUpperCase()) ?? null,
+        listarCombos: obtenerCombos,
       },
       conversaciones,
       pedidos,

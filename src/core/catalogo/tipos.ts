@@ -3,8 +3,11 @@ export type TipoProducto = "original" | "inspirado" | "marca_propia";
 export interface Variante {
   id: string;
   tamanoMl: number;
+  /** Precio que paga el cliente hoy, con la promoción ya aplicada. */
   precioCop: number | null;
   disponible: boolean;
+  precioAnteriorCop?: number;
+  promocion?: string;
 }
 
 export interface Producto<A = Record<string, unknown>> {

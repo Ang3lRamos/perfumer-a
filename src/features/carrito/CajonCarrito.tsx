@@ -19,12 +19,18 @@ function Linea({ linea }: { linea: LineaCarrito }) {
       </div>
       <div className="min-w-0">
         <p className="text-micro uppercase tracking-[0.14em] text-tinta-suave">{linea.marca}</p>
-        <Link href={`/p/${linea.slug}`} className="block truncate font-display text-lg leading-tight hover:underline">
-          {linea.nombre}
-        </Link>
+        {linea.slug ? (
+          <Link href={`/p/${linea.slug}`} className="block truncate font-display text-lg leading-tight hover:underline">
+            {linea.nombre}
+          </Link>
+        ) : (
+          <p className="truncate font-display text-lg leading-tight">{linea.nombre}</p>
+        )}
         <p className="font-mono text-micro text-tinta-suave">
-          {linea.codigo} · {linea.tamanoMl} ml
+          {linea.codigo}
+          {linea.tamanoMl && ` · ${linea.tamanoMl} ml`}
         </p>
+        {linea.detalle && <p className="mt-1 text-xs text-tinta-suave">{linea.detalle}</p>}
         <div className="mt-2 flex items-center gap-3">
           <div className="flex items-center border border-linea">
             <button

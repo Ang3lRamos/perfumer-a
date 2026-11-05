@@ -9,6 +9,13 @@ export function precioDesde(producto: Producto): number | null {
   return precios.length ? Math.min(...precios) : null;
 }
 
+/** Precio tachado que acompaña a precioDesde, si ese tamaño está en promoción. */
+export function precioAnteriorDesde(producto: Producto): number | null {
+  const desde = precioDesde(producto);
+  const variante = producto.variantes.find((v) => v.disponible && v.precioCop === desde);
+  return variante?.precioAnteriorCop ?? null;
+}
+
 export function estaDisponible(producto: Producto): boolean {
   return producto.variantes.some((v) => v.disponible);
 }

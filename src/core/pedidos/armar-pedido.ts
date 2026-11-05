@@ -1,5 +1,6 @@
 import type { Producto } from "../catalogo/tipos";
-import type { DatosEnvio, ItemPedido, ItemSolicitado } from "./tipos";
+import { repartirCombo, type ComboResuelto } from "../combos/combos";
+import type { ComboSolicitado, DatosEnvio, ItemPedido, ItemSolicitado } from "./tipos";
 
 export type ResultadoArmado =
   | { ok: true; items: ItemPedido[]; totalCop: number }
@@ -27,8 +28,9 @@ export function armarPedido(
   envio: DatosEnvio,
   catalogo: Producto[],
   ciudadesCubiertas: string[],
+  combos: { solicitados: ComboSolicitado[]; disponibles: ComboResuelto[] } = { solicitados: [], disponibles: [] },
 ): ResultadoArmado {
-  if (!solicitados.length) return { ok: false, motivo: "El pedido no tiene productos." };
+  if (!solicitados.length && !combos.solicitados.length) return { ok: false, motivo: "El pedido no tiene productos." };
   if (!ciudadCubierta(envio.ciudad, ciudadesCubiertas)) {
     return { ok: false, motivo: `Por ahora solo despachamos a ${ciudadesCubiertas.join(", ")}.` };
   }
@@ -53,6 +55,24 @@ export function armarPedido(
       cantidad: solicitado.cantidad,
       precioUnitarioCop: variante.precioCop,
     });
+  }
+
+  for (const solicitado of combos.solicitados) {
+    const combo = combos.disponibles.find((c) => c.codigo === solicitado.codigo.toUpperCase());
+    if (!combo) return { ok: false, motivo: `El combo ${solicitado.codigo} no está disponible.` };
+    for (let vez = 0; vez < solicitado.cantidad; vez += 1) {
+      for (const { pieza, precioUnitarioCop } of repartirCombo(combo)) {
+        items.push({
+          varianteId: pieza.varianteId,
+          codigo: pieza.codigo,
+          descripcion: `${pieza.marca} ${pieza.nombre}`,
+          tamanoMl: pieza.tamanoMl,
+          cantidad: 1,
+          precioUnitarioCop,
+          comboCodigo: combo.codigo,
+        });
+      }
+    }
   }
 
   const totalCop = items.reduce((suma, item) => suma + item.precioUnitarioCop * item.cantidad, 0);

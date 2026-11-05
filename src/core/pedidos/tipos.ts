@@ -14,6 +14,11 @@ export interface ItemSolicitado {
   cantidad: number;
 }
 
+export interface ComboSolicitado {
+  codigo: string;
+  cantidad: number;
+}
+
 export interface ItemPedido {
   varianteId: string;
   codigo: string;
@@ -21,6 +26,8 @@ export interface ItemPedido {
   tamanoMl: number;
   cantidad: number;
   precioUnitarioCop: number;
+  /** Código del combo del que viene esta unidad; su precio es la parte que le toca del combo. */
+  comboCodigo?: string;
 }
 
 export interface Pedido {
