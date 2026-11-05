@@ -63,7 +63,8 @@ export function crearGestionRepositorio(cliente: SupabaseClient): GestionReposit
                 disponible: v.disponible,
                 precioManual: v.precio_manual,
                 productoActivo: producto.activo,
-                imagen: fotosDeCalidad(producto)[0] ?? null,
+                // A 40 px la foto del PDF no se nota borrosa y ayuda a reconocer el producto; en la tienda sigue sin mostrarse.
+                imagen: fotosDeCalidad(producto)[0] ?? producto.imagenes[0] ?? null,
               }),
             )
             .sort((a, b) => a.tamanoMl - b.tamanoMl),

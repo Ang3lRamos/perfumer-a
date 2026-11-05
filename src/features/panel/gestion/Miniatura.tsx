@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-/** Decorativa: el nombre del producto siempre va al lado. Sin foto de calidad queda el cuadro vacío, nunca la borrosa del PDF. */
+/** Decorativa: el nombre del producto siempre va al lado. Sin ninguna foto queda el cuadro vacío. */
 export function Miniatura({ src }: { src: string | null }) {
   return (
     <span aria-hidden className="relative block h-10 w-10 shrink-0 bg-vitrina">

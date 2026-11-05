@@ -5,6 +5,7 @@ import { formatearCop } from "@/core/catalogo/precio";
 import { FORMATO_MARGEN, leerEnteroCop, margenSobreCosto, type FilaPrecio } from "@/core/panel/gestion";
 import { guardarPrecio } from "./acciones";
 import { Aviso, CLASE_BOTON_SECUNDARIO, CLASE_CAMPO, useFormularioAccion } from "./comunes";
+import { Miniatura } from "./Miniatura";
 
 const POR_PAGINA = 40;
 
@@ -28,15 +29,18 @@ function Fila({ fila }: { fila: FilaPrecio }) {
       <form onSubmit={enviar} className="grid grid-cols-2 items-center gap-x-4 gap-y-2 lg:grid-cols-[1fr_8rem_9rem_6rem_7rem_6rem]">
         <input type="hidden" name="varianteId" value={fila.varianteId} />
         {fila.costoCop !== null && <input type="hidden" name="costo" value={fila.costoCop} />}
-        <div className="col-span-2 min-w-0 lg:col-span-1">
-          <p className="truncate text-sm font-medium">
-            {fila.marca} {fila.nombre}
-          </p>
-          <p className="font-mono text-micro text-tinta-suave">
-            {fila.codigo} · {fila.tamanoMl} ml
-            {fila.precioManual && " · precio manual"}
-            {!fila.productoActivo && " · producto inactivo"}
-          </p>
+        <div className="col-span-2 flex min-w-0 items-center gap-3 lg:col-span-1">
+          <Miniatura src={fila.imagen} />
+          <div className="min-w-0">
+            <p className="truncate text-sm font-medium">
+              {fila.marca} {fila.nombre}
+            </p>
+            <p className="font-mono text-micro text-tinta-suave">
+              {fila.codigo} · {fila.tamanoMl} ml
+              {fila.precioManual && " · precio manual"}
+              {!fila.productoActivo && " · producto inactivo"}
+            </p>
+          </div>
         </div>
         <p className="text-xs text-tinta-suave lg:text-right">
           Costo <span className="tabular-nums">{fila.costoCop === null ? "—" : formatearCop(fila.costoCop)}</span>

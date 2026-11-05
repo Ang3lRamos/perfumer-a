@@ -14,7 +14,7 @@ export interface FilaPrecio {
   disponible: boolean;
   precioManual: boolean;
   productoActivo: boolean;
-  /** Primera foto de calidad del producto. */
+  /** Para miniaturas: la mejor foto disponible, aunque sea la del PDF del proveedor. */
   imagen: string | null;
 }
 

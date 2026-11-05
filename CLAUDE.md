@@ -75,7 +75,7 @@ Next.js 16 (App Router, `cacheComponents`), TypeScript, Tailwind 4, Supabase, Zo
 ## Estilo
 - Código y nombres de dominio en español; sin comentarios que repitan el código, solo el porqué.
 - Diseño: tokens en `src/app/globals.css` (blanco y negro: papel, tinta, acento; radio 2px; sin sombras). Productos sin
-  foto de calidad (`core/catalogo/imagenes.ts`) se muestran con `ui/EtiquetaProducto`, nunca con la foto borrosa del PDF. Tipografías:
+  foto de calidad (`core/catalogo/imagenes.ts`) se muestran con `ui/EtiquetaProducto`, nunca con la foto borrosa del PDF (solo las miniaturas del panel la usan: a 40 px no se nota). Tipografías:
   Instrument Serif (display), Hanken Grotesk (texto), JetBrains Mono (etiquetas y códigos).
 - Movimiento: solo `transform`/`opacity`, tokens `--dur-*`/`--ease-*`, respetar `prefers-reduced-motion`.
 - Interacción (skills en `.claude/skills/`, sobre todo `apple-design`): lo tocable lleva `presion`; las barras flotantes,
